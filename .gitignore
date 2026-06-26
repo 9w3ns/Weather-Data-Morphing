@@ -1,1 +1,6 @@
-*.txt
+__pycache__/
+*.py[cod]
+*$py.class
+*.epw
+!data/epw/*.epw
+desktop.ini

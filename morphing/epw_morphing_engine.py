@@ -522,7 +522,7 @@ if __name__ == "__main__":
     print("Usage:")
     print("  from epw_morphing_engine import EPWMorphingEngine")
     print()
-    print('  engine = EPWMorphingEngine("baseline.epw", "deltas.csv")')
+    print('  engine = EPWMorphingEngine("../data/epw/Bangkok_baseline_2026_TMYx.epw", "../data/deltas/bangkok_ssp585_2070.csv")')
     print()
     print("  # Option A: Standard Belcher shift/stretch")
     print('  engine.morph(method="belcher")')

@@ -37,17 +37,28 @@ The accuracy of this finding depends entirely on the quality of the morphed EPW 
 ```
 Weather-Data-Morphing/
 ├── .agents/
-│   └── AGENTS.md                          ← This file
-├── belcher_morpher.py                     ← Method 1: Normal Shift/Stretch
-├── btws_morpher.py                        ← Method 2: Bounded Temperature Weighted Stretch
-├── epw_morphing_engine.py                 ← Orchestrator: EPW I/O + dispatches to either method
-├── sample_deltas_bangkok_ssp585.csv       ← Monthly climate change factors (CSV input)
-├── Morphing_Tool_Development_Plan.md      ← Original 4-phase development roadmap
-├── applybtwsforthailandclimate.md         ← Analysis: BTWS applicability to tropical climate
-├── grasshopper_morphing_tool_plan.md      ← Plan for Grasshopper integration
-└── Example of .epw file/                  ← Reference EPW files
-    └── FutureFile_FutureWeather_2070SSP5-8.5/
-        └── Bangkok...ssp585.epw           ← CURA-lab Normal Shift benchmark EPW
+│   └── AGENTS.md                              ← This file
+├── morphing/                                  ← Core morphing tools
+│   ├── belcher_morpher.py                     ← Method 1: Normal Shift/Stretch
+│   ├── btws_morpher.py                        ← Method 2: Bounded Temperature Weighted Stretch
+│   └── epw_morphing_engine.py                 ← Orchestrator: EPW I/O + dispatches to either method
+├── data/                                      ← Input and baseline data
+│   ├── deltas/
+│   │   └── bangkok_ssp585_2070.csv            ← Monthly climate change factors
+│   └── epw/
+│       ├── Bangkok_baseline_2026_TMYx.epw     ← Present-day baseline EPW
+│       └── Bangkok_CURA-lab_2070_ssp585.epw   ← CURA-lab Normal Shift benchmark EPW
+├── docs/                                      ← Plans and analysis documents
+│   ├── development_plan.md                    
+│   ├── btws_thailand_analysis.md              
+│   └── grasshopper_integration_plan.md        
+├── research/
+│   └── hamann_2025_weather_morphing.txt       ← Key research reference
+└── thesis/                                    ← Thesis context and documentation
+    ├── thesis_brief.docx
+    ├── UTCI_metric_rationale.docx
+    ├── UTCI_CA_process_document.docx
+    └── fin_shading_study_summary.docx
 ```
 
 ### The Two Morphing Methods
