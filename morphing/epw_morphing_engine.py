@@ -323,10 +323,16 @@ class EPWMorphingEngine:
         self._log(f"  ✓ Relative Humidity morphed [Belcher stretch]")
 
     def _morph_solar_radiation(self, months, method):
-        """Morphs global horizontal radiation."""
+        """Morphs global horizontal radiation and its components."""
         col_ghr = EPW_COLS['global_horizontal_radiation']
+        col_dni = EPW_COLS['direct_normal_radiation']
+        col_dhi = EPW_COLS['diffuse_horizontal_radiation']
+        
         ghr = self._get_column(col_ghr)
-        morphed = ghr.copy()
+        dni = self._get_column(col_dni)
+        dhi = self._get_column(col_dhi)
+        
+        morphed_ghr = ghr.copy()
 
         if method == "btws" and all(
             'delta_rsds_max' in self.deltas[m] for m in range(1, 13)
@@ -347,7 +353,7 @@ class EPWMorphingEngine:
                     day_morphed = self.btws.morph_solar_radiation(
                         day_ghr, delta_mean, delta_max, delta_min
                     )
-                    morphed[day_idx] = day_morphed
+                    morphed_ghr[day_idx] = day_morphed
 
                 self._log(f"  GHR Month {m:2d}: BTWS applied")
         else:
@@ -356,12 +362,42 @@ class EPWMorphingEngine:
                 d = self.deltas[m]
                 mask = self._get_month_mask(months, m)
                 alpha = d.get('alpha_rsds', 1.0)
-                morphed[mask] = self.belcher.morph_solar_radiation(
+                morphed_ghr[mask] = self.belcher.morph_solar_radiation(
                     ghr[mask], alpha
                 )
 
-        self._set_column(col_ghr, morphed)
-        self._log(f"  ✓ Global Horizontal Radiation morphed")
+        # ── Phase 3: Solar Physics Correction ──────────────────────
+        # To maintain the equation GHI = DNI * cos(θ) + DHI, we scale DNI 
+        # and DHI proportionally to the change in GHI. This intrinsically 
+        # preserves the solar zenith angle relationship without complex 
+        # explicit geometry modeling, while fixing the physically impossible 
+        # values (like DHI > GHI) seen in earlier morphing approaches.
+        morphed_dni = dni.copy()
+        morphed_dhi = dhi.copy()
+        
+        # Using numpy for vectorized operations to speed up the 8760 iterations
+        # Avoid divide by zero by only calculating ratio where ghr > 0
+        valid_mask = ghr > 0
+        ratio = np.zeros_like(ghr)
+        ratio[valid_mask] = morphed_ghr[valid_mask] / ghr[valid_mask]
+        
+        morphed_dni = dni * ratio
+        morphed_dhi = dhi * ratio
+        
+        # Enforce physical constraints: DHI cannot exceed GHI
+        dhi_exceeds_mask = morphed_dhi > morphed_ghr
+        morphed_dhi[dhi_exceeds_mask] = morphed_ghr[dhi_exceeds_mask]
+        
+        # When GHI is 0 (night time), ensure DNI and DHI are also 0
+        night_mask = morphed_ghr <= 0
+        morphed_dni[night_mask] = 0.0
+        morphed_dhi[night_mask] = 0.0
+        morphed_ghr[night_mask] = 0.0
+
+        self._set_column(col_ghr, morphed_ghr)
+        self._set_column(col_dni, morphed_dni)
+        self._set_column(col_dhi, morphed_dhi)
+        self._log(f"  ✓ Solar Radiation (GHI, DNI, DHI) co-morphed with physics correction")
 
     def _morph_wind_speed(self, months):
         """Morphs wind speed using Belcher stretch (both methods)."""
