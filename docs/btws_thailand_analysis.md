@@ -73,6 +73,9 @@ The paper already identified solar radiation consistency issues in Vienna (27.26
 > [!IMPORTANT]
 > **Modification needed:** Morph DNI and DHI **together with GHI** to maintain physical consistency. Consider separate treatment for dry season vs monsoon season. Apply the constraint $DHI \leq GHI$ and recalculate DNI from the relationship after morphing.
 
+> [!NOTE]
+> **Status:** Implemented as Phase 3 in `epw_morphing_engine.py` (ratio-scaling DNI/DHI by `morphed_GHI / baseline_GHI`) and validated in `morphing/validate_phase3.py` — see `docs/belcher_vs_cura_validation.md`. The `DHI \leq GHI` constraint is enforced, but the current clip does not re-solve DNI afterward, so the closure identity is not guaranteed at the ~6% of hours where the clip fires. In the Bangkok baseline this only affects near-zero-GHI edge hours, but under Thailand's monsoon cloud cover (this document's premise) genuine high-irradiance DHI > GHI violations are more likely — recalculating `DNI' = (GHI' - DHI') / cos(θ)` after the clip should be prioritized before relying on this for monsoon months.
+
 ---
 
 ### 4. 🟡 Precipitation: Monsoon Intensity Not Captured

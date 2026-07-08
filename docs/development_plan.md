@@ -20,7 +20,8 @@ The methodology heavily relies on the theories and algorithms discussed in the 2
 ## Phase 3: The Solar Physics Correction
 **Goal:** Fix known limitations in existing solar morphing methodologies.
 *   **The Problem:** Morphing Global Horizontal Radiation (GHI) alone without adjusting its components can result in physically impossible data (e.g., Diffuse Horizontal Irradiance exceeding GHI).
-*   **The Solution:** Add a mathematical correction step. After GHI is morphed using the BTWS algorithm, dynamically recalculate Direct Normal Irradiance (DNI) and Diffuse Horizontal Irradiance (DHI) using the solar zenith angle to guarantee that the equation $GHI = DNI \cdot \cos(\theta) + DHI$ holds true at every hour.
+*   **The Solution:** Add a mathematical correction step. After GHI is morphed, scale Direct Normal Irradiance (DNI) and Diffuse Horizontal Irradiance (DHI) by `ratio = morphed_GHI / baseline_GHI`, which algebraically guarantees $GHI' = DNI' \cdot \cos(\theta) + DHI'$ holds wherever it held in the baseline — implemented in `epw_morphing_engine.py::_morph_solar_radiation`.
+*   **Validation:** No third-party BTWS-morphed benchmark file exists (unlike Belcher, which has the CURA-lab file), so Phase 3 is validated as a self-contained unit instead of by diffing against a ground-truth future file — see `docs/belcher_vs_cura_validation.md` § "Phase 3 Validation" and `morphing/validate_phase3.py`. Confirmed: the ratio identity holds for 4108/4366 daytime hours to within EPW rounding precision; known gap is 258 near-zero-GHI hours where the DHI clip doesn't re-solve DNI, and the BTWS solar branch doesn't currently engage because the delta CSVs lack `delta_rsds_max`/`delta_rsds_min`.
 
 ## Phase 4: Integration and Workflow Handoff
 **Goal:** Seamlessly integrate the morphed data into the architectural design workflow.

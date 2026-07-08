@@ -4,3 +4,4 @@ __pycache__/
 *.epw
 !data/epw/*.epw
 desktop.ini
+*.png
