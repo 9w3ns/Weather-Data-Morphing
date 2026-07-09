@@ -1,24 +1,27 @@
 #! python 3
-"""
-GHPython Script: Match District UHI Data to Geometry
-Author: Antigravity
-
-Inputs:
-    Curves         : List of Curve, district boundary curves (from gh_geojson_to_curves.py).
-    District_Names : List of String, district name aligned 1:1 with Curves.
-    CSV_Path       : String, absolute path to 'bangkok_uhi_data.csv'.
-Outputs:
-    Matched_Curves : The curves that successfully matched a CSV row.
-    UHI_Risk       : List of UHI Risk categories (Low, Medium, Severe).
-    Death_Risk     : List of Death Risk values (Float).
-    LCZ_Category   : List of dominant LCZ classes.
-    Report         : String summary / error log.
-"""
+# GHPython Script: Match District UHI Data to Geometry
+#
+# Inputs:
+#     District_Names : List of String, one name per district (same order as
+#                       the Curves you built natively on the canvas -- this
+#                       script does not touch geometry at all).
+#     CSV_Path       : String, absolute path to 'bangkok_uhi_data.csv'.
+# Outputs:
+#     UHI_Risk       : List of UHI Risk categories, aligned 1:1 with
+#                       District_Names (use "No Data" placeholder if unmatched).
+#     Death_Risk     : List of Death Risk values (Float, -1 if unmatched).
+#     LCZ_Category   : List of dominant LCZ classes ("No Data" if unmatched).
+#     Report         : String summary / error log.
+#
+# Deliberately does NOT take or return Curve geometry: lists of Curve
+# objects don't reliably survive the round-trip out of this Script
+# component in this environment. Pair this output with your existing
+# native Curves list by index instead (both are in District_Names order,
+# nothing is filtered out, so the indices always line up 1:1).
 import csv
 import traceback
 
 # Initialize outputs
-Matched_Curves = []
 UHI_Risk = []
 Death_Risk = []
 LCZ_Category = []
@@ -46,14 +49,17 @@ def read_csv_data(filepath):
     return data_dict
 
 
-if not (CSV_Path and Curves and District_Names):
-    Report = "Provide CSV_Path, Curves, and District_Names."
+if not (CSV_Path and District_Names):
+    Report = "Provide CSV_Path and District_Names."
 else:
     try:
-        district_data = read_csv_data(CSV_Path)
+        # Strip stray quotes/whitespace -- GH panels/sliders with no type
+        # hint on the input can pass the path wrapped in literal quote chars.
+        clean_csv_path = str(CSV_Path).strip().strip('"').strip("'")
+        district_data = read_csv_data(clean_csv_path)
         unmatched = []
 
-        for i, name in enumerate(District_Names):
+        for name in District_Names:
             clean_name = normalize_name(name)
 
             # Exact match first; fall back to a loose substring match for
@@ -66,14 +72,17 @@ else:
                         break
 
             if match is not None:
-                Matched_Curves.append(Curves[i])
                 UHI_Risk.append(match['UHI_Risk'])
                 Death_Risk.append(match['Death_Risk'])
                 LCZ_Category.append(match['Dominant_LCZ'])
             else:
+                UHI_Risk.append("No Data")
+                Death_Risk.append(-1.0)
+                LCZ_Category.append("No Data")
                 unmatched.append(str(name))
 
-        Report = "Matched {} out of {} districts.".format(len(Matched_Curves), len(District_Names))
+        matched_count = len(District_Names) - len(unmatched)
+        Report = "Matched {} out of {} districts.".format(matched_count, len(District_Names))
         if unmatched:
             Report += "\nNo match found for: " + ", ".join(unmatched)
 
