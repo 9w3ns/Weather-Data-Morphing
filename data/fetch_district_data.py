@@ -112,49 +112,15 @@ def fetch_bangkok_geojson(output_path):
         print(f"Failed to fetch GeoJSON: {e}")
         return []
 
-def create_mock_csv(districts, output_path):
-    print("Creating dataset CSV...")
-    
-    # Based on the World Bank report text
-    high_uhi = ["Khlong San", "Sathon", "Din Daeng", "Pom Prap Sattru Phai", "Samphanthawong", "Pathum Wan", "Bang Rak", "Ratchathewi", "Phaya Thai"]
-    low_uhi = ["Don Mueang", "Sai Mai", "Nong Chok", "Bang Khen", "Lat Krabang", "Min Buri", "Khlong Sam Wa"]
-    
-    with open(output_path, 'w', encoding='utf-8') as f:
-        f.write("District,UHI_Risk,Death_Risk_Index,Dominant_LCZ\n")
-        
-        if not districts:
-            # Fallback list if OSM fails
-            districts = high_uhi + low_uhi + ["Bangkok Noi", "Bangkok Yai", "Chatuchak", "Thon Buri"]
-            
-        for dist in districts:
-            # Clean up OSM names (e.g. "Khet Pathum Wan" -> "Pathum Wan")
-            clean_name = dist.replace("Khet ", "").strip()
-            
-            # Assign data based on report text
-            if any(h.lower() in clean_name.lower() for h in high_uhi):
-                uhi_risk = "Severe"
-                death_risk = "1.035"
-                lcz = "LCZ 1 (Compact high-rise)"
-            elif any(l.lower() in clean_name.lower() for l in low_uhi):
-                uhi_risk = "Low"
-                death_risk = "1.022"
-                lcz = "LCZ 6 (Open low-rise)"
-            else:
-                uhi_risk = "Medium"
-                death_risk = "1.028"
-                lcz = "LCZ 3 (Compact low-rise)"
-                
-            f.write(f'"{clean_name}","{uhi_risk}",{death_risk},"{lcz}"\n')
-            
-    print(f"Successfully saved CSV dataset to {output_path}")
-
 if __name__ == "__main__":
+    # NOTE: this only (re)fetches district boundary geometry. UHI data
+    # (data/gis/bangkok_uhi_data.csv) is generated separately by
+    # data/fetch_uhi_lst.py + data/fetch_uhi_lcz.py + data/merge_uhi_data.py
+    # (see docs/uhi_data_sourcing_plan.md) -- running this script does NOT
+    # touch that file.
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     data_dir = os.path.join(base_dir, 'data', 'gis')
     os.makedirs(data_dir, exist_ok=True)
-    
+
     geojson_path = os.path.join(data_dir, 'bangkok_districts.geojson')
-    csv_path = os.path.join(data_dir, 'bangkok_uhi_data.csv')
-    
-    districts = fetch_bangkok_geojson(geojson_path)
-    create_mock_csv(districts, csv_path)
+    fetch_bangkok_geojson(geojson_path)

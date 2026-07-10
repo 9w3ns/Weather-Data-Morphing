@@ -7,11 +7,18 @@
 #                       script does not touch geometry at all).
 #     CSV_Path       : String, absolute path to 'bangkok_uhi_data.csv'.
 # Outputs:
-#     UHI_Risk       : List of UHI Risk categories, aligned 1:1 with
-#                       District_Names (use "No Data" placeholder if unmatched).
-#     Death_Risk     : List of Death Risk values (Float, -1 if unmatched).
+#     UHI_Tier       : List of UHI tier (Severe/Medium/Low, derived from real
+#                       LST tertiles), aligned 1:1 with District_Names
+#                       ("No Data" placeholder if unmatched).
+#     LST_Mean_C     : List of mean Land Surface Temperature (Float, -1 if
+#                       unmatched) -- real Landsat-derived values, see
+#                       data/fetch_uhi_lst.py.
 #     LCZ_Category   : List of dominant LCZ classes ("No Data" if unmatched).
 #     Report         : String summary / error log.
+#
+# No Death_Risk field: that requires population/vulnerability weighting
+# (Phase 3 of docs/uhi_data_sourcing_plan.md), not built yet. Don't
+# fabricate a number for it.
 #
 # Deliberately does NOT take or return Curve geometry: lists of Curve
 # objects don't reliably survive the round-trip out of this Script
@@ -22,8 +29,8 @@ import csv
 import traceback
 
 # Initialize outputs
-UHI_Risk = []
-Death_Risk = []
+UHI_Tier = []
+LST_Mean_C = []
 LCZ_Category = []
 Report = "Awaiting inputs..."
 
@@ -42,8 +49,8 @@ def read_csv_data(filepath):
         for row in reader:
             district = normalize_name(row['District'])
             data_dict[district] = {
-                'UHI_Risk': row['UHI_Risk'],
-                'Death_Risk': float(row['Death_Risk_Index']),
+                'UHI_Tier': row['UHI_Tier'],
+                'LST_Mean_C': float(row['LST_Mean_C']),
                 'Dominant_LCZ': row['Dominant_LCZ']
             }
     return data_dict
@@ -72,12 +79,12 @@ else:
                         break
 
             if match is not None:
-                UHI_Risk.append(match['UHI_Risk'])
-                Death_Risk.append(match['Death_Risk'])
+                UHI_Tier.append(match['UHI_Tier'])
+                LST_Mean_C.append(match['LST_Mean_C'])
                 LCZ_Category.append(match['Dominant_LCZ'])
             else:
-                UHI_Risk.append("No Data")
-                Death_Risk.append(-1.0)
+                UHI_Tier.append("No Data")
+                LST_Mean_C.append(-1.0)
                 LCZ_Category.append("No Data")
                 unmatched.append(str(name))
 

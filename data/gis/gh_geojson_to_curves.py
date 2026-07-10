@@ -12,21 +12,33 @@
 #                      points belong to each district, same order as
 #                      District_Names. Sum == number of lines in the file.
 #   District_Names   : FLAT list of String, one per district.
+#   Centroid_Strings : FLAT list of String, "x,y" centroid per district,
+#                      same order as District_Names.
 #   Report            : String summary / error log.
 #
 # This Script component's output channel is unreliable for sizeable lists
 # (a 50-item string list works, a ~1700-item one comes back empty) --
 # looks like a payload/buffer size limit, not a type issue. So the bulk
 # point data is written to a file and only the file PATH (a single small
-# string) is returned; Count_Strings/District_Names stay small enough to
-# come back directly. On the canvas, use native components to read the
-# file back in -- these don't cross the same broken boundary:
+# string) is returned; Count_Strings/District_Names/Centroid_Strings stay
+# small enough to come back directly. On the canvas, use native components
+# to read the file back in -- these don't cross the same broken boundary:
 #   Points_File_Path -> Read File -> Split Text (newline) -> Split Text (comma, x2)
 #     -> Text to Number (x2) -> Construct Point
 #   Count_Strings -> Text to Number -> Partition List "Size" input
 #   Partition List "List" input <- the constructed Points
 #   Partition List "Chunk" output -> native Polyline component (Closed=True)
-#   Polyline output -> Flatten -> gh_data_matcher.py's Curves input
+#   Polyline output -> Flatten -> Curves
+#
+# IMPORTANT: that chain has been observed to NOT reliably preserve order
+# (Curves end up out of sync with District_Names, no consistent shift).
+# Use Centroid_Strings to re-pair them robustly instead of trusting order:
+#   Centroid_Strings -> Split Text(,) -> Text to Number x2 -> Construct Point
+#     => True_Centroids (District_Names order)
+#   Curves -> Area component -> Centroid output => Curve_Centroids (Curves' order)
+#   Closest Point: Point=True_Centroids, Cloud=Curve_Centroids -> Index output
+#   List Item: List=Curves, Index=<that Index output> -> Curves reordered to
+#     finally match District_Names order by geometry, not assumed order.
 import json
 import math
 import os
@@ -38,6 +50,7 @@ SIMPLIFY_TOLERANCE_M = 50.0
 Points_File_Path = None
 Count_Strings = []
 District_Names = []
+Centroid_Strings = []
 Report = "Awaiting GeoJSON path..."
 
 
@@ -124,6 +137,10 @@ else:
 
                 for x, y in simplified:
                     point_lines.append("{:.2f},{:.2f}".format(x, y))
+
+                cx = sum(p[0] for p in simplified) / len(simplified)
+                cy = sum(p[1] for p in simplified) / len(simplified)
+                Centroid_Strings.append("{:.2f},{:.2f}".format(cx, cy))
 
                 Count_Strings.append(str(len(simplified)))
                 District_Names.append(name)
