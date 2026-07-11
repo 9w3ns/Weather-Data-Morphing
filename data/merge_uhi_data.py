@@ -4,27 +4,28 @@ datasets into data/gis/bangkok_uhi_data.csv, replacing the mock 3-tier
 placeholder that used to live there.
 
 Sources:
-  - bangkok_worldbank_uhii.csv: Table A1.1 from the World Bank report
-    "Modeling Spatio-Temporal Characteristics of Urban Heat in Bangkok"
-    (research/*.pdf) -- real WRF-modeled nighttime Urban Heat Island
-    Intensity (UHII, air temperature vs rural reference) for the cool/dry
-    season (Dec 2019), the report's own headline "most pronounced UHI"
-    result, plus each district's real % share of BMA population.
+  - bangkok_worldbank_uhii_full.csv: Tables A1.1-A1.6 from the World Bank
+    report "Modeling Spatio-Temporal Characteristics of Urban Heat in
+    Bangkok" (research/*.pdf) -- real WRF-modeled Urban Heat Island
+    Intensity (UHII, air temperature vs rural reference) for all 3 seasons
+    x night/evening (6 columns), plus each district's real % share of BMA
+    population. See data/extract_worldbank_uhii_full.py.
   - bangkok_lst_data.csv: real Landsat-derived daytime surface temperature
     (data/fetch_uhi_lst.py).
   - bangkok_lcz_data.csv: real Local Climate Zone classification
     (data/fetch_uhi_lcz.py).
 
-UHI_Tier (Severe/Medium/Low) is derived from UHII_Night_DecC tertiles --
-the real WRF air-temperature metric, not LST -- since that's the
-actual "urban heat island" quantity as classically defined and the one
-relevant to health risk (the report ties nighttime air temperature, not
-daytime surface temperature, to heat-mortality risk). LST/LCZ are kept as
-separate labeled columns: LST is real, but reflects daytime surface
-temperature, which this same report documents as an "urban cool island"
-period for Bangkok's compact high-rise core -- the two datasets disagree
-on which districts are "hottest" because they measure genuinely different
-physical phenomena, not because either is wrong.
+UHI_Tier (Severe/Medium/Low) is derived from UHII_CoolDry_Night_C tertiles
+-- Table A1.1, the report's own headline "most pronounced UHI" result, and
+the real WRF air-temperature metric (not LST), since that's the actual
+"urban heat island" quantity as classically defined and the one relevant
+to health risk (the report ties nighttime air temperature, not daytime
+surface temperature, to heat-mortality risk). LST/LCZ are kept as separate
+labeled columns: LST is real, but reflects daytime surface temperature,
+which this same report documents as an "urban cool island" period for
+Bangkok's compact high-rise core -- the two datasets disagree on which
+districts are "hottest" because they measure genuinely different physical
+phenomena, not because either is wrong.
 
 Death_Risk_Index (mortality) is intentionally NOT included -- no district
 level mortality data was found; Population_Pct_BMA is the real, sourced
@@ -39,6 +40,12 @@ NAME_ALIASES = {
     "watthana": "vadhana",
     "phra khanon": "phra khanong",
 }
+
+UHII_COLUMNS = [
+    "UHII_CoolDry_Night_C", "UHII_CoolDry_Evening_C",
+    "UHII_HotDry_Night_C", "UHII_HotDry_Evening_C",
+    "UHII_Wet_Night_C", "UHII_Wet_Evening_C",
+]
 
 
 def normalize(name):
@@ -65,7 +72,7 @@ def tertile_tier(value, sorted_values):
 def main():
     base_dir = os.path.dirname(os.path.abspath(__file__))
     gis_dir = os.path.join(base_dir, "gis")
-    uhii_path = os.path.join(gis_dir, "bangkok_worldbank_uhii.csv")
+    uhii_path = os.path.join(gis_dir, "bangkok_worldbank_uhii_full.csv")
     lst_path = os.path.join(gis_dir, "bangkok_lst_data.csv")
     lcz_path = os.path.join(gis_dir, "bangkok_lcz_data.csv")
     out_path = os.path.join(gis_dir, "bangkok_uhi_data.csv")
@@ -78,35 +85,36 @@ def main():
     if missing:
         raise SystemExit("Districts missing from one of the sources: {}".format(missing))
 
-    uhii_values = sorted(float(row["UHII_Night_DecC"]) for row in uhii_data.values())
+    headline_values = sorted(float(row["UHII_CoolDry_Night_C"]) for row in uhii_data.values())
 
     rows = []
     for name, lst_row in lst_data.items():
         uhii_row = uhii_data[name]
         lcz_row = lcz_data[name]
-        uhii_night = float(uhii_row["UHII_Night_DecC"])
+        headline_uhii = float(uhii_row["UHII_CoolDry_Night_C"])
         # Use the original (non-aliased) District spelling from the LST/geojson
         # source, since that's what the Grasshopper matcher's District_Names
         # will actually contain.
-        rows.append(
-            {
-                "District": lst_row["District"],
-                "UHII_Night_DecC": uhii_night,
-                "Population_Pct_BMA": float(uhii_row["Population_Pct_BMA"]),
-                "UHI_Tier": tertile_tier(uhii_night, uhii_values),
-                "LST_Mean_C": float(lst_row["LST_Mean_C"]),
-                "LST_Max_C": float(lst_row["LST_Max_C"]),
-                "Dominant_LCZ": lcz_row["Dominant_LCZ"],
-                "LCZ_Confidence_Pct": float(lcz_row["LCZ_Confidence_Pct"]),
-            }
-        )
+        row = {
+            "District": lst_row["District"],
+            "Population_Pct_BMA": float(uhii_row["Population_Pct_BMA"]),
+            "UHI_Tier": tertile_tier(headline_uhii, headline_values),
+            "LST_Mean_C": float(lst_row["LST_Mean_C"]),
+            "LST_Max_C": float(lst_row["LST_Max_C"]),
+            "Dominant_LCZ": lcz_row["Dominant_LCZ"],
+            "LCZ_Confidence_Pct": float(lcz_row["LCZ_Confidence_Pct"]),
+        }
+        for col in UHII_COLUMNS:
+            row[col] = float(uhii_row[col])
+        rows.append(row)
 
-    rows.sort(key=lambda r: r["UHII_Night_DecC"], reverse=True)
+    rows.sort(key=lambda r: r["UHII_CoolDry_Night_C"], reverse=True)
 
-    fieldnames = [
-        "District", "UHII_Night_DecC", "Population_Pct_BMA", "UHI_Tier",
-        "LST_Mean_C", "LST_Max_C", "Dominant_LCZ", "LCZ_Confidence_Pct",
-    ]
+    fieldnames = (
+        ["District", "Population_Pct_BMA", "UHI_Tier"]
+        + UHII_COLUMNS
+        + ["LST_Mean_C", "LST_Max_C", "Dominant_LCZ", "LCZ_Confidence_Pct"]
+    )
     with open(out_path, "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
@@ -117,7 +125,7 @@ def main():
         tier_counts[row["UHI_Tier"]] = tier_counts.get(row["UHI_Tier"], 0) + 1
 
     print("Wrote {} district(s) to {}".format(len(rows), out_path))
-    print("UHI_Tier distribution (from real WRF nighttime UHII):", tier_counts)
+    print("UHI_Tier distribution (from real WRF cool/dry-season nighttime UHII):", tier_counts)
 
 
 if __name__ == "__main__":

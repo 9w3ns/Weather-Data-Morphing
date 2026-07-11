@@ -55,6 +55,24 @@ authoritative source, no WorldPop/GEE work needed. LST/LCZ are kept as
 separate labeled columns (still real, still useful for this repo's
 building-energy-simulation purpose) rather than discarded.
 
+### Update 2: full seasonal/diurnal UHII table extracted
+
+All 6 of the report's Annex 1 tables (A1.1-A1.6: cool/dry, hot/dry, wet
+monsoon seasons x night/evening) transcribed via
+`data/extract_worldbank_uhii_full.py` into
+`data/gis/bangkok_worldbank_uhii_full.csv` (50 districts x 6 UHII columns
++ population). Cross-validated against the original Table A1.1-only
+extraction with zero mismatches. `data/merge_uhi_data.py` now folds all 6
+columns into `bangkok_uhi_data.csv`; `UHI_Tier` still derives from the
+headline `UHII_CoolDry_Night_C` column only (unchanged). The Grasshopper
+matcher needed no changes (`UHI_Tier`/`LST_Mean_C` column names are
+unchanged). A companion web artifact
+(https://claude.ai/code/artifact/725bfedb-128c-4678-ac3e-feaba5a683bf)
+renders all 6 season/time views with a selector, for comparing the
+seasonal/diurnal pattern the report describes (e.g. hot/dry-season UHII is
+counterintuitively the *lowest* of the year despite that season having the
+highest absolute temperatures -- Section 3.1.2 of the report).
+
 ## Phase 0 — Trace the source claim
 
 Find the actual World Bank report referenced in the original script's
