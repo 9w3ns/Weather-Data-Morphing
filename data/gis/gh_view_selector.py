@@ -13,6 +13,11 @@
 # Outputs:
 #     R_Strings, G_Strings, B_Strings : FLAT lists of String ("0"-"255"),
 #                       one per district, District_Names order.
+#     Population_Strings : FLAT list of String, each district's real
+#                       % share of BMA population (e.g. "1.21"), same
+#                       order as District_Names -- feed into a Text Tag
+#                       (with your Curves' centroids) to label the map,
+#                       same pattern as the district-name labels.
 #     Legend_Text    : String describing the current view's color scale,
 #                       for a Panel next to the map.
 #     Report         : String summary / error log.
@@ -62,6 +67,7 @@ VIEW_LABELS = {
 R_Strings = []
 G_Strings = []
 B_Strings = []
+Population_Strings = []
 Legend_Text = ""
 Report = "Awaiting inputs..."
 
@@ -126,14 +132,18 @@ else:
             if match is None:
                 unmatched.append(str(name))
                 r, g, b = 200, 200, 200
-            elif view == "Tier":
-                r, g, b = TIER_COLORS.get(match["UHI_Tier"], (200, 200, 200))
+                pop_str = "No Data"
             else:
-                r, g, b = diverging_color(float(match[view]), pos_max, neg_min)
+                pop_str = "{:.2f}%".format(float(match["Population_Pct_BMA"]))
+                if view == "Tier":
+                    r, g, b = TIER_COLORS.get(match["UHI_Tier"], (200, 200, 200))
+                else:
+                    r, g, b = diverging_color(float(match[view]), pos_max, neg_min)
 
             R_Strings.append(str(int(round(r))))
             G_Strings.append(str(int(round(g))))
             B_Strings.append(str(int(round(b))))
+            Population_Strings.append(pop_str)
 
         if view == "Tier":
             Legend_Text = "{}\nRed=Severe (18)  Amber=Medium (16)  Green=Low (16)".format(
