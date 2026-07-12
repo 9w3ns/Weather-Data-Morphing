@@ -145,6 +145,66 @@ The real physical UHI signal.
   districts. Classification confidence ranges 52-85%; lower-confidence
   districts (e.g. Ratchathewi 52.3%, Pathum Wan 56.4%) reflect genuinely
   mixed built form rather than a data quality problem.
+- **Standalone check**: `data/gis/plot_lcz_map.py` renders
+  `bangkok_lcz_data.csv` + `bangkok_districts.geojson` as a matplotlib
+  choropleth (`--highlight "<name>"` outlines one district, `--out` saves a
+  PNG) — a way to sanity-check any district's dominant class without going
+  through Grasshopper. Confirmed via this that a district visually reading
+  as "wrong" in a GH view (e.g. Sathon appearing as LCZ 6) was a
+  GH-side matching/ordering issue, not bad source data — the CSV has always
+  had Sathon as LCZ 3 (59.6% confidence).
+
+## Phase 2b — Full-resolution LCZ grid (no per-district aggregation)
+
+Per-district mode (Phase 2) collapses ~half a district's worth of pixels
+into one class, which hides real intra-district variation (e.g. a compact
+high-rise core surrounded by lower-density residential soi, like Sathon).
+To instead map the **entire pixel grid** in Grasshopper — like a WRF/WUDAPT
+LCZ input map, colored cell-by-cell rather than district-by-district — skip
+the zonal reducer and pull the raw raster directly.
+
+- **Data source**: same as Phase 2, `RUB/RUBCLIM/LCZ/global_lcz_map/latest`
+  on Earth Engine, `LCZ_Filter` band (+ `LCZ_Probability`). No new dataset.
+- **Fetch method**: `data/fetch_lcz_grid.py` uses `ee.data.computePixels()`
+  — a single synchronous pixel-array request — instead of
+  `reduceRegions()`/`Export.image.toDrive`. Region is small enough (Bangkok
+  districts' bounding box) that even native 100m resolution (~341k cells)
+  fits comfortably under computePixels' response-size limit; no Drive
+  export or async task polling needed. Verified live: 200m default scale →
+  330×259 = 85,470 cells in one call, output visually spot-checked against
+  the WRF LCZ figure (matching river shape / dense core / green fringe
+  pattern). Resolution is a tunable `--scale` flag in meters (100m ≈341k
+  cells, 150m ≈152k, 200m ≈85k \[default\], 250m ≈55k).
+- **Cost**: negligible — response is a few hundred KB to low single-digit
+  MB even at 100m, far under any Earth Engine quota. No cost expected
+  unless the `weather-data-morphing` GCP project is registered as
+  commercial (unconfirmed — worth checking at
+  `code.earthengine.google.com/register` if usage patterns change, e.g.
+  many repeated fetches at very high resolution).
+- **Coordinate system**: cell centers are projected into the same local
+  planar XY (meters, equirectangular, origin = mean vertex of all district
+  geometry) that `data/gis/gh_geojson_to_curves.py` already uses for the
+  district curves, computed with the identical formula — so the grid lines
+  up with existing GH geometry with no separate alignment/georeferencing
+  step.
+- **Output**: `data/gis/bangkok_lcz_grid.csv` (`Row,Col,X,Y,LCZ_Code,
+  LCZ_Confidence_Pct`, one row per cell) + `data/gis/bangkok_lcz_grid_meta.json`
+  (grid dimensions, scale, projection origin).
+- **Grasshopper side**: `data/gis/gh_lcz_grid_mesh.py` reads both files and
+  builds a **single Rhino `Mesh`** — one flat-colored quad per cell, vertices
+  unwelded per cell so colors don't blend across cell boundaries (sharp
+  pixel look, matching the WRF figure, instead of a smooth-shaded surface).
+  Deliberately outputs one Mesh object rather than parallel point/color
+  lists: `gh_geojson_to_curves.py` already documented that this Script
+  component's output channel breaks on large lists (~1700+ items), and this
+  grid has tens of thousands of cells.
+- **Status**: fetch script (`fetch_lcz_grid.py`) run and verified against
+  live Earth Engine data. `gh_lcz_grid_mesh.py` written and checked against
+  the RhinoCommon API (`Mesh.Vertices.Add`/`Faces.AddFace`/
+  `VertexColors.Add`/`Normals.ComputeNormals`) but **not yet executed
+  inside actual Rhino/Grasshopper** — no Rhino available in the dev
+  sandbox. Pending: user validation on the GH canvas (check the script's
+  `Report` output first).
 
 ## Phase 3 — Heat-health / vulnerability risk
 
