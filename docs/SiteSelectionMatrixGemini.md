@@ -84,8 +84,8 @@ We build on the existing `bangkok_uhi_data.csv` (UHI Tier, seasonal Night/Evenin
 | Housing vulnerability | `Dominant_LCZ` = LCZ 3 | `bangkok_uhi_data.csv` | ✅ have |
 | Demographic density | `Population_Pct_BMA` | `bangkok_uhi_data.csv` | ✅ have |
 | Transit / intercept | station + interchange count per district | OSM via QGIS `QuickOSM`, or BMA GIS | ❌ **needed** |
-| Work/home adjacency | commercial↔residential boundary | Bangkok Comprehensive Plan (Land Use) | ❌ needed (Tier 0/2) |
-| Micro land availability | underused plots near nodes | Google Earth Pro / Street View | ❌ needed (Tier 2) |
+| Work/home adjacency | residential fabric within 200 m of a working zone, per district | OSM `landuse` via `data/fetch_land_use_osm.py` → `bangkok_intercept_scores.csv` | ✅ have (OSM proxy — see caveat below) |
+| Micro land availability | underused plots near nodes | OSM signals via `data/fetch_vacant_plots_osm.py` → `bangkok_vacant_plots_scored.csv`; imagery for final check | 🟡 candidate shortlist auto-extracted (Tier 2); imagery verification still manual |
 
 **Metric caveat — LST is a daytime surface signal.** `LST_Mean_C` is Landsat
 land-surface temperature at the ~10:30 overpass, i.e. a *daytime, surface* (not
@@ -108,11 +108,50 @@ Weighted Multi-Criteria Decision Analysis (MCDA), executed in **three** tiers. T
 ### Tier 0 — Intercept pre-filter (spatial gate, pass/fail)
 Before scoring, discard districts that cannot serve the commute-intercept role.
 Keep a district only if it **borders or contains a commercial/employment core
-AND adjacent residential fabric** (a work↔home threshold), using the Bangkok
-Comprehensive Plan land-use map. This encodes Nuance #1 as a gate rather than
-diluting it into a 25% weight where a purely residential or purely commercial
-district could still rank high. Output: a shortlist (~10–20 districts) that
-advance to Tier 1.
+AND adjacent residential fabric** (a work↔home threshold). This encodes Nuance
+#1 as a gate rather than diluting it into a 25% weight where a purely
+residential or purely commercial district could still rank high. Output: a
+shortlist (~10–20 districts) that advance to Tier 1.
+
+**Operationalised (data now in hand).** `data/fetch_land_use_osm.py` pulls OSM
+`landuse=residential` and `landuse ∈ {commercial, retail, industrial} + building=office`
+polygons for Bangkok, buffers the working zones by **200 m** (a walkable
+work↔home threshold), and measures where residential fabric falls inside that
+buffer. Output is `bangkok_intercept_scores.csv`, one row per district with:
+- `Intercept_Score_Pct` — % of the **district** area that is intercept fabric.
+- `Intercept_Pct_of_Residential` — % of the district's **residential** fabric
+  that is intercept-adjacent (less biased by how much of the district is parks,
+  water, or unmapped, so prefer this for the gate).
+
+**Suggested gate:** keep districts with `Intercept_Score_Pct` above a natural
+break in the ranking (the top tier — Bang Rak 95%, Yan Nawa 71%, Sathon 66%,
+Bang Kho Laem 43%, Din Daeng 39%, Khlong Toei 32% — sits well clear of the long
+<10% tail). Treat the cutoff as a defensible threshold, not a hard law, and
+sanity-check borderline districts against imagery.
+
+> **Methodology caveats (state these in the thesis):**
+> 1. **Areas are dissolved before measurement.** OSM landuse polygons overlap
+>    and duplicate; an earlier version summed per-polygon areas and produced a
+>    physically impossible >100% score for Bang Rak. The scorer now unions each
+>    layer first, so scores are bounded to [0, 100] and overlaps aren't
+>    double-counted.
+> 2. **OSM landuse is an incomplete, volunteer-mapped proxy**, not an
+>    authoritative cadastre — coverage is patchy and some areas are one coarse
+>    polygon. It is defensible for **relative** district screening (the intended
+>    Tier 0 use), not for absolute land-area claims. Where feasible, corroborate
+>    the shortlist against the Bangkok Comprehensive Plan (Land Use) map.
+> 3. The 200 m buffer is a modelling assumption (walkable intercept distance);
+>    it is easy to re-run at 150/300 m to test sensitivity.
+
+**Grasshopper visualisation.** Two GHPython scripts render this on the canvas
+alongside the district curves:
+- `data/gis/gh_landuse_zones.py` — residential vs working zone polygons as
+  curves (shares the exact projection origin of `gh_geojson_to_curves.py`, so
+  the layers register). Colour residential/working differently to read the
+  work↔home seam directly.
+- `data/gis/gh_intercept_scores.py` — returns `Intercept_Score_Pct` /
+  `Intercept_Pct_of_Residential` per district in `District_Names` order, to
+  drive a gradient (choropleth) on the existing district curves.
 
 ### Tier 1 — Macro-Scale district ranking (MCDA)
 Score each surviving district on a normalized 0–10 scale per criterion.
@@ -163,6 +202,46 @@ Take the top 3 districts from Tier 1. Within each:
 2. Overlay the **Land Use Map** to find the exact threshold where commercial zoning transitions to residential (the Tier 0 gate, now at plot resolution).
 3. Use the `bangkok_lcz_grid.csv` grid (200 m cells) to confirm the immediate surroundings are LCZ 3 fabric, and — if pursuing the informal-settlement angle — hand-digitize any LCZ 7-type pockets the continental map missed.
 4. Use satellite imagery to identify a specific, buildable, underutilized plot (parking lot, low-density commercial) within that radius and threshold.
+
+**Semi-automated candidate extraction (step 4, operationalised).**
+`data/fetch_land_use_osm.py`'s sibling `data/fetch_vacant_plots_osm.py` now pulls
+OSM vacancy *signals* city-wide and ranks them so step 4 starts from a shortlist
+instead of a blank satellite view. It fetches explicit vacant tags
+(`landuse=brownfield`/`greenfield`/`construction`) plus open-vegetation gaps
+(`landuse=grass`, `natural=scrub`), keeps discrete polygons ≥ 400 m², and tags
+each plot with the funnel criteria:
+- `dist_to_station_m` / `nearest_station` — nearest of the ~160 rail stations.
+- `intercept_score` — the district's Tier-0 intercept % (joined from
+  `bangkok_intercept_scores.csv`).
+- `in_intercept_surface` — whether the plot sits on the work↔home intercept
+  surface (`res_union ∩ work_buffer(200 m)`).
+- `source_class` / confidence — brownfield/greenfield/construction = high;
+  grass/scrub = low (noisy landscaping, kept but down-weighted).
+
+A composite `rank_score` (transit proximity 35% + district intercept 25% +
+intercept-surface bonus 20% + source confidence 10% + buildable-size band 10%)
+sorts them. Outputs: `bangkok_vacant_plots.geojson`,
+`bangkok_vacant_plots_scored.csv`, `docs/bangkok_vacant_plots_map.png`. The
+current top candidates land in **Bang Rak, Sathon and Khlong Toei** (the top
+intercept districts) and are all high-confidence `construction`/`brownfield`
+plots 80–530 m from a station.
+
+> **Caveats (state in the thesis, same standard as Tier 0):**
+> - **Candidates, not confirmed vacant.** OSM has no reliable vacant tag and
+>   absence of a building ≠ empty land. The pipeline maximises *recall +
+>   relevance ranking*; **manual satellite/Street-View verification of the top
+>   plots remains the required final step** (step 4 proper).
+> - `landuse=construction` is *transitional* — a site under construction may
+>   already be committed development, not available land. Filter `source_class`
+>   to `brownfield`/`greenfield` if you want genuinely undeveloped plots.
+> - grass/scrub are mostly landscaping, not buildable; they dominate by count and
+>   are flagged low-confidence for exactly that reason.
+> - Authoritative upgrade path (out of scope): cadastral data (Dept. of Lands) or
+>   a recent-satellite land-cover classification.
+
+**Grasshopper:** `data/gis/gh_vacant_plots.py` draws the top-N plots as curves in
+the shared canvas frame (same origin as the district curves / transit network),
+coloured by `rank_score`, for overlay against the stations and intercept zones.
 
 ### Sampling design — intervention + control
 The morphing plan (Track A validation) needs to *demonstrate the local
