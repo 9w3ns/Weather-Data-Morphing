@@ -1,0 +1,160 @@
+Node_ID,Name,Lines,Degree,Lat,Lon,X,Y,District
+0,Kheha,BTS Sukhumvit,1,13.567706,100.607726,5133.16,-19500.84,
+1,Sai Luat,BTS Sukhumvit,2,13.577872,100.605467,4889.09,-18370.44,
+2,Phraek Sa,BTS Sukhumvit,2,13.584235,100.607861,5147.72,-17662.97,
+3,Srinagarindra,BTS Sukhumvit,2,13.592018,100.608985,5269.07,-16797.51,
+4,Pak Nam,BTS Sukhumvit,2,13.602095,100.597137,3989.33,-15676.97,
+5,Royal Thai Naval Academy,BTS Sukhumvit,2,13.608433,100.59494,3752.07,-14972.2,
+6,Chang Erawan,BTS Sukhumvit,2,13.621541,100.590161,3235.91,-13514.68,
+7,Pu Chao,BTS Sukhumvit,2,13.637287,100.59199,3433.42,-11763.76,
+8,Samrong,BTS Sukhumvit|MRT Yellow,3,13.645783,100.596165,3884.35,-10819.04,
+9,Bearing,BTS Sukhumvit,2,13.661194,100.601789,4491.82,-9105.43,Bang Na District
+10,Bang Na,BTS Sukhumvit,2,13.668148,100.604645,4800.37,-8332.21,Bang Na District
+11,Udom Suk,BTS Sukhumvit,2,13.679884,100.609447,5319.03,-7027.29,Bang Na District
+12,Punnawithi,BTS Sukhumvit,2,13.689272,100.608977,5268.24,-5983.37,Phra Khanong District
+13,Bang Chak,BTS Sukhumvit,2,13.696756,100.605318,4873.04,-5151.2,Phra Khanong District
+14,On Nut,BTS Sukhumvit,2,13.705619,100.600983,4404.77,-4165.66,Khlong Toei District
+15,Phra Khanong,BTS Sukhumvit,2,13.715157,100.591225,3350.77,-3105.02,Khlong Toei District
+16,Ekkamai BTS Station,BTS Sukhumvit,2,13.719522,100.585098,2689.02,-2619.71,Khlong Toei District
+17,Thong Lo,BTS Sukhumvit,2,13.72422,100.5785,1976.36,-2097.3,Khlong Toei District
+18,Phrom Phong,BTS Sukhumvit,2,13.730418,100.569704,1026.27,-1408.11,Khlong Toei District
+19,Asok,BTS Sukhumvit|MRT Blue,4,13.737251,100.560976,83.56,-648.34,Vadhana District
+20,Nana,BTS Sukhumvit,2,13.740526,100.555412,-517.44,-284.2,Khlong Toei District
+21,Phloen Chit,BTS Sukhumvit,2,13.74305,100.548971,-1213.06,-3.49,Pathum Wan District
+22,Chit Lom,BTS Sukhumvit,2,13.744078,100.543067,-1850.77,110.83,Pathum Wan District
+23,Siam,BTS Sukhumvit,2,13.745684,100.534231,-2805.17,289.4,Pathum Wan District
+24,Ratchathewi,BTS Sukhumvit,2,13.751886,100.531533,-3096.6,979.0,Ratchathewi District
+25,Phaya Thai,ARL|BTS Sukhumvit,3,13.756904,100.534149,-2814.06,1537.04,Ratchathewi District
+26,Victory Monument,BTS Sukhumvit,2,13.762768,100.53704,-2501.81,2189.08,Ratchathewi District
+27,Sanam Pao,BTS Sukhumvit,2,13.772637,100.542053,-1960.34,3286.44,Phaya Thai District
+28,Ari,BTS Sukhumvit,2,13.779718,100.544604,-1684.83,4073.75,Phaya Thai District
+29,Sena Ruam,BTS Sukhumvit,2,13.785936,100.546865,-1440.57,4765.17,Phaya Thai District
+30,Saphan Khwai,BTS Sukhumvit,2,13.793831,100.549693,-1135.15,5643.1,Phaya Thai District
+31,Chatuchak Park,BTS Sukhumvit|MRT Blue,4,13.802791,100.553532,-720.48,6639.36,Chatuchak District
+32,Ha Yaek Lat Phrao,BTS Sukhumvit,2,13.816725,100.561943,188.03,8188.82,Chatuchak District
+33,Phahonyothin 24,BTS Sukhumvit,2,13.824128,100.566409,670.41,9011.93,Chatuchak District
+34,Ratchayothin,BTS Sukhumvit,2,13.829757,100.569704,1026.33,9637.94,Chatuchak District
+35,Sena Nikhom,BTS Sukhumvit,2,13.836419,100.573609,1448.06,10378.71,Chatuchak District
+36,Kasetsart University,BTS Sukhumvit,2,13.842326,100.577087,1823.75,11035.47,Chatuchak District
+37,Royal Forest Department,BTS Sukhumvit,2,13.850335,100.581797,2332.46,11926.03,Chatuchak District
+38,Bang Bua,BTS Sukhumvit,2,13.856061,100.585159,2695.58,12562.75,Chatuchak District
+39,11th Infantry Regiment,BTS Sukhumvit,2,13.867586,100.591953,3429.43,13844.29,Bang Khen District
+40,Wat Phra Sri Mahathat,BTS Sukhumvit|MRT Pink,4,13.8749,100.596974,3971.8,14657.56,Bang Khen District
+41,Phahonyothin 59,BTS Sukhumvit,2,13.882458,100.600712,4375.56,15497.96,Bang Khen District
+42,Sai Yud,BTS Sukhumvit,2,13.888461,100.604249,4757.58,16165.43,Bang Khen District
+43,Saphan Mai,BTS Sukhumvit,2,13.896622,100.609057,5276.87,17072.91,Bang Khen District
+44,Bhumibol Adulyadej Hospital,BTS Sukhumvit,2,13.910723,100.617375,6175.33,18640.85,Don Mueang District
+45,Royal Thai Air Force Museum,BTS Sukhumvit,2,13.917981,100.621668,6639.0,19447.93,Don Mueang District
+46,Yaek Kor Por Aor,BTS Sukhumvit,2,13.925024,100.62582,7087.46,20231.08,Don Mueang District
+47,Khu Khot,BTS Sukhumvit,1,13.932384,100.646523,9323.59,21049.44,
+48,Tha Phra,MRT Blue,3,13.729619,100.474009,-9309.86,-1496.99,Bangkok Yai District
+49,จรัญฯ 13,MRT Blue,2,13.740179,100.470688,-9668.57,-322.71,Bangkok Yai District
+50,Fai Chai,MRT Blue,2,13.755796,100.469299,-9818.57,1413.8,Bangkok Noi District
+51,Bang Khun Non,MRT Blue,2,13.763344,100.473274,-9389.26,2253.07,Bangkok Noi District
+52,Bang Yi Khan,MRT Blue,2,13.777413,100.485231,-8097.78,3817.51,Bang Phlat District
+53,Sirindhorn,MRT Blue,2,13.783893,100.493306,-7225.6,4538.01,Bang Phlat District
+54,Bang Phlat,MRT Blue,2,13.79242,100.504859,-5977.67,5486.16,Bang Phlat District
+55,Bang O,MRT Blue,2,13.799001,100.50976,-5448.37,6217.94,Bang Phlat District
+56,Bang Pho,MRT Blue,2,13.80645,100.521026,-4231.46,7046.23,Bang Sue District
+57,Tao Poon,MRT Blue|MRT Purple,3,13.806144,100.530812,-3174.44,7012.25,Bang Sue District
+58,Bang Sue,MRT Blue,2,13.802427,100.54106,-2067.62,6598.93,Chatuchak District
+59,Kamphaeng Phet,MRT Blue,2,13.797948,100.547884,-1330.54,6100.93,Chatuchak District
+60,Phahon Yothin,MRT Blue,2,13.812881,100.561463,136.22,7761.34,Chatuchak District
+61,Lat Phrao,MRT Blue|MRT Yellow,3,13.806747,100.573839,1472.91,7079.3,Chatuchak District
+62,Ratchadaphisek,MRT Blue,2,13.798971,100.574554,1550.12,6214.6,Din Daeng District
+63,Sutthisan,MRT Blue,2,13.789488,100.57408,1498.97,5160.22,Din Daeng District
+64,Huai Khwang,MRT Blue,2,13.778688,100.573566,1443.46,3959.25,Din Daeng District
+65,Thailand Cultural Centre,MRT Blue,2,13.766291,100.570083,1067.24,2580.81,Din Daeng District
+66,Phra Ram 9,MRT Blue,2,13.757817,100.565277,548.18,1638.48,Din Daeng District
+67,Makkasan,ARL|MRT Blue,4,13.749963,100.562838,284.72,765.19,Ratchathewi District
+68,Queen Sirikit National Convention Centre,MRT Blue,2,13.722622,100.560067,-14.64,-2275.01,Khlong Toei District
+69,Khlong Toei,MRT Blue,2,13.722053,100.554306,-636.87,-2338.27,Khlong Toei District
+70,Lumphini,MRT Blue,2,13.725594,100.545718,-1564.42,-1944.53,Pathum Wan District
+71,Si Lom,MRT Blue,2,13.729174,100.537068,-2498.76,-1546.4,Pathum Wan District
+72,Sam Yan,MRT Blue,2,13.732046,100.530114,-3249.91,-1227.12,Bang Rak District
+73,Hua Lamphong,MRT Blue,2,13.737408,100.517047,-4661.25,-630.82,Pathum Wan District
+74,Wat Mangkon,MRT Blue,2,13.742201,100.509905,-5432.73,-97.85,Samphanthawong District
+75,Sam Yot,MRT Blue,2,13.746981,100.502303,-6253.8,433.63,Phra Nakhon District
+76,Sanam Chai,MRT Blue,2,13.744334,100.494692,-7075.86,139.29,Phra Nakhon District
+77,Itsaraphap,MRT Blue,2,13.738327,100.485702,-8046.87,-528.62,Bangkok Yai District
+78,Bang Phai,MRT Blue,2,13.72461,100.465086,-10273.64,-2053.93,Phasi Charoen District
+79,Bang Wa,BTS Silom|MRT Blue,3,13.720523,100.4574,-11103.81,-2508.33,Phasi Charoen District
+80,Phetkasem 48,MRT Blue,2,13.715538,100.445453,-12394.18,-3062.64,Phasi Charoen District
+81,Phasi Charoen,MRT Blue,2,13.712898,100.434332,-13595.44,-3356.25,Phasi Charoen District
+82,Bang Khae,MRT Blue,2,13.711917,100.422336,-14891.11,-3465.31,Bang Khae District
+83,Lak Song,MRT Blue,1,13.710856,100.409493,-16278.33,-3583.3,Bang Khae District
+84,Krung Thon Buri,BTS Silom|Gold Line,2,13.721041,100.503216,-6155.16,-2450.84,Khlong San District
+85,Wongwian Yai,BTS Silom,2,13.721068,100.495156,-7025.7,-2447.72,Khlong San District
+86,Pho Nimit,BTS Silom,2,13.719229,100.485975,-8017.38,-2652.31,Thon Buri District
+87,Talat Phlu,BTS Silom,2,13.714207,100.476699,-9019.29,-3210.73,Thon Buri District
+88,Wutthakat,BTS Silom,2,13.713013,100.468901,-9861.63,-3343.42,Thon Buri District
+89,Ratchaprarop,ARL,2,13.755068,100.542324,-1931.01,1332.85,Ratchathewi District
+90,Ramkhamhaeng,ARL,2,13.742973,100.600618,4365.36,-12.08,Suan Luang District
+91,Hua Mak,ARL,2,13.73806,100.645878,9254.0,-558.4,Suan Luang District
+92,Ban Thap Chang,ARL,2,13.732915,100.690819,14108.06,-1130.47,Prawet District
+93,Lat Krabang,ARL,2,13.727708,100.74932,20426.85,-1709.4,Lat Krabang District
+94,Suvarnabhumi,ARL,1,13.694297,100.75134,20645.02,-5424.57,
+95,Khlong Bang Phai,MRT Purple,1,13.89244,100.408285,-16408.82,16607.97,
+96,Talad Bang Yai,MRT Purple,2,13.881018,100.409354,-16293.34,15337.89,
+97,Sam Yaek Bang Yai,MRT Purple,2,13.874737,100.419357,-15212.89,14639.47,
+98,Bang Phlu,MRT Purple,2,13.875824,100.433798,-13653.12,14760.27,
+99,Bang Rak Yai,MRT Purple,2,13.876669,100.444934,-12450.34,14854.31,
+100,Bang Rak Noi Tha It,MRT Purple,2,13.874866,100.455998,-11255.23,14653.73,
+101,Sai Ma,MRT Purple,2,13.870573,100.466711,-10098.14,14176.39,
+102,Phra Nang Klao Bridge,MRT Purple,2,13.870348,100.480126,-8649.17,14151.39,
+103,Yaek Nonthaburi 1,MRT Purple,2,13.866011,100.494108,-7138.96,13669.17,
+104,Bang Krasor,MRT Purple,2,13.861714,100.504668,-5998.32,13191.3,
+105,Nonthaburi Civic Center,MRT Purple,2,13.860233,100.513072,-5090.6,13026.69,
+106,Ministry of Public Health,MRT Purple,2,13.848499,100.514776,-4906.55,11721.92,
+107,Yaek Tiwanon,MRT Purple,2,13.839575,100.515011,-4881.2,10729.59,
+108,Wong Sawang,MRT Purple,2,13.829919,100.526532,-3636.81,9655.87,Bang Sue District
+109,Bang Son,MRT Purple,2,13.820087,100.532521,-2989.89,8562.62,Bang Sue District
+110,Charoen Nakhon,Gold Line,2,13.726462,100.509052,-5524.86,-1847.96,Khlong San District
+111,Khlong San,Gold Line,1,13.730325,100.507728,-5667.85,-1418.41,Khlong San District
+112,Phawana,MRT Yellow,2,13.800171,100.584217,2593.83,6348.07,Huai Khwang District
+113,Chok Chai 4,MRT Yellow,2,13.794431,100.594465,3700.78,5709.78,Wang Thonglang District
+114,Lat Phrao 71,MRT Yellow,2,13.787103,100.60759,5118.4,4894.96,Wang Thonglang District
+115,Lat Phrao 83,MRT Yellow,2,13.783753,100.613605,5768.07,4522.44,Wang Thonglang District
+116,Mahatthai,MRT Yellow,2,13.778377,100.623187,6803.11,3924.73,Wang Thonglang District
+117,Lat Phrao 101,MRT Yellow,2,13.774678,100.629803,7517.73,3513.4,Bang Kapi District
+118,Bang Kapi,MRT Yellow,2,13.769098,100.639756,8592.77,2892.89,Bang Kapi District
+119,Yaek Lam Sali,MRT Yellow,2,13.761844,100.645552,9218.71,2086.33,Bang Kapi District
+120,Si Kritha,MRT Yellow,2,13.750433,100.644812,9138.79,817.44,Bang Kapi District
+121,Kalantan,MRT Yellow,2,13.725343,100.641796,8813.11,-1972.48,Suan Luang District
+122,Si Nut,MRT Yellow,2,13.711144,100.644158,9068.15,-3551.23,Suan Luang District
+123,Srinagarindra 38,MRT Yellow,2,13.701115,100.646484,9319.39,-4666.47,Prawet District
+124,Si Iam,MRT Yellow,2,13.667663,100.645081,9167.89,-8386.09,Bang Na District
+125,Si La Salle,MRT Yellow,2,13.654958,100.642136,8849.77,-9798.92,Bang Na District
+126,Si Bearing,MRT Yellow,2,13.643471,100.636241,8213.09,-11076.19,
+127,Si Dan,MRT Yellow,2,13.633125,100.630104,7550.24,-12226.64,
+128,Si Thepha,MRT Yellow,2,13.629879,100.622682,6748.53,-12587.54,
+129,Thipphawan,MRT Yellow,2,13.636736,100.609916,5369.64,-11825.07,
+130,Nonthaburi Civic Center,MRT Pink,1,13.8597,100.518106,-4546.92,12967.35,
+131,Khae Rai,MRT Pink,2,13.86264,100.520642,-4272.99,13294.29,
+132,Sanambin Nam,MRT Pink,2,13.8741,100.516307,-4741.21,14568.6,
+133,Samakkhi,MRT Pink,2,13.889258,100.510563,-5361.57,16254.1,
+134,Royal Irrigation Department,MRT Pink,2,13.898537,100.507079,-5737.97,17285.83,
+135,Yaek Pak Kret,MRT Pink,2,13.906148,100.5054,-5919.27,18132.13,
+136,Pak Kret Bypass,MRT Pink,2,13.906477,100.515558,-4822.07,18168.73,
+137,Chaeng Watthana-Pak Kret 28,MRT Pink,2,13.904138,100.529267,-3341.37,17908.69,
+138,Si Rat,MRT Pink,2,13.900635,100.540031,-2178.78,17519.22,
+139,Muang Thong Thani,MRT Pink,2,13.897398,100.548436,-1270.86,17159.17,
+140,Chaeng Watthana 14,MRT Pink,2,13.893283,100.560143,-6.41,16701.61,Lak Si District
+141,Government Complex,MRT Pink,2,13.890753,100.567342,771.23,16420.31,Lak Si District
+142,National Telecom,MRT Pink,2,13.887563,100.575709,1674.93,16065.65,Lak Si District
+143,Lak Si,MRT Pink,2,13.884049,100.582681,2427.97,15674.94,Lak Si District
+144,Rajabhat Phranakhon,MRT Pink,2,13.879928,100.589283,3141.02,15216.67,Bang Khen District
+145,Ram Inthra 3,MRT Pink,2,13.870939,100.602604,4579.88,14217.07,Bang Khen District
+146,Lat Pla Khao,MRT Pink,2,13.862778,100.617802,6221.41,13309.63,Bang Khen District
+147,Ram Inthra Kor Mor 4,MRT Pink,2,13.858291,100.626119,7119.78,12810.76,Bang Khen District
+148,Maiyalap,MRT Pink,2,13.855001,100.632213,7778.02,12444.85,Bang Khen District
+149,Vacharaphol,MRT Pink,2,13.84925,100.642869,8928.97,11805.37,Bang Khen District
+150,Ram Inthra Kor Mor 6,MRT Pink,2,13.845243,100.650234,9724.5,11359.82,Khan Na Yao District
+151,Khu Bon,MRT Pink,2,13.840609,100.658781,10647.59,10844.56,Khan Na Yao District
+152,Ram Inthra Kor Mor 9,MRT Pink,2,13.833766,100.667563,11596.18,10083.63,Khan Na Yao District
+153,Outer Ring Road-Ram Inthra,MRT Pink,2,13.82444,100.677195,12636.52,9046.71,Khan Na Yao District
+154,Nopparat,MRT Pink,2,13.81652,100.685641,13548.83,8165.97,Khan Na Yao District
+155,Bang Chan,MRT Pink,2,13.812702,100.702928,15416.05,7741.41,Min Buri District
+156,Setthabutbamphen,MRT Pink,2,13.812678,100.712628,16463.74,7738.74,Min Buri District
+157,Min Buri Market,MRT Pink,2,13.812493,100.725833,17890.06,7718.17,Min Buri District
+158,Min Buri,MRT Pink,1,13.808402,100.732674,18628.98,7263.3,Min Buri District

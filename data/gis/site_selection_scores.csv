@@ -1,0 +1,51 @@
+Rank,District,score,tier,lcz,evening,lst,transit,pop,s_uhi,s_vuln,s_transit,s_pop
+1,Chatuchak District,9.07,Severe,LCZ 3 (Compact low-rise),3.1,44.35,14,2.8,8.17,10.0,10.0,7.06
+2,Bang Sue District,7.22,Severe,LCZ 3 (Compact low-rise),3.2,44.7,4,2.17,8.53,10.0,2.86,5.23
+3,Din Daeng District,6.9,Severe,LCZ 3 (Compact low-rise),2.7,44.25,5,2.02,7.23,10.0,3.57,4.8
+4,Bang Khen District,6.7,Low,LCZ 5 (Open midrise),3.3,44.84,12,3.37,8.8,2.0,8.57,8.72
+5,Wang Thonglang District,6.67,Medium,LCZ 3 (Compact low-rise),2.7,44.07,4,1.9,7.16,10.0,2.86,4.45
+6,Bueng Kum District,6.58,Medium,LCZ 3 (Compact low-rise),3.1,45.14,0,2.51,8.46,10.0,0.0,6.22
+7,Lat Phrao District,6.4,Medium,LCZ 3 (Compact low-rise),3.1,44.66,0,2.08,8.29,10.0,0.0,4.97
+8,Phaya Thai District,6.36,Severe,LCZ 3 (Compact low-rise),2.8,44.04,3,1.19,7.38,10.0,2.14,2.38
+9,Bang Phlat District,6.36,Severe,LCZ 3 (Compact low-rise),2.5,43.59,4,1.59,6.53,10.0,2.86,3.55
+10,Suan Luang District,6.26,Medium,LCZ 3 (Compact low-rise),2.4,43.4,3,2.23,6.24,10.0,2.14,5.41
+11,Don Mueang District,6.01,Low,LCZ 8 (Large low-rise),3.7,45.63,3,3.03,10.0,4.0,2.14,7.73
+12,Khlong San District,5.86,Severe,LCZ 3 (Compact low-rise),1.9,42.91,5,1.21,4.93,10.0,3.57,2.44
+13,Bangkok Noi District,5.75,Medium,LCZ 3 (Compact low-rise),2.1,43.64,2,1.81,5.65,10.0,1.43,4.19
+14,Bang Kapi District,5.7,Medium,LCZ 2 (Compact midrise),2.7,44.34,4,2.57,7.26,6.0,2.86,6.4
+15,Thon Buri District,5.64,Severe,LCZ 3 (Compact low-rise),1.7,43.87,3,1.81,4.83,10.0,2.14,4.19
+16,Bangkok Yai District,5.63,Severe,LCZ 3 (Compact low-rise),1.9,44.11,3,1.12,5.37,10.0,2.14,2.18
+17,Pathum Wan District,5.49,Severe,LCZ 2 (Compact midrise),2.4,41.82,9,0.74,5.65,6.0,6.43,1.08
+18,Vadhana District,5.21,Severe,LCZ 3 (Compact low-rise),2.0,42.2,1,1.47,4.89,10.0,0.71,3.2
+19,Khlong Toei District,5.08,Medium,LCZ 2 (Compact midrise),1.5,42.1,9,1.65,3.72,6.0,6.43,3.72
+20,Ratchathewi District,5.03,Severe,LCZ 2 (Compact midrise),2.6,42.85,4,1.21,6.48,6.0,2.86,2.44
+21,Sathon District,5.02,Severe,LCZ 3 (Compact low-rise),2.0,42.49,0,1.32,5.0,10.0,0.0,2.76
+22,Lak Si District,5.02,Medium,LCZ 5 (Open midrise),3.6,44.59,4,1.83,9.39,2.0,2.86,4.24
+23,Sai Mai District,4.85,Low,LCZ 5 (Open midrise),3.5,44.91,0,3.8,9.28,2.0,0.0,9.97
+24,Bang Kho Laem District,4.74,Severe,LCZ 3 (Compact low-rise),1.6,42.48,0,1.44,4.09,10.0,0.0,3.11
+25,Bang Rak District,4.71,Severe,LCZ 2 (Compact midrise),2.3,41.81,5,0.8,5.42,6.0,3.57,1.25
+26,Khan Na Yao District,4.54,Low,LCZ 6 (Open low-rise),2.8,44.57,5,1.74,7.57,2.0,3.57,3.98
+27,Rat Burana District,4.35,Medium,LCZ 3 (Compact low-rise),1.2,42.02,0,1.39,3.01,10.0,0.0,2.97
+28,Phra Nakhon District,4.35,Severe,LCZ 2 (Compact midrise),2.3,43.21,2,0.76,5.94,6.0,1.43,1.13
+29,Phra Khanong District,4.35,Medium,LCZ 2 (Compact midrise),2.0,43.21,2,1.57,5.26,6.0,1.43,3.49
+30,Pom Prap Sattru Phai District,4.28,Severe,LCZ 2 (Compact midrise),2.5,44.33,0,0.72,6.81,6.0,0.0,1.02
+31,Bang Na District,4.19,Medium,LCZ 8 (Large low-rise),1.9,43.09,5,1.57,4.99,4.0,3.57,3.49
+32,Samphanthawong District,3.99,Severe,LCZ 2 (Compact midrise),2.3,42.72,1,0.37,5.76,6.0,0.71,0.0
+33,Dusit District,3.86,Severe,LCZ 8 (Large low-rise),2.6,43.49,0,1.43,6.72,4.0,0.0,3.08
+34,Huai Khwang District,3.8,Medium,LCZ 8 (Large low-rise),2.3,43.29,1,1.52,5.97,4.0,0.71,3.34
+35,Min Buri District,3.72,Low,LCZ 6 (Open low-rise),2.0,42.65,4,2.57,5.05,2.0,2.86,6.4
+36,Prawet District,3.62,Low,LCZ 6 (Open low-rise),1.8,42.78,3,3.33,4.65,2.0,2.14,8.6
+37,Khlong Sam Wa District,3.56,Low,LCZ 5 (Open midrise),2.3,42.26,0,3.81,5.59,2.0,0.0,10.0
+38,Phasi Charoen District,3.46,Medium,LCZ 5 (Open midrise),1.5,43.09,5,2.22,4.09,2.0,3.57,5.38
+39,Bang Khae District,3.18,Low,LCZ 6 (Open low-rise),1.4,42.8,2,3.5,3.76,2.0,1.43,9.1
+40,Saphan Sung District,3.11,Low,LCZ 6 (Open low-rise),2.2,44.06,0,1.75,6.03,2.0,0.0,4.01
+41,Taling Chan District,2.74,Medium,LCZ 5 (Open midrise),1.9,42.82,0,1.85,4.89,2.0,0.0,4.3
+42,Yan Nawa District,2.72,Medium,LCZ 8 (Large low-rise),1.5,41.6,0,1.35,3.54,4.0,0.0,2.85
+43,Nong Chok District,2.65,Low,LCZ D (Low plants),1.5,41.28,0,3.3,3.42,2.0,0.0,8.52
+44,Lat Krabang District,2.62,Low,LCZ D (Low plants),1.4,41.81,0,3.25,3.39,2.0,0.0,8.37
+45,Nong Khaem District,2.37,Low,LCZ 5 (Open midrise),1.1,42.65,0,2.83,3.02,2.0,0.0,7.15
+46,Thawi Watthana District,2.33,Low,LCZ 5 (Open midrise),1.6,42.36,0,1.44,4.04,2.0,0.0,3.11
+47,Chom Thong District,2.32,Medium,LCZ 5 (Open midrise),1.1,42.71,0,2.61,3.04,2.0,0.0,6.51
+48,Bang Bon District,1.78,Low,LCZ 6 (Open low-rise),0.9,41.51,0,1.84,2.15,2.0,0.0,4.27
+49,Thung Khru District,1.68,Low,LCZ 6 (Open low-rise),0.7,41.02,0,2.25,1.51,2.0,0.0,5.47
+50,Bang Khun Thian District,1.47,Low,"LCZ C (Bush, scrub)",0.6,37.55,0,3.36,0.0,2.0,0.0,8.69
