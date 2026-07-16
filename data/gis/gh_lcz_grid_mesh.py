@@ -115,7 +115,6 @@ else:
         mesh = rg.Mesh()
         counts = {}
         unknown_codes = set()
-        max_x = max_y = None
 
         with open(csv_path, "r", encoding="utf-8") as f:
             for row in csv.DictReader(f):
@@ -138,8 +137,6 @@ else:
                     mesh.VertexColors.Add(color)
 
                 counts[code] = counts.get(code, 0) + 1
-                max_x = x if max_x is None else max(max_x, x)
-                max_y = y if max_y is None else max(max_y, y)
 
         mesh.Normals.ComputeNormals()
         mesh.Compact()
@@ -151,42 +148,8 @@ else:
         ]
         Legend_Text = "\n".join(legend_lines)
 
-        # Legend swatches: a column of squares just past the grid's right
-        # edge, one per class actually present, biggest cell dimension x8
-        # so each swatch reads clearly regardless of --scale. Guaranteed to
-        # match the main Mesh's colors since both read the same LCZ_COLORS.
-        swatch_half = max(half_w, half_h) * 8.0
-        spacing = swatch_half * 2.4
-        legend_x = max_x + swatch_half * 3.0
-        legend_mesh = rg.Mesh()
-        legend_points = []
-        legend_labels = []
-        for i, code in enumerate(sorted(counts.keys())):
-            cx = legend_x
-            cy = max_y - i * spacing
-            rgb = LCZ_COLORS.get(code, FALLBACK_COLOR)
-            color = sd.Color.FromArgb(rgb[0], rgb[1], rgb[2])
-
-            i0 = legend_mesh.Vertices.Add(cx - swatch_half, cy - swatch_half, 0.0)
-            i1 = legend_mesh.Vertices.Add(cx + swatch_half, cy - swatch_half, 0.0)
-            i2 = legend_mesh.Vertices.Add(cx + swatch_half, cy + swatch_half, 0.0)
-            i3 = legend_mesh.Vertices.Add(cx - swatch_half, cy + swatch_half, 0.0)
-            legend_mesh.Faces.AddFace(i0, i1, i2, i3)
-            for _ in range(4):
-                legend_mesh.VertexColors.Add(color)
-
-            legend_points.append(rg.Point3d(cx + swatch_half * 1.3, cy, 0.0))
-            legend_labels.append("LCZ {} ({}): {} cells".format(
-                code, LCZ_NAMES.get(code, "Unknown"), counts[code]))
-
-        legend_mesh.Normals.ComputeNormals()
-        legend_mesh.Compact()
-        Legend_Mesh = legend_mesh
-        Legend_Points = legend_points
-        Legend_Labels = legend_labels
-
-        Report = "Built mesh: {} cells, {} vertices, {} faces. Legend: {} classes.".format(
-            sum(counts.values()), mesh.Vertices.Count, mesh.Faces.Count, len(counts))
+        Report = "Built mesh: {} cells, {} vertices, {} faces.".format(
+            sum(counts.values()), mesh.Vertices.Count, mesh.Faces.Count)
         if unknown_codes:
             Report += "\nWARNING: unrecognized LCZ codes (colored gray): {}".format(
                 ", ".join(str(c) for c in sorted(unknown_codes)))
