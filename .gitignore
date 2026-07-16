@@ -5,3 +5,12 @@ __pycache__/
 !data/epw/*.epw
 desktop.ini
 *.png
+
+# accidentally-cloned third-party repo
+markitdown/
+
+# generated cache
+cache/
+
+# Excel lock/temp files
+~$*

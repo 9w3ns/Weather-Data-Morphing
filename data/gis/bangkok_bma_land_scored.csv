@@ -1,0 +1,4 @@
+﻿site_id,district,name,category,ownership_confidence,land_owner_risk,temple_overlap_pct,parcel_to_seed_ratio,n_parcels,site_area_sqm,seed_geom,dist_to_station_m,nearest_station,intercept_score,uhii_hotdry_evening_c,lst_mean_c,operator_raw,source
+3,Khlong Toei District,สำนักงานเขตคลองเตย,district_office,high,none,0.0,9.7,1,12198.74605607202,Polygon,1181.5657012814372,Phra Khanong,32.04800465406342,1.5,42.1,,osm_category_default
+0,Sathon District,สำนักงานเขตสาทร,district_office,high,none,0.0,,1,2938.1185109401954,Point,2610.373347193241,Si Lom,66.31155084548975,2.0,42.49,,osm_category_default
+4,Bang Rak District,สำนักงานเขตบางรัก,district_office,high,none,0.0,2.0,1,2133.9624033752084,Polygon,712.8988801742678,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
