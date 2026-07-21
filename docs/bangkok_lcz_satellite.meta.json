@@ -1,0 +1,54 @@
+{
+  "fits": "bangkok_lcz_grid_mesh.py (and every gh_ layer -- shared origin)",
+  "local_xy_frame": {
+    "lon0": 100.56020222339369,
+    "lat0": 13.74308139840324,
+    "earth_r_m": 6371000.0
+  },
+  "extent_local_m": {
+    "min_x": -25093.77,
+    "min_y": -28216.9,
+    "max_x": 40906.23,
+    "max_y": 23583.1
+  },
+  "lonlat_bbox": {
+    "min_lon": 100.32787724127164,
+    "min_lat": 13.489320720182757,
+    "max_lon": 100.93892328258211,
+    "max_lat": 13.95516931204866
+  },
+  "image_px": [
+    8250,
+    6475
+  ],
+  "m_per_px": 8.0,
+  "corners_local_xy_z0": {
+    "lower_left": [
+      -25093.77,
+      -28216.9
+    ],
+    "lower_right": [
+      40906.23,
+      -28216.9
+    ],
+    "upper_right": [
+      40906.23,
+      23583.1
+    ],
+    "upper_left": [
+      -25093.77,
+      23583.1
+    ]
+  },
+  "attribution": "Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "grasshopper_placement": [
+    "Rhino (simplest): run PictureFrame, pick the image, then type the",
+    "lower-left corner [-25093.77, -28216.9] and press Enter, then the upper-right",
+    "corner [40906.23, 23583.1] -- places it flat at Z=0 aligned to the mesh.",
+    "Send it to back / set Z just below 0 so the LCZ mesh and BMA site",
+    "curves draw on top.",
+    "Grasshopper: build a rectangle from the four corner points above at",
+    "Z=0 and map this image as its material texture (e.g. Human 'Custom",
+    "Preview Materials'), or just reference the Rhino PictureFrame object."
+  ]
+}

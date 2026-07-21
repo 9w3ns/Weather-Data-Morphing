@@ -1,0 +1,20 @@
+﻿site_id,district,office_name_th,building_year_BE,building_year_CE,year_type,storeys,confidence,source_url,evidence_th
+243,Phra Nakhon,ศาลาว่าการกรุงเทพมหานคร (เสาชิงช้า),2499,1956,construction,,high,https://th.wikipedia.org/wiki/ศาลาว่าการกรุงเทพมหานคร,ออกแบบ พ.ศ.2498; วางศิลาฤกษ์ 24 มิ.ย. 2499; ใช้เป็นที่ทำการตั้งแต่ พ.ศ.2499. อาคารประวัติศาสตร์.
+702,Din Daeng,ศาลาว่าการกรุงเทพมหานคร 2 (ดินแดง),2554,2011,construction+opening,37 (tower),high,https://th.wikipedia.org/wiki/ศาลาว่าการกรุงเทพมหานคร_2,ประกวดแบบตั้งแต่ 2538; โครงสร้างหลักแล้วเสร็จ 2554; เปิดทำการ 2560 (2017). อาคาร กทม. ใหม่ที่สุด.
+11,Khlong San,สำนักงานเขตคลองสาน,2503,1960,construction,2 (main),high,https://webportal.bangkok.go.th/khlongsarn/page/sub/4801,ตึกกลางเริ่มสร้าง ส.ค.2503 เปิด 4 พ.ค.2504; ตึกปีกขวา 2519 (ต่อเติม 2530); ตึกปีกซ้าย 2521.
+14,Sathon,สำนักงานเขตสาทร,2537,1994,opening,10,high,https://webportal.bangkok.go.th/public/sathon/page/sub/4156,อาคาร 10 ชั้น สร้างปีงบ 2533-2535; ย้ายเข้า 26 มิ.ย.2536; เปิดทำการ 2 มิ.ย.2537 เป็นอาคารถาวร.
+349,Phra Nakhon,สำนักงานเขตพระนคร,2457,1914,construction (historic),,high,https://webportal.bangkok.go.th/pranakorn/page/sub/2824,อาคารเดิมเป็นบ้านพระยาอมเรศร์สมบัติ สร้างระยะเดียวกับพระที่นั่งอนันตสมาคม (พ.ศ.2457); เขตย้ายเข้า 2517; กทม.ซื้ออาคาร 2540.
+10,Bang Kho Laem,สำนักงานเขตบางคอแหลม,2537,1994,opening,9+B1,high,https://webportal.bangkok.go.th/bangkholaem/page/sub/18833/ประวัติความเป็นมาของเขต,พ.ศ.2537 ย้ายมา ณ ที่ทำการถาวรเป็นอาคารสูง 9 ชั้น ชั้นใต้ดิน 1 ชั้น (เปิด 17 ม.ค.2537). ก่อนหน้าใช้วัด/โรงเรียนชั่วคราว.
+4,Bang Sue,สำนักงานเขตบางซื่อ,2536,1993,construction,7,high,https://webportal.bangkok.go.th/bangsue/page/sub/1862/ประวัติความเป็นมาของสำนักงานเขต,อาคาร 7 ชั้น งบ 84 ล้าน; ก่อสร้างเสร็จ 29 มี.ค.2536; เปิดป้ายอาคารอย่างเป็นทางการ 10 ต.ค.2538.
+134,Pathum Wan,สำนักงานเขตปทุมวัน,2506,1963,relocation,,medium,http://www.bangkok.go.th/pathumwan/page/sub/2326/ประวัติความเป็นมา,พ.ศ.2506 เขตย้ายมาอยู่ในที่ดินจุฬาฯ. เป็นปีย้าย ไม่ใช่ปีสร้างอาคาร; ตั้งบนที่ดินจุฬาฯ (ไม่ใช่ที่ กทม.).
+7,Vadhana,สำนักงานเขตวัฒนา,,,leased (not a BMA building),,high,https://gcc.go.th/2024/10/23/สำนักงานเขตวัฒนา-แนะนำเ/,ที่ทำการอยู่ชั้น 7 อาคารลิเบอร์ตี้พลาซ่า (ทองหล่อ) เป็นพื้นที่เช่าอาคารพาณิชย์เอกชน. ไม่ใช่อาคาร กทม. -> อายุอาคาร N/A; ตั้งข้อสังเกตกับการอนุมานที่ดิน กทม. ของวัฒนา.
+459,Yan Nawa,สำนักงานเขตยานนาวา,,,unknown,,-,https://webportal.bangkok.go.th/yannawa,หน้าราชการทางการไม่ระบุปีก่อสร้างอาคาร.
+9,Thon Buri,สำนักงานเขตธนบุรี,,,unknown,,-,https://webportal.bangkok.go.th/thonburi,ประวัติทางการระบุเฉพาะประวัติการปกครอง ไม่ระบุปีสร้างอาคาร.
+6,Bang Phlat,สำนักงานเขตบางพลัด,,,unknown,,-,https://webportal.bangkok.go.th/bangphlat/page/sub/2087/ประวัติความเป็นมา,เริ่มจากใช้อาคารโรงเรียนวัดบางพลัด (2528); ประวัติไม่ระบุปีสร้างอาคารสำนักงานปัจจุบัน.
+2,Pom Prap Sattru Phai,สำนักงานเขตป้อมปราบศัตรูพ่าย,,,unknown,,-,https://webportal.bangkok.go.th/pomprapsattruphai/page/sub/2487/ประวัติความเป็นมา,ประวัติทางการไม่ระบุปีสร้างอาคาร.
+574,Bang Rak,สำนักงานเขตบางรัก,,,unknown,,-,https://webportal.bangkok.go.th/bangrak/page/sub/8026/ข้อมูลทั่วไป,หน้าทางการไม่ระบุปีสร้างอาคาร. หมายเหตุ: คำกล่าวอ้าง '2526/1983' จาก snippet ค้นหา ตรวจสอบแล้วไม่พบในหน้าทางการ (เป็นข้อมูลที่ AI สรุปคลาดเคลื่อน).
+541,Khlong Toei,สำนักงานเขตคลองเตย,,,unknown,,-,https://webportal.bangkok.go.th/khlongtoei/page/sub/40/ประวัติความเป็นมา,ระบุเฉพาะวันจัดตั้งเขต (9 พ.ย.2532) และอาคารเลขที่ 599; ไม่ระบุปีสร้างอาคาร.
+5,Bang Na,สำนักงานเขตบางนา,,,unknown,,-,https://webportal.bangkok.go.th/bangna/page/sub/25291/ประวัติความเป็นมา,หน้าประวัติมีเฉพาะรูปภาพ+ที่อยู่ (888 ถ.สรรพาวุธ); ไม่ระบุปีสร้างอาคาร.
+1,Ratchathewi,สำนักงานเขตราชเทวี,,,unknown,10,-,https://webportal.bangkok.go.th/ratchathewi/page/sub/3271/ประวัติความเป็นมา,"อาคารสูง 10 ชั้น ตั้งบนที่ดินสำนักงานทรัพย์สินฯ (Crown Property, ไม่ใช่ที่ กทม.); ไม่ระบุปีสร้าง."
+812,Phaya Thai,สำนักงานเขตพญาไท,,,unknown,,-,https://webportal.bangkok.go.th/phayathai,ประวัติเป็นไฟล์ PDF; ไม่พบปีสร้างอาคารจากผลค้นหา.
+8,Bangkok Yai,สำนักงานเขตบางกอกใหญ่,,,unknown,,-,https://webportal.bangkok.go.th/bangkokyai/page/sub/5453/ประวัติความเป็นมา,ประวัติทางการไม่ระบุปีสร้างอาคาร.

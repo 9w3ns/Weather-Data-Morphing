@@ -20,8 +20,17 @@ docs/bma_land_sourcing_notes.md for why the authoritative ownership registry
 VINTAGE UNKNOWN: the service publishes no description and no metadata date, so
 how current these parcels are cannot be established from the service itself.
 
-SCOPE: district-scoped. All 2.2M parcels would take 2,200+ requests against a
-public government server; the thesis only needs the Tier 1 shortlist districts.
+SCOPE: two modes, same recursive fetch underneath.
+  - default (district): fetch EVERY parcel in the named districts. Complete
+    cadastral fabric, but heavy -- Bang Rak alone is ~13,700 parcels.
+  - --around-facilities (seed-driven): fetch parcels only where a BMA facility
+    seed sits, across a UHI/transit PRIORITY SUBSET of districts. The facility
+    seeds in bangkok_bma_facilities.geojson already cover all 50 districts, so the
+    only gap outside the Tier 1 three is parcel GEOMETRY; this mode fills exactly
+    that, and no more. Parcels carry no owner attribute, so fetching whole
+    districts buys nothing extra for ownership -- only grey context. See
+    docs/plan_bma_land_priority_subset.md and bma_land_sourcing_notes.md.
+    All 2.2M parcels would take 2,200+ requests against a public government server.
 
 PAGING: the service caps every response at 1000 features (maxRecordCount) and
 flags truncation with `exceededTransferLimit`. We do NOT use resultOffset paging
@@ -42,6 +51,7 @@ import os
 import time
 
 import geopandas as gpd
+import pandas as pd
 import requests
 
 # --- Configuration ---------------------------------------------------------
@@ -58,6 +68,18 @@ MAX_RECORD_COUNT = 1000  # server-side cap; a response this size is assumed trun
 MIN_TILE_M = 50.0        # floor on subdivision, so recursion always terminates
 REQUEST_SLEEP_S = 0.5    # be gentle: one government server, no mirror to fail over to
 MAX_RETRIES = 3
+
+# --- Seed-driven ("--around-facilities") mode ------------------------------
+FACILITIES_PATH = "data/gis/bangkok_bma_facilities.geojson"
+UHI_CSV = "data/gis/bangkok_uhi_data.csv"
+INTERCEPT_CSV = "data/gis/bangkok_intercept_scores.csv"
+MANIFEST_PATH = "data/gis/bangkok_parcels_seeded_manifest.csv"
+POLY_BUFFER_M = 50.0     # margin around a facility footprint (catches its parcel)
+POINT_BUFFER_M = 150.0   # radius around a point seed (parcels can be large)
+TIER_RANK = {"low": 0, "medium": 1, "severe": 2}
+DEFAULT_MIN_TIER = "severe"       # UHI tier floor for the priority subset
+DEFAULT_INTERCEPT_MIN = 30.0      # OR transit-interception score (pct) at/above this
+DEFAULT_EXTRA_DISTRICTS = ["Bang Na"]  # always-include, regardless of the rule
 
 
 def normalize_name(name):
@@ -217,10 +239,184 @@ def fetch_parcels(district_names):
           "attribute.\nRun build_bma_land_layer.py to infer which parcels are BMA's.")
 
 
+def compute_priority_districts(min_tier=DEFAULT_MIN_TIER,
+                               intercept_min=DEFAULT_INTERCEPT_MIN, extra=None):
+    """The districts worth searching, and WHY each made the cut.
+
+    priority = { UHI tier >= min_tier } | { intercept score >= intercept_min } |
+               { named in `extra` }
+    Returns {normalized_name: [reason, ...]} so the reasons can be reported and
+    written to the manifest -- the subset is a defensible rule, not folklore.
+    """
+    if extra is None:
+        extra = DEFAULT_EXTRA_DISTRICTS
+    floor = TIER_RANK[min_tier.lower()]
+    reasons = {}
+    uhi = pd.read_csv(UHI_CSV)
+    for _, r in uhi.iterrows():
+        tier = str(r["UHI_Tier"]).strip()
+        if TIER_RANK.get(tier.lower(), 0) >= floor:
+            reasons.setdefault(normalize_name(r["District"]), []).append("UHI:" + tier)
+    inter = pd.read_csv(INTERCEPT_CSV)
+    for _, r in inter.iterrows():
+        pct = float(r["Intercept_Score_Pct"])
+        if pct >= intercept_min:
+            reasons.setdefault(normalize_name(r["District"]), []).append(
+                "intercept:{:.0f}%".format(pct))
+    for e in (extra or []):
+        reasons.setdefault(normalize_name(e), []).append("manual")
+    return reasons
+
+
+def write_manifest(sel, reasons, existing_norms, seeded_norms):
+    """Provenance for the thesis methods section: which districts, fetched how."""
+    rows = []
+    for _, row in sel.sort_values("District").iterrows():
+        norm = row["norm"]
+        path = "data/gis/bangkok_parcels_{}.geojson".format(slugify(row["District"]))
+        if norm in existing_norms:
+            mode = "full"
+        elif norm in seeded_norms:
+            mode = "seeded"
+        else:
+            mode = "none"  # in subset but no parcels found
+        n_parcels, total_sqm = 0, 0.0
+        if os.path.exists(path):
+            g = gpd.read_file(path)
+            n_parcels = len(g)
+            if "area_sqm" in g.columns and n_parcels:
+                total_sqm = float(g["area_sqm"].sum())
+        rows.append({"district": row["District"], "fetch_mode": mode,
+                     "priority_reason": ";".join(reasons.get(norm, [])),
+                     "n_parcels": n_parcels,
+                     "total_parcel_area_sqm": round(total_sqm, 1)})
+    pd.DataFrame(rows).to_csv(MANIFEST_PATH, index=False, encoding="utf-8-sig")
+    print("\nManifest -> {}".format(MANIFEST_PATH))
+
+
+def fetch_around_facilities(min_tier, intercept_min, extra, force):
+    """Seed-driven fetch: parcels around BMA facilities, in the priority subset.
+
+    Facility seeds already span all 50 districts (fetch_bma_facilities.py runs
+    city-wide), so this only needs to pull the parcel geometry under them. Seeds
+    are buffered and merged into a few disjoint envelopes, so clustered inner-city
+    facilities cost one fetch each rather than one per facility.
+    """
+    districts = gpd.read_file("data/gis/bangkok_districts.geojson").to_crs(epsg=UTM47N)
+    districts["norm"] = districts["District"].apply(normalize_name)
+
+    reasons = compute_priority_districts(min_tier, intercept_min, extra)
+    wanted = set(reasons)
+    sel = districts[districts["norm"].isin(wanted)].copy()
+    missing = wanted - set(sel["norm"])
+    if missing:
+        print("   ! priority name(s) with no matching district polygon, ignored: {}"
+              .format(sorted(missing)))
+
+    print("Priority subset: {} districts".format(len(sel)))
+    for _, row in sel.sort_values("District").iterrows():
+        print("   - {:<26} {}".format(row["District"], ", ".join(reasons[row["norm"]])))
+
+    # Districts that already have a parcel file stay 'full' -- don't re-seed them.
+    existing_norms = set()
+    for _, row in sel.iterrows():
+        path = "data/gis/bangkok_parcels_{}.geojson".format(slugify(row["District"]))
+        if os.path.exists(path) and not force:
+            existing_norms.add(row["norm"])
+    to_fetch = sel[~sel["norm"].isin(existing_norms)].copy()
+    if existing_norms:
+        print("\nKept as full parcels (already fetched, use --force to re-seed): {}"
+              .format(sorted(existing_norms)))
+
+    seeded_norms = set()
+    if to_fetch.empty:
+        print("Nothing new to fetch.")
+    else:
+        print("\nSeeding {} new district(s) from BMA facilities.".format(len(to_fetch)))
+        fetch_union = to_fetch.geometry.union_all()
+
+        fac = gpd.read_file(FACILITIES_PATH).to_crs(epsg=UTM47N)
+        in_scope = fac[fac.geometry.intersects(fetch_union)].copy()
+        print("   - {} of {} facility seeds fall in the districts to fetch."
+              .format(len(in_scope), len(fac)))
+
+        if in_scope.empty:
+            print("   ! no seeds in scope; nothing to fetch.")
+        else:
+            # Buffer each seed (footprint +50 m, point +150 m), then dissolve into
+            # disjoint blobs so clustered facilities share one envelope.
+            buffered = gpd.GeoSeries(
+                [g.buffer(POINT_BUFFER_M) if g.geom_type == "Point"
+                 else g.buffer(POLY_BUFFER_M) for g in in_scope.geometry],
+                crs=UTM47N)
+            blob = buffered.union_all()
+            parts = list(blob.geoms) if blob.geom_type == "MultiPolygon" else [blob]
+            print("   - merged into {} fetch envelope(s); querying parcels..."
+                  .format(len(parts)))
+
+            features = []
+            stats = {"tiles": 0, "max_depth": 0, "truncated_tiles": 0}
+            for part in parts:
+                xmin, ymin, xmax, ymax = part.bounds
+                fetch_recursive(xmin, ymin, xmax, ymax, features, stats)
+            print("\n   - {} tiles, max depth {}, {} raw features."
+                  .format(stats["tiles"], stats["max_depth"], len(features)))
+
+            if features:
+                gdf = gpd.GeoDataFrame.from_features(features, crs=4326)
+                gdf = gdf.drop_duplicates("OBJECTID").to_crs(epsg=UTM47N)
+                gdf["area_sqm"] = gdf.geometry.area
+                gdf = gdf.rename(columns={"OBJECTID": "parcel_id"})
+
+                # Assign each parcel to the priority district holding its centroid;
+                # drop buffer spillover that lands outside the subset (incl. the
+                # already-full districts, so no parcel is written twice).
+                cent = gpd.GeoDataFrame(gdf[["parcel_id"]].copy(),
+                                        geometry=gdf.geometry.centroid, crs=UTM47N)
+                hit = gpd.sjoin(cent, to_fetch[["District", "geometry"]],
+                                how="left", predicate="within")
+                hit = hit.drop_duplicates("parcel_id").set_index("parcel_id")
+                gdf["district"] = gdf["parcel_id"].map(hit["District"])
+                gdf = gdf[gdf["district"].notna()].copy()
+                gdf["fetch_mode"] = "seeded"
+
+                for name, grp in gdf.groupby("district"):
+                    out_path = "data/gis/bangkok_parcels_{}.geojson".format(slugify(name))
+                    out = grp[["parcel_id", "district", "area_sqm", "fetch_mode",
+                               "geometry"]].to_crs(epsg=4326)
+                    out.to_file(out_path, driver="GeoJSON")
+                    seeded_norms.add(normalize_name(name))
+                    print("   - {}: {} parcels, median {:.0f} sqm -> {}".format(
+                        name, len(grp), grp["area_sqm"].median(), out_path))
+            else:
+                print("   ! no parcels returned.")
+
+    write_manifest(sel, reasons, existing_norms, seeded_norms)
+    print("\nDone. These are plot BOUNDARIES only -- no owner attribute.\n"
+          "Next: build_bma_land_layer.py --min-confidence low --min-area 500")
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    ap.add_argument("--around-facilities", action="store_true",
+                    help="Seed-driven mode: fetch parcels around BMA facilities across "
+                         "a UHI/transit priority subset, instead of whole districts.")
     ap.add_argument("--districts", nargs="+", default=DEFAULT_DISTRICTS,
-                    help="District names to fetch (default: %(default)s). "
+                    help="(district mode) District names to fetch (default: %(default)s). "
                          "Matching ignores the 'District'/'Khet' suffix.")
+    ap.add_argument("--min-tier", choices=["severe", "medium", "low"],
+                    default=DEFAULT_MIN_TIER,
+                    help="(seed mode) lowest UHI tier to include (default: %(default)s).")
+    ap.add_argument("--intercept-min", type=float, default=DEFAULT_INTERCEPT_MIN,
+                    help="(seed mode) also include districts with intercept score >= this "
+                         "pct (default: %(default)s).")
+    ap.add_argument("--extra-districts", nargs="*", default=DEFAULT_EXTRA_DISTRICTS,
+                    help="(seed mode) always-include districts (default: %(default)s).")
+    ap.add_argument("--force", action="store_true",
+                    help="(seed mode) re-seed districts that already have a parcel file.")
     args = ap.parse_args()
-    fetch_parcels(args.districts)
+    if args.around_facilities:
+        fetch_around_facilities(args.min_tier, args.intercept_min,
+                                args.extra_districts, args.force)
+    else:
+        fetch_parcels(args.districts)

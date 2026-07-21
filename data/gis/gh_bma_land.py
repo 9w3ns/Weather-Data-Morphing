@@ -37,6 +37,16 @@
 #   Land_Owner_Risk  : List of String, "temple_land" or "none" (same order).
 #   Site_Name        : List of String, Thai facility name (same order).
 #   District         : List of String, district per site (same order).
+#   Building_Year    : List of String, district-office building construction/
+#                      opening year CE (same order); "" if unknown or not an
+#                      office. From data/gis/district_office_building_age.csv,
+#                      joined by data/enrich_office_building_age.py.
+#   Building_Era     : List of String, coarse lifecycle bucket for colouring
+#                      (same order): "Pre-1970 (historic)", "1970-1999",
+#                      "2000-present", "Leased (not BMA bldg)", "Unknown", or
+#                      "" (non-office). Colour offices by era:
+#                        filter Category == "district_office" -> Member Index
+#                        Building_Era against that 5-item list -> Colour Swatch.
 #   Site_Count       : String, number of sites kept.
 #   Report           : String summary / error log.
 #
@@ -66,6 +76,8 @@ Confidence = []
 Land_Owner_Risk = []
 Site_Name = []
 District = []
+Building_Year = []
+Building_Era = []
 Site_Count = "0"
 Report = "Awaiting inputs..."
 
@@ -196,6 +208,8 @@ else:
             Land_Owner_Risk.append(str(props.get("land_owner_risk", "")))
             Site_Name.append(str(props.get("name", "")))
             District.append(str(props.get("district", "")))
+            Building_Year.append(str(props.get("building_year_ce", "")))
+            Building_Era.append(str(props.get("building_era", "")))
             kept += 1
 
         with open(Site_Points_Path, "w", encoding="utf-8") as f:

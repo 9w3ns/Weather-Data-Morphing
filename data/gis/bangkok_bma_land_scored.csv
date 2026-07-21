@@ -1,4 +1,876 @@
 ﻿site_id,district,name,category,ownership_confidence,land_owner_risk,temple_overlap_pct,parcel_to_seed_ratio,n_parcels,site_area_sqm,seed_geom,dist_to_station_m,nearest_station,intercept_score,uhii_hotdry_evening_c,lst_mean_c,operator_raw,source
-3,Khlong Toei District,สำนักงานเขตคลองเตย,district_office,high,none,0.0,9.7,1,12198.74605607202,Polygon,1181.5657012814372,Phra Khanong,32.04800465406342,1.5,42.1,,osm_category_default
-0,Sathon District,สำนักงานเขตสาทร,district_office,high,none,0.0,,1,2938.1185109401954,Point,2610.373347193241,Si Lom,66.31155084548975,2.0,42.49,,osm_category_default
-4,Bang Rak District,สำนักงานเขตบางรัก,district_office,high,none,0.0,2.0,1,2133.9624033752084,Polygon,712.8988801742678,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
+182,Pathum Wan District,Tallsters,health_centre,low,oversized_parcel,0.2,,1,1047570.8302095255,Point,1025.1680787907337,Sam Yan,8.958127403648023,2.4,41.82,,osm_category_default
+188,Pathum Wan District,ห้องสมุดวิศวะกรรมศาสตร์,library,low,oversized_parcel,0.0,,1,717631.7084833096,Point,727.4356931333904,Siam,8.958127403648023,2.4,41.82,,osm_category_default
+285,Pathum Wan District,สวนลุมพินี,park,high,none,0.0,1.1,9,569053.4972802524,Polygon,536.9793188118174,Si Lom,8.958127403648023,2.4,41.82,กรุงเทพมหานคร,osm_operator_tag
+181,Sathon District,ห้องสมุดสิกขาเอซีย,library,low,oversized_parcel,0.0,,1,474355.1241856622,Point,1087.2606054220462,Lumphini,66.31155084548975,2.0,42.49,,osm_category_default
+147,Pathum Wan District,,government_office,low,oversized_parcel,0.0,,1,466221.30650842673,Point,698.6897615323865,Siam,8.958127403648023,2.4,41.82,,osm_category_default
+296,Dusit District,อุทยานเฉลิมพระเกียรติ รัชกาลที่ ๙,park,low,none,0.0,1.0,1,459140.36238355975,Polygon,1795.4731150209805,Phaya Thai,15.140222506111774,2.6,43.49,สำนักพระราชวัง | พระบาทสมเด็จพระวชิรเกล้าเจ้าอยู่หัว,osm_category_default
+187,Chatuchak District,ห้องสมุดสิ่งแวดล้อม,library,low,oversized_parcel,0.0,,1,446724.93141981907,Point,885.5052971705775,Phahon Yothin,7.512476021659428,3.1,44.35,,osm_category_default
+82,Ratchathewi District,,school,low,oversized_parcel,0.0,,1,408042.36857253633,Point,326.0060828565533,Victory Monument,3.519620160749606,2.6,42.85,,osm_category_default
+528,Ratchathewi District,สวนราชเทวีภิรมย์,park,low,oversized_parcel,0.0,10.5,122,352542.48655382096,Polygon,515.2020041367377,Ratchaprarop,3.519620160749606,2.6,42.85,,osm_category_default
+203,Chatuchak District,Living animals,market,low,oversized_parcel,0.0,,1,310848.5774864868,Point,412.6367590055122,Chatuchak Park,7.512476021659428,3.1,44.35,,osm_category_default
+287,Chatuchak District,สวนจตุจักร,park,low,none,0.0,1.2,11,300617.3782265937,Polygon,616.9672400039095,Chatuchak Park,7.512476021659428,3.1,44.35,,osm_category_default
+453,Din Daeng District,โรงเรียนสามเสนนอก,school,low,oversized_parcel,0.8,22.3,1,287984.6000268174,Polygon,512.6865334354019,Huai Khwang,39.43490169368372,2.7,44.25,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+690,Khlong Toei District,สวนเบญจกิติ,park,low,none,0.0,1.3,3,283601.5244358317,Polygon,732.500818354833,Queen Sirikit National Convention Centre,32.04800465406342,1.5,42.1,,osm_category_default
+560,Ratchathewi District,โรงเรียนสวนมิสกวัน,school,low,oversized_parcel,0.0,37.5,1,257682.58019474833,Polygon,763.7478222694933,Victory Monument,3.519620160749606,2.6,42.85,,osm_category_default
+810,Khlong Toei District,กรมศุลกากร,government_office,low,none,0.0,3.1,3,250541.22782548322,Polygon,1310.6837968358705,Queen Sirikit National Convention Centre,32.04800465406342,1.5,42.1,,osm_category_default
+154,Chatuchak District,กองบริหารจัดการทรัพยากรและกำหนดมาตรการ,government_office,low,oversized_parcel,0.0,,1,246149.3451113142,Point,510.0770335704517,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+279,Khlong Toei District,โรงเรียนชุมชนหมู่บ้านพัฒนา,school,low,oversized_parcel,0.0,26.0,1,240443.3937606245,Polygon,1447.298536587016,Thong Lo,32.04800465406342,1.5,42.1,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+195,Phra Nakhon District,หอสมุดมหามงคล,library,low,oversized_parcel,8.5,,1,238455.7109525505,Point,676.4620254106107,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+561,Khlong Toei District,สวนป่าเบญจกิติ,park,low,none,0.0,0.4,2,205888.11253916676,Polygon,846.702906580132,Khlong Toei,32.04800465406342,1.5,42.1,,osm_category_default
+767,Phaya Thai District,,government_office,low,none,0.0,0.8,44,196174.90292421033,Polygon,755.8180322737635,Ari,24.15944885836817,2.8,44.04,,osm_category_default
+266,Ratchathewi District,กระทรวงการต่างประเทศ,government_office,low,oversized_parcel,0.0,15.5,1,191215.26034642264,Polygon,1254.3795031243205,Victory Monument,3.519620160749606,2.6,42.85,,osm_category_default
+202,Pathum Wan District,การรถไฟแห่งประเทศไทย,government_office,low,oversized_parcel,0.0,,1,189808.63683376668,Point,664.3365696938401,Hua Lamphong,8.958127403648023,2.4,41.82,,osm_category_default
+73,Pathum Wan District,เมโกะ คลินิก สาขาเซ็นทรัลเวิลด์,health_centre,low,oversized_parcel,10.1,,1,187820.70795765286,Point,513.3480907030915,Siam,8.958127403648023,2.4,41.82,,osm_category_default
+270,Dusit District,โรงเรียนวชิราวุธวิทยาลัย,school,low,none,0.0,1.1,3,182438.45801745373,MultiPolygon,2283.595965016659,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+17,Pom Prap Sattru Phai District,,fire_station,low,oversized_parcel,1.2,,1,169520.5090294585,Point,876.9147947339089,Sam Yot,2.5132994081199342,2.5,44.33,,osm_category_default
+347,Chatuchak District,กรมการขนส่งทางบก,government_office,low,none,0.0,1.3,30,157679.84662474858,Polygon,501.1806036901595,Chatuchak Park,7.512476021659428,3.1,44.35,,osm_category_default
+476,Dusit District,รัฐสภา,government_office,low,none,0.0,0.8,35,155990.72258023595,Polygon,957.8008644531163,Bang O,15.140222506111774,2.6,43.49,,osm_category_default
+290,Chatuchak District,สวนวชิรเบญจทัศ,park,low,none,0.0,0.3,7,151013.3478413846,Polygon,652.9311716096875,Phahon Yothin,7.512476021659428,3.1,44.35,,osm_category_default
+326,Chatuchak District,,market,low,oversized_parcel,0.0,23.3,1,146325.0854403123,Polygon,1056.8432381860432,Chatuchak Park,7.512476021659428,3.1,44.35,,osm_category_default
+693,Bang Na District,กรมอุตุนิยมวิทยา,government_office,low,none,0.0,1.2,8,134810.5086739097,Polygon,201.16758702104482,Bang Na,16.730954912626892,1.9,43.09,,osm_category_default
+297,Chatuchak District,ตลาดนัดจตุจักร,market,low,none,0.0,1.2,11,133746.61113519216,Polygon,345.5161107807489,Kamphaeng Phet,7.512476021659428,3.1,44.35,,osm_category_default
+609,Khlong Toei District,โรงเรียนคลองเตยวิทยา,school,low,oversized_parcel,0.5,36.6,1,133578.88154086738,Polygon,272.75687688323956,Khlong Toei,32.04800465406342,1.5,42.1,,osm_category_default
+589,Khlong Toei District,สำนักงานการยาสูบแห่งประเทศไทย,government_office,low,oversized_parcel,0.0,30.1,1,132221.87776192458,Polygon,365.99498852954264,Khlong Toei,32.04800465406342,1.5,42.1,,osm_category_default
+166,Khlong Toei District,,school,low,oversized_parcel,0.0,,1,130897.54331337908,Point,321.2938843875118,Ekkamai BTS Station,32.04800465406342,1.5,42.1,,osm_category_default
+401,Vadhana District,โรงเรียนวัฒนาวิทยาลัย,school,low,none,0.0,1.3,9,130179.806423436,Polygon,608.1536242388564,Makkasan,14.147439509302414,2.0,42.2,,osm_category_default
+277,Khlong Toei District,ตลาดคลองเตย,market,low,none,0.0,1.0,27,117509.15226754115,Polygon,516.570579613412,Queen Sirikit National Convention Centre,32.04800465406342,1.5,42.1,,osm_category_default
+429,Dusit District,โรงเรียนเซนต์ฟรังซีสเซเวียร์,school,low,none,5.0,8.6,1,111543.17587038186,Polygon,1455.388822655731,Sirindhorn,15.140222506111774,2.6,43.49,,osm_category_default
+23,Chatuchak District,ห้องสมุดคณะวิศวกรรมศาสตร์,library,low,oversized_parcel,0.0,,1,109151.41709144012,Point,879.668594512523,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+83,Vadhana District,หลักสูตรนานาชาติ รร.สาธิต มศว ประสานมิตร(ฝ่ายมัธยม),school,low,oversized_parcel,0.0,,1,108428.19425555594,Point,588.4961682329947,Makkasan,14.147439509302414,2.0,42.2,,osm_category_default
+855,Dusit District,โรงเรียนจิตรลดาวิชาชีพ,school,low,oversized_parcel,0.0,16.8,1,108259.87619014498,Polygon,2527.2439124884977,Phaya Thai,15.140222506111774,2.6,43.49,,osm_category_default
+612,Pathum Wan District,,park,low,oversized_parcel,0.0,21.1,1,102939.15894720168,Polygon,774.6673155208964,Chit Lom,8.958127403648023,2.4,41.82,,osm_category_default
+339,Bang Kho Laem District,Asiatique The Riverfront,market,low,none,1.9,1.0,6,102357.96279568292,Polygon,1869.2827650402862,Krung Thon Buri,43.05120204584554,1.6,42.48,,osm_category_default
+809,Dusit District,ศูนย์นันทนาการสวนอ้อย,community_centre,low,oversized_parcel,0.0,186.8,1,100315.72810100816,Polygon,1605.0120100972622,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+819,Dusit District,โรงเรียนสุโขทัย,school,low,oversized_parcel,0.1,90.8,1,100287.35555329018,Polygon,1975.9505887442306,Sanam Pao,15.140222506111774,2.6,43.49,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+513,Chatuchak District,กรมป่าไม้,government_office,low,none,0.0,1.1,1,98480.5499782158,Polygon,370.97134728478574,Royal Forest Department,7.512476021659428,3.1,44.35,,osm_category_default
+805,Dusit District,โรงเรียนสาธิตมหาวิทยาลัยราชภัฏสวนสุนันทา,school,low,none,0.0,7.4,1,96492.13062605528,Polygon,1872.6112566970894,Sirindhorn,15.140222506111774,2.6,43.49,,osm_category_default
+249,Phra Nakhon District,สวนสมเด็จพระปกเกล้าฯ,park,low,none,0.0,5.2,14,95662.71581511472,MultiPolygon,664.0909993167554,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+268,Ratchathewi District,กรมทางหลวง,government_office,low,none,0.0,1.1,5,94429.05253968117,MultiPolygon,1027.888098760154,Phaya Thai,3.519620160749606,2.6,42.85,,osm_category_default
+269,Bang Na District,โรงเรียนบางกอกพัฒนา,school,low,none,0.0,0.9,19,92935.33326970467,Polygon,1889.4585802561207,Bang Na,16.730954912626892,1.9,43.09,,osm_category_default
+431,Phra Nakhon District,ธนาคารแห่งประเทศไทย,government_office,low,none,0.4,1.0,10,92196.62543164734,Polygon,1850.4426534981385,Sirindhorn,10.073902842536365,2.3,43.21,,osm_category_default
+230,Ratchathewi District,กองคุ้มครองซากดึกดำบรรพ์,government_office,low,oversized_parcel,0.0,,1,91522.40541078118,Point,989.4230957949436,Victory Monument,3.519620160749606,2.6,42.85,,osm_category_default
+894,Vadhana District,โรงเรียนวัดธาตุทอง (เรือนเขียวสะอาด),school,low,temple_land;oversized_parcel,68.4,,1,89137.97302516593,Point,216.3245860231109,Ekkamai BTS Station,14.147439509302414,2.0,42.2,BMA school registry (data.bangkok.go.th),bma_open_data
+272,Bang Sue District,สวนสาธารณะสะพานพระราม 7,park,low,none,0.0,2.2,1,86378.11737223712,MultiPolygon,1243.4637587703355,Bang Pho,16.59413937857211,3.2,44.7,,osm_category_default
+25,Chatuchak District,ภาควิชาพืชไร่นา,school,low,oversized_parcel,0.9,,1,86085.81784977837,Point,1013.2725208805064,Royal Forest Department,7.512476021659428,3.1,44.35,,osm_category_default
+119,Chatuchak District,คณะมนุษยศาสตร์และสังคมศาสตร์,government_office,low,oversized_parcel,0.0,,1,84097.59522124236,Point,1247.0501277412168,Phahonyothin 24,7.512476021659428,3.1,44.35,,osm_category_default
+696,Dusit District,กรมชลประทาน,government_office,low,none,0.0,1.0,1,83715.45012187828,Polygon,845.8147205030776,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+941,Phra Nakhon District,โรงเรียนวัดพระเชตุพน,school,low,temple_land;oversized_parcel,93.4,,1,82491.59441707426,Point,245.22768241914588,Sanam Chai,10.073902842536365,2.3,43.21,BMA school registry (data.bangkok.go.th),bma_open_data
+391,Chatuchak District,,park,low,oversized_parcel,0.0,62.3,1,82047.24582530156,Polygon,709.1089920984522,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+795,Bang Na District,โรงเรียนลาซาลกรุงเทพ,school,low,none,0.0,1.0,5,81785.68382912879,Polygon,1162.4492729541969,Si La Salle,16.730954912626892,1.9,43.09,La Salle,osm_category_default
+26,Chatuchak District,Science Library,library,low,oversized_parcel,0.0,,1,80991.25142135716,Point,635.2380507917605,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+180,Chatuchak District,,park,low,oversized_parcel,0.0,,1,80393.43556764461,Point,1081.6127977779724,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+337,Dusit District,ทำเนียบรัฐบาล,government_office,low,none,0.0,1.0,3,80193.0799228426,Polygon,2079.481858770768,Sam Yot,15.140222506111774,2.6,43.49,,osm_category_default
+291,Phra Nakhon District,สนามหลวง,park,low,none,0.0,0.7,1,79751.3954649046,Polygon,1213.5669406346979,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+483,Dusit District,โรงเรียนวัดราชาธิวาส,school,low,temple_land,66.3,9.9,1,78086.79907619764,Polygon,1532.025848149833,Sirindhorn,15.140222506111774,2.6,43.49,,osm_category_default
+159,Phra Nakhon District,,community_centre,low,oversized_parcel,0.7,,1,77395.68525567859,Point,295.4593440783644,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+338,Dusit District,กระทรวงศึกษาธิการ,government_office,low,none,0.0,1.0,3,72314.45399604853,Polygon,2233.6887662320796,Sam Yot,15.140222506111774,2.6,43.49,,osm_category_default
+679,Ratchathewi District,โรงเรียนอำนวยศิลป์,school,low,none,0.0,3.6,1,71042.93972879362,Polygon,737.3909540316872,Phaya Thai,3.519620160749606,2.6,42.85,,osm_category_default
+519,Din Daeng District,โรงเรียนพิบูลประชาสรรค์,school,low,none,0.0,1.1,3,67673.49993532777,Polygon,1440.8244765358836,Ratchaprarop,39.43490169368372,2.7,44.25,,osm_category_default
+593,Pathum Wan District,โรงเรียนสุนีพิทยา,school,low,oversized_parcel,0.9,18.0,1,63859.069493558796,Polygon,638.6362843046846,Lumphini,8.958127403648023,2.4,41.82,,osm_category_default
+426,Bang Kho Laem District,โรงเรียนนานาชาติโชรส์เบอรี กรุงเทพ,school,low,none,0.0,1.0,62,61836.10927556213,Polygon,1392.3129986344175,Krung Thon Buri,43.05120204584554,1.6,42.48,,osm_category_default
+708,Pathum Wan District,อาคารศูนย์รวมน้ำใจ,community_centre,low,oversized_parcel,0.0,401.6,1,60432.52590282251,Polygon,464.1402278635003,Khlong Toei,8.958127403648023,2.4,41.82,,osm_category_default
+639,Pathum Wan District,โรงเรียนปลูกจิต,school,low,oversized_parcel,0.0,12.9,1,60207.10534497792,Polygon,477.2681330355433,Lumphini,8.958127403648023,2.4,41.82,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+24,Ratchathewi District,องค์การเภสัชกรรม,government_office,low,oversized_parcel,0.0,,1,59963.461261780336,Point,947.9484705756928,Victory Monument,3.519620160749606,2.6,42.85,,osm_category_default
+120,Chatuchak District,คณะวิทยาศาสตร์,government_office,low,oversized_parcel,0.0,,1,58237.59147907427,Point,1327.5264716819927,Phahonyothin 24,7.512476021659428,3.1,44.35,,osm_category_default
+157,Pathum Wan District,อาคารเฉลิม บูรณะนนท์,government_office,low,oversized_parcel,0.0,,1,57946.736371611376,Point,300.10340051564646,Sam Yan,8.958127403648023,2.4,41.82,,osm_category_default
+183,Phra Nakhon District,หอสมุดปิยมหาราชรฦก,library,low,temple_land;oversized_parcel,87.2,,1,57762.49967543317,Point,1227.2665024210705,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+220,Phaya Thai District,กรมควบคุมมลพิษ,government_office,low,oversized_parcel,0.0,,1,57354.35142796328,Point,685.038511472781,Sena Ruam,24.15944885836817,2.8,44.04,,osm_category_default
+371,Chatuchak District,,park,low,oversized_parcel,0.0,252.9,1,57154.592395845604,Polygon,1233.0765738719506,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+246,Chatuchak District,กรมพัฒนาที่ดิน,government_office,low,none,0.0,1.0,27,56967.50527878709,Polygon,182.64089442418359,Sena Nikhom,7.512476021659428,3.1,44.35,,osm_category_default
+216,Din Daeng District,,library,low,oversized_parcel,0.0,,1,55332.95721552818,Point,1316.659667066505,Ari,39.43490169368372,2.7,44.25,,osm_category_default
+929,Thon Buri District,โรงเรียนวัดกัลยาณมิตร,school,low,temple_land;oversized_parcel,86.1,,1,53763.83841204517,Point,613.1364603778943,Itsaraphap,0.4552733595031658,1.7,43.87,BMA school registry (data.bangkok.go.th),bma_open_data
+354,Chatuchak District,โรงเรียนสารวิทยา,school,low,none,0.0,1.0,4,53469.84911353921,Polygon,185.10646518565096,Royal Forest Department,7.512476021659428,3.1,44.35,,osm_category_default
+255,Sathon District,โรงเรียนพระแม่มารี,school,low,none,0.0,1.0,21,53225.6821064454,Polygon,3036.6792103703065,Si Lom,66.31155084548975,2.0,42.49,,osm_category_default
+678,Bangkok Yai District,โรงเรียนวัดหงส์รัตนารามราชวรวิหาร,school,low,temple_land;oversized_parcel,53.4,27.5,1,52970.42587147268,Polygon,263.5844544048667,Itsaraphap,17.88295316842188,1.9,44.11,,osm_category_default
+424,Bangkok Yai District,โรงเรียนทวีธาภิเศก,school,low,none,23.8,3.2,2,51959.53105241875,Polygon,831.6102214943203,Itsaraphap,17.88295316842188,1.9,44.11,,osm_category_default
+591,Pathum Wan District,สวนสามย่าน,park,low,oversized_parcel,0.0,111.7,1,51949.37211147116,Polygon,826.6041519320913,Sam Yan,8.958127403648023,2.4,41.82,,osm_category_default
+939,Phra Nakhon District,โรงเรียนวัดมกุฎกษัตริยาราม,school,low,temple_land;oversized_parcel,56.5,,1,51556.579881589714,Point,1970.0399553277068,Sam Yot,10.073902842536365,2.3,43.21,BMA school registry (data.bangkok.go.th),bma_open_data
+436,Dusit District,โรงเรียนมัธยมวัดเบญจมพบิตร,school,low,temple_land,70.4,6.5,1,51508.84202624008,Polygon,2413.5968687487093,Sam Yot,15.140222506111774,2.6,43.49,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+772,Phaya Thai District,สำนักอำนวยการกองอาสารักษาดินแดน,government_office,low,oversized_parcel,0.0,171.8,1,51435.60484975561,Polygon,261.7678426473725,Sena Ruam,24.15944885836817,2.8,44.04,,osm_category_default
+378,Chatuchak District,,park,low,none,0.0,8.8,1,50623.16151068982,Polygon,1352.6636790972843,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+710,Pathum Wan District,One Bangkok Park,park,low,none,0.0,4.7,1,50406.241285577744,Polygon,234.43978836043095,Lumphini,8.958127403648023,2.4,41.82,,osm_category_default
+408,Pom Prap Sattru Phai District,โรงเรียนเทพศิรินทร์,school,low,temple_land,56.4,2.8,1,50330.99358035568,Polygon,774.1669827495938,Wat Mangkon,2.5132994081199342,2.5,44.33,,osm_category_default
+590,Pathum Wan District,,park,low,oversized_parcel,0.2,14.4,1,49266.935276586526,Polygon,149.91051856332217,Lumphini,8.958127403648023,2.4,41.82,,osm_category_default
+490,Chatuchak District,SCB park east,park,low,oversized_parcel,0.0,12.7,1,48563.066539778345,Polygon,327.3882153651357,Phahonyothin 24,7.512476021659428,3.1,44.35,,osm_category_default
+943,Phra Nakhon District,โรงเรียนวัดราชบูรณะ,school,low,temple_land;oversized_parcel,28.4,,1,48451.69704600239,Point,518.5634216627493,Sam Yot,10.073902842536365,2.3,43.21,BMA school registry (data.bangkok.go.th),bma_open_data
+225,Phra Nakhon District,ห้องสมุดสัญญา ธรรมศักดิ์,library,low,oversized_parcel,0.0,,1,48077.415303378446,Point,1430.6490947808054,Sanam Chai,10.073902842536365,2.3,43.21,"Faculty of Law, Thammasat University",osm_category_default
+576,Bangkok Yai District,,park,low,temple_land,83.6,5.3,1,47875.86273580388,Polygon,683.870983601923,Sanam Chai,17.88295316842188,1.9,44.11,,osm_category_default
+665,Yan Nawa District,โรงเรียนนานาชาติคิงส์คอลเลจกรุงเทพ,school,low,none,0.0,1.0,32,47848.9649855407,Polygon,4258.872079278589,Krung Thon Buri,71.17195774707528,1.5,41.6,,osm_category_default
+926,Thon Buri District,โรงเรียนวัดประยุรวงค์,school,low,temple_land;oversized_parcel,74.8,,1,47040.2977163474,Point,845.249413100972,Sanam Chai,0.4552733595031658,1.7,43.87,BMA school registry (data.bangkok.go.th),bma_open_data
+343,Bang Kho Laem District,สวนสาธารณะเฉลิมพระเกียรติ 6 รอบ พระชนมพรรษา,park,low,none,0.0,1.0,12,46848.73711318338,Polygon,4195.880309362537,Krung Thon Buri,43.05120204584554,1.6,42.48,,osm_category_default
+369,Chatuchak District,สวนรวมพรรณไม้เกียรติประวัติไทย,park,low,none,0.0,1.1,2,46456.397664556935,Polygon,419.6556343989697,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+288,Khlong Toei District,อุทยานเบญจสิริ,park,low,none,0.0,1.1,7,46171.76670698768,Polygon,259.4012390636204,Phrom Phong,32.04800465406342,1.5,42.1,,osm_category_default
+248,Phra Nakhon District,สวนรมณีนาถ,park,low,none,0.0,1.2,2,45924.932413172544,Polygon,221.54216751530993,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+524,Phra Nakhon District,โรงเรียนวัดบวรนิเวศ,school,low,temple_land,79.4,4.5,1,45326.14973292914,Polygon,1408.270337718608,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+883,Phra Nakhon District,โรงเรียนวัดชนะสงคราม,school,low,temple_land,97.0,7.6,1,45299.66080132164,Polygon,1714.292619190362,Sam Yot,10.073902842536365,2.3,43.21,กรุงเทพมหานคร,osm_operator_tag
+754,Din Daeng District,,government_office,low,oversized_parcel,0.0,21.6,1,45246.24762248593,Polygon,1198.805113637999,Sanam Pao,39.43490169368372,2.7,44.25,,osm_category_default
+821,Dusit District,กรมสรรพสามิต,government_office,low,none,0.0,1.0,6,45156.90658703348,Polygon,1855.7535707531413,Sanam Pao,15.140222506111774,2.6,43.49,,osm_category_default
+135,Pathum Wan District,คลีนิคนิรนาม,health_centre,low,oversized_parcel,0.0,,1,44872.72980640314,Point,654.5433554507694,Si Lom,8.958127403648023,2.4,41.82,,osm_category_default
+785,Bang Na District,โรงเรียนสรรพาวุธวิทยา,school,low,none,0.0,1.4,8,43888.79589284533,Polygon,971.4780655062748,Bearing,16.730954912626892,1.9,43.09,,osm_category_default
+305,Phra Nakhon District,โรงเรียนพระปริยัติธรรม หอติสสเทวาภิธาน,school,low,temple_land;oversized_parcel,92.7,130.1,1,43640.05006287427,Polygon,373.91605837750916,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+67,Pathum Wan District,ห้องสมุดสื่อสมาคมฝรั่งเศส,library,low,oversized_parcel,0.0,,1,43572.16540892808,Point,651.7002081746797,Lumphini,8.958127403648023,2.4,41.82,,osm_category_default
+638,Pathum Wan District,สถานีดับเพลิงบ่อนไก่,fire_station,low,oversized_parcel,0.0,14.9,1,43326.78642957772,Polygon,412.12743645210287,Lumphini,8.958127403648023,2.4,41.82,,osm_category_default
+295,Chatuchak District,Water Bank รัชวิภา,park,low,none,0.0,1.8,2,43263.86486032657,Polygon,1072.4475329326563,Phahonyothin 24,7.512476021659428,3.1,44.35,,osm_category_default
+289,Chatuchak District,สวนสมเด็จพระนางเจ้าสิริกิติ์ฯ,park,low,none,0.0,0.1,5,43226.79733686997,Polygon,551.3470977477654,Chatuchak Park,7.512476021659428,3.1,44.35,,osm_category_default
+407,Pom Prap Sattru Phai District,โรงเรียนวัดโสมนัส,school,low,temple_land,73.8,5.7,1,42634.25389331688,Polygon,1743.6319251145464,Sam Yot,2.5132994081199342,2.5,44.33,,osm_category_default
+372,Chatuchak District,,park,low,none,0.0,8.7,1,42328.802379579734,Polygon,1443.9537929207374,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+515,Chatuchak District,กรมฝนหลวงและการบินเกษตร,government_office,low,none,0.0,3.4,1,42149.38072352532,Polygon,425.52899568895486,Royal Forest Department,7.512476021659428,3.1,44.35,,osm_category_default
+62,Bang Sue District,Siam Gypsy Market,market,low,oversized_parcel,0.0,,1,42058.04609383191,Point,318.3067112032779,Bang Son,16.59413937857211,3.2,44.7,,osm_category_default
+753,Din Daeng District,วิทยาลัยการแรงงาน,government_office,low,oversized_parcel,0.0,51.6,1,41897.5444799548,Polygon,1252.5036599511152,Sanam Pao,39.43490169368372,2.7,44.25,,osm_category_default
+336,Dusit District,สำนักงานทรัพย์สินส่วนพระมหากษัตริย์,government_office,low,none,0.0,1.1,2,41882.57942746725,Polygon,2204.8855917039728,Sirindhorn,15.140222506111774,2.6,43.49,,osm_category_default
+853,Phaya Thai District,สถานีดับเพลิงพหลโยธิน,fire_station,low,oversized_parcel,0.0,76.9,1,41228.419231260545,Polygon,342.45659972622394,Ari,24.15944885836817,2.8,44.04,,osm_category_default
+784,Bang Na District,ศูนย์การค้าลาซาลสแควร์,market,low,none,0.0,1.2,1,40713.92551832012,Polygon,630.097641916443,Si La Salle,16.730954912626892,1.9,43.09,,osm_category_default
+583,Bang Na District,โรงเรียนนานาชาติเบิร์คลีย์,school,low,none,0.0,1.0,6,40528.63761127184,Polygon,887.0954014548211,Udom Suk,16.730954912626892,1.9,43.09,,osm_category_default
+536,Bang Sue District,โรงเรียนโยธินบูรณะ,school,low,none,0.5,1.0,2,40369.633670464034,Polygon,791.6398980758001,Bang Pho,16.59413937857211,3.2,44.7,,osm_category_default
+540,Dusit District,ศูนย์บริการสาธารณสุข 6,health_centre,low,oversized_parcel,0.0,196.3,1,39720.99353294676,Polygon,1701.2877052464348,Ratchathewi,15.140222506111774,2.6,43.49,กรุงเทพมหานคร,osm_operator_tag
+400,Khlong San District,,park,low,none,0.0,4.1,1,39549.97598286657,Polygon,840.946528598271,Sanam Chai,3.432735525625637,1.9,42.91,,osm_category_default
+727,Bang Phlat District,โรงเรียนวัดเทพากร (เลี่ยมมาตุทิศ),school,low,oversized_parcel,16.6,20.6,1,39000.65378501153,Polygon,710.3690866547282,Bang Phlat,5.343934684605851,2.5,43.59,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+551,Bang Na District,โรงเรียนนานาชาติเซนต์แอนดรูส์ สุขุมวิท,school,low,none,0.0,1.2,7,38968.01371167636,Polygon,106.6965946970444,Bearing,16.730954912626892,1.9,43.09,Cognita,osm_category_default
+373,Chatuchak District,อุทยานพรรณไม้ในเพลงพระราชนิพนธ์ สมเด็จพระเทพรัตนราชสุดา ฯ สยามบรมราชกุมารี,park,low,none,0.0,7.5,1,38670.111832202034,Polygon,1401.020836118562,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+342,Yan Nawa District,โรงเรียนนนทรีวิทยา,school,high,none,0.0,1.0,3,38514.41931175962,Polygon,1833.438676696677,Khlong Toei,71.17195774707528,1.5,41.6,สำนักงานเขตพื้นที่การศึกษามัธยมศึกษา กรุงเทพมหานคร เขต 2,osm_operator_tag
+616,Chatuchak District,โรงเรียนอนุบาลคหกรรมศาสตร์,school,low,oversized_parcel,0.0,19.5,1,38428.02072381287,Polygon,781.0118895773192,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+240,Chatuchak District,,school,low,oversized_parcel,0.0,,1,38028.66784046253,Point,1268.227357151217,Ratchayothin,7.512476021659428,3.1,44.35,,osm_category_default
+351,Chatuchak District,โรงเรียนหอวัง,school,low,none,0.7,1.0,6,37958.20867331506,Polygon,225.53975504269104,Ha Yaek Lat Phrao,7.512476021659428,3.1,44.35,,osm_category_default
+701,Din Daeng District,โรงเรียนวิชากร กรุงเทพมหานคร,school,high,none,0.0,4.1,1,37931.115839997045,Polygon,1469.7880303741672,Sanam Pao,39.43490169368372,2.7,44.25,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+443,Phra Nakhon District,โรงเรียนสวนกุหลาบวิทยาลัย,school,low,none,0.0,1.3,10,37913.83467802185,Polygon,396.77356967940335,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+256,Sathon District,สถานีดับเพลิงและหน่วยกู้ภัยทุ่งมหาเมฆ,fire_station,low,oversized_parcel,0.0,20.9,1,37844.018869413616,MultiPolygon,1506.9707288010352,Lumphini,66.31155084548975,2.0,42.49,,osm_category_default
+705,Din Daeng District,กองการกีฬา,government_office,low,oversized_parcel,0.0,11.6,1,37825.03114885198,Polygon,1439.3072113235976,Phra Ram 9,39.43490169368372,2.7,44.25,,osm_category_default
+702,Din Daeng District,ศาลาว่าการกรุงเทพมหานคร 2,district_office,high,none,0.0,6.7,1,37735.3267135199,Polygon,1356.2296955693198,Sanam Pao,39.43490169368372,2.7,44.25,,osm_category_default
+370,Chatuchak District,,park,low,oversized_parcel,0.0,12.0,1,37660.61916652185,Polygon,191.14877976676132,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+462,Chatuchak District,Suan Lum Night Bazaar,market,low,none,0.0,2.4,1,37304.399206994385,Polygon,396.5056051006837,Lat Phrao,7.512476021659428,3.1,44.35,,osm_category_default
+45,Bang Rak District,โรงเรียนอัสสัมชัญคอนแวนต์,school,low,oversized_parcel,3.5,,1,37169.7875576705,Point,797.1686538759989,Charoen Nakhon,95.26537274363294,2.3,41.81,,osm_category_default
+493,Chatuchak District,SCB park main,park,low,oversized_parcel,0.0,19.5,1,36751.9561793485,Polygon,375.817237560123,Phahonyothin 24,7.512476021659428,3.1,44.35,,osm_category_default
+936,Khlong San District,โรงเรียนวัดพิชัยญาติ,school,low,temple_land;oversized_parcel,98.5,,1,36699.16262896411,Point,1213.0296553770365,Khlong San,3.432735525625637,1.9,42.91,BMA school registry (data.bangkok.go.th),bma_open_data
+760,Din Daeng District,สวน 15 นาที @ ดินแดง,park,low,oversized_parcel,0.0,17.6,1,36619.192742628635,Polygon,1342.4747903304808,Sutthisan,39.43490169368372,2.7,44.25,,osm_category_default
+724,Khlong Toei District,โรงเรียนพระหฤทัยคอนแวนต์,school,low,none,0.0,1.0,4,36311.3083693137,Polygon,486.5644549138278,Khlong Toei,32.04800465406342,1.5,42.1,,osm_category_default
+286,Phra Nakhon District,สวนสราญรมย์,park,low,none,0.1,1.1,1,36089.51153343031,Polygon,446.001071007023,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+954,Dusit District,โรงเรียนวัดเทวราชกุญชร,school,low,temple_land;oversized_parcel,39.2,,1,36040.153035019044,Point,1568.4020550738164,Sirindhorn,15.140222506111774,2.6,43.49,BMA school registry (data.bangkok.go.th),bma_open_data
+197,Din Daeng District,หอประชุมสภากรุงเทพมหานคร,government_office,low,oversized_parcel,0.0,,1,35666.027872069775,Point,1408.0076841752623,Sanam Pao,39.43490169368372,2.7,44.25,,osm_category_default
+31,Dusit District,สำนักเลขาธิการรัฐสภา,government_office,low,oversized_parcel,0.0,,1,35618.68137460884,Point,885.2756320576556,Bang O,15.140222506111774,2.6,43.49,,osm_category_default
+933,Khlong San District,โรงเรียนวัดเศวตฉัตร,school,low,temple_land;oversized_parcel,46.1,,1,35460.72092127447,Point,883.1604761149671,Krung Thon Buri,3.432735525625637,1.9,42.91,BMA school registry (data.bangkok.go.th),bma_open_data
+139,Ratchathewi District,Dermatology Clinic (Piel Clinic),health_centre,low,oversized_parcel,0.0,,1,33675.42782820226,Point,232.2418134370219,Victory Monument,3.519620160749606,2.6,42.85,,osm_category_default
+530,Chatuchak District,สถาบันสารสนเทศทรัพยากรน้ำ (องค์การมหาชน),government_office,high,none,0.0,2.9,1,33653.25861250079,Polygon,832.014833142649,Royal Forest Department,7.512476021659428,3.1,44.35,901 ถนน งามวงศ์วาน แขวง ลาดยาว เขต จตุจักร กรุงเทพมหานคร,osm_operator_tag
+950,Samphanthawong District,โรงเรียนวัดจักรวรรดิ์,school,low,oversized_parcel,0.0,,1,33587.61647570434,Point,592.0930626901455,Sam Yot,1.3497852761115583,2.3,42.72,BMA school registry (data.bangkok.go.th),bma_open_data
+428,Dusit District,หอสมุดแห่งชาติ,library,low,none,0.0,1.2,1,33133.2829091747,Polygon,1771.4402984197245,Sirindhorn,15.140222506111774,2.6,43.49,,osm_category_default
+869,Vadhana District,ตลาดพระโขนง,market,low,none,0.0,0.9,363,33114.73707946805,Polygon,619.596500592816,Phra Khanong,14.147439509302414,2.0,42.2,,osm_category_default
+299,Sathon District,โรงเรียนอัสสัมชัญ แผนกประถม,school,low,none,0.0,1.6,1,32855.40558269696,Polygon,1760.8208354434646,Sam Yan,66.31155084548975,2.0,42.49,,osm_category_default
+768,Dusit District,,park,low,oversized_parcel,0.0,11.1,1,32838.841768520455,Polygon,1616.5411275340784,Tao Poon,15.140222506111774,2.6,43.49,,osm_category_default
+133,Bang Rak District,Bangkok skin & laser clinic,health_centre,low,oversized_parcel,0.7,,1,32678.04793425177,Point,328.7403073842568,Si Lom,95.26537274363294,2.3,41.81,,osm_category_default
+365,Khlong San District,สวนป่าเฉลิมพระเกียรติ,park,low,none,0.0,1.2,1,32608.725501462046,Polygon,736.803927647126,Krung Thon Buri,3.432735525625637,1.9,42.91,,osm_category_default
+376,Chatuchak District,,park,low,none,0.0,6.1,1,32595.939014339474,Polygon,1307.3509843839472,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+740,Thon Buri District,โรงเรียนวัดอินทาราม,school,low,temple_land,70.9,6.0,1,32471.073794401982,Polygon,556.8704008033279,Pho Nimit,0.4552733595031658,1.7,43.87,,osm_category_default
+789,Yan Nawa District,โรงเรียนวัดช่องนนทรี,school,high,none,12.8,5.6,1,32379.203988850004,Polygon,3351.233298935451,Khlong Toei,71.17195774707528,1.5,41.6,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+410,Vadhana District,โรงเรียนนานาชาติเอกมัย,school,low,none,0.0,1.3,13,32330.510434256517,Polygon,1482.271312045362,Ekkamai BTS Station,14.147439509302414,2.0,42.2,,osm_category_default
+729,Bang Phlat District,โรงเรียนวัดบวรมงคล,school,low,none,0.0,2.3,1,32217.986476430582,Polygon,836.9985355656996,Sirindhorn,5.343934684605851,2.5,43.59,,osm_category_default
+533,Din Daeng District,ตลาดนัดเรนโบว์,market,low,none,0.0,1.0,4,32131.616007197757,Polygon,1094.1197453349862,Thailand Cultural Centre,39.43490169368372,2.7,44.25,,osm_category_default
+273,Dusit District,กองบัญชาการตำรวจนครบาล,government_office,low,none,0.0,8.8,1,31900.493262306114,Polygon,2475.4033509854735,Sam Yot,15.140222506111774,2.6,43.49,,osm_category_default
+306,Ratchathewi District,สวนสันติภาพ,park,low,none,0.0,1.1,1,31841.735700679696,Polygon,416.5992959558671,Victory Monument,3.519620160749606,2.6,42.85,,osm_category_default
+775,Phra Nakhon District,ตลาดส่งเสริมเกษตรไทย,market,low,none,0.0,1.1,198,31636.940306596123,Polygon,222.895597800327,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+308,Sathon District,โรงเรียนโกศลภัทรวิทย์,school,low,none,0.3,0.9,1,31497.540159142856,Polygon,1523.5236437653211,Charoen Nakhon,66.31155084548975,2.0,42.49,,osm_category_default
+935,Khlong San District,โรงเรียนวัดทองนพคุณ,school,low,temple_land;oversized_parcel,63.1,,1,31190.78758423517,Point,257.90148850435924,Khlong San,3.432735525625637,1.9,42.91,BMA school registry (data.bangkok.go.th),bma_open_data
+384,Phaya Thai District,โรงเรียนสามเสนวิทยาลัย,school,low,none,0.0,1.0,3,31047.406498967386,Polygon,1318.730989021109,Ari,24.15944885836817,2.8,44.04,,osm_category_default
+244,Dusit District,ตลาดผลไม้สะพานขาว,market,low,none,0.0,6.7,1,30693.56705066192,Polygon,1711.782771285481,Ratchathewi,15.140222506111774,2.6,43.49,,osm_category_default
+865,Bang Phlat District,สวนวัดอาวุธฯ,park,low,temple_land;oversized_parcel,59.8,10.0,1,30638.045289323065,Polygon,288.4543553772884,Bang Phlat,5.343934684605851,2.5,43.59,,osm_category_default
+224,Phra Nakhon District,ห้องสมุดปรีดี พนมยงค์,library,low,oversized_parcel,0.0,,1,30596.53538163841,Point,1589.9642121331494,Sanam Chai,10.073902842536365,2.3,43.21,Thammasat University,osm_category_default
+318,Thon Buri District,โรงเรียนมัธยมสาธิตมหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา,school,low,oversized_parcel,0.8,42.3,1,30428.510102405588,Polygon,721.0164520363068,Itsaraphap,0.4552733595031658,1.7,43.87,,osm_category_default
+670,Khlong Toei District,สวนเฉลิมพระเกียรติสมเด็จย่า,park,low,none,0.0,2.2,6,30277.45708099436,Polygon,657.9569572126699,Khlong Toei,32.04800465406342,1.5,42.1,,osm_category_default
+312,Khlong Toei District,โรงเรียนสายน้ำผึ้ง,school,low,none,0.0,1.9,5,30272.92876090753,Polygon,623.899573123291,Phrom Phong,32.04800465406342,1.5,42.1,,osm_category_default
+944,Phra Nakhon District,โรงเรียนวัดอินทรวิหาร,school,low,temple_land;oversized_parcel,49.1,,1,29858.369888296853,Point,2155.8151409697675,Sirindhorn,10.073902842536365,2.3,43.21,BMA school registry (data.bangkok.go.th),bma_open_data
+732,Bang Phlat District,โรงเรียนเขมะสิริอนุสสรณ์,school,low,none,0.0,1.0,15,29612.628931715837,Polygon,494.87567521494657,Sirindhorn,5.343934684605851,2.5,43.59,,osm_category_default
+500,Vadhana District,โรงเรียนเกษมพิทยา,school,low,none,0.0,1.0,80,29352.44911955309,Polygon,1422.623228484,Ramkhamhaeng,14.147439509302414,2.0,42.2,,osm_category_default
+298,Pathum Wan District,โรงเรียนมาแตร์เดอีวิทยาลัย,school,low,none,0.0,1.0,3,28798.08866770332,Polygon,128.45156463038077,Chit Lom,8.958127403648023,2.4,41.82,,osm_category_default
+186,Chatuchak District,ตลาดนัดเลียบด่วนแดนเนรมิต,market,low,oversized_parcel,0.0,,1,28739.45905525436,Point,361.0038009903993,Phahonyothin 24,7.512476021659428,3.1,44.35,,osm_category_default
+495,Ratchathewi District,Neoroscience's Park,park,low,oversized_parcel,0.0,15.7,1,28735.65257066943,Polygon,1276.5324564964196,Victory Monument,3.519620160749606,2.6,42.85,,osm_category_default
+245,Chatuchak District,สถาบันพัฒนาข้าราชการตำรวจ,government_office,low,oversized_parcel,0.0,15.4,1,28624.777187501048,Polygon,1377.9717947417973,Ratchayothin,7.512476021659428,3.1,44.35,,osm_category_default
+174,Bang Rak District,,library,low,oversized_parcel,1.2,,1,28547.394090480568,Point,632.4022032893906,Charoen Nakhon,95.26537274363294,2.3,41.81,,osm_category_default
+566,Bang Na District,ตลาดนัดแอทแบริ่ง,market,low,none,0.0,2.5,1,28547.282834917707,Polygon,1989.2307434441957,Si Bearing,16.730954912626892,1.9,43.09,,osm_category_default
+948,Pathum Wan District,โรงเรียนวัดปทุมวนาราม ในพระบรมราชูปถัมภ์สมเด็จพระเทพรัตนราชสุดาฯ สยามบรมราชกุมารี,school,low,temple_land;oversized_parcel,100.0,,1,28514.841817195418,Point,274.9749412054608,Siam,8.958127403648023,2.4,41.82,BMA school registry (data.bangkok.go.th),bma_open_data
+913,Sathon District,โรงเรียนวัดดอน,school,low,temple_land;oversized_parcel,52.1,,1,28301.02778917392,Point,1667.5312152181982,Charoen Nakhon,66.31155084548975,2.0,42.49,BMA school registry (data.bangkok.go.th),bma_open_data
+27,Chatuchak District,Bon Marché Market Park,market,low,oversized_parcel,0.0,,1,28276.52953645863,Point,2255.6246523352247,Ratchayothin,7.512476021659428,3.1,44.35,,osm_category_default
+506,Bang Sue District,โรงเรียนวัดสร้อยทอง,school,low,temple_land,72.3,6.3,1,28215.231110192926,Polygon,799.7733514333855,Bang Pho,16.59413937857211,3.2,44.7,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+934,Khlong San District,โรงเรียนวัดทองธรรมชาติ,school,low,temple_land;oversized_parcel,83.1,,1,28154.033294549252,Point,419.2054431591964,Khlong San,3.432735525625637,1.9,42.91,BMA school registry (data.bangkok.go.th),bma_open_data
+545,Chatuchak District,สวนวรุณาวัน,park,low,none,0.0,0.8,3,28088.564228729807,Polygon,1589.5723076669174,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+218,Dusit District,,market,low,oversized_parcel,0.0,,1,28014.315408100152,Point,1550.6881921874417,Ratchathewi,15.140222506111774,2.6,43.49,,osm_category_default
+914,Sathon District,โรงเรียนวัดยานนาวา,school,low,temple_land;oversized_parcel,65.5,,1,27849.379839906163,Point,1095.640606919872,Charoen Nakhon,66.31155084548975,2.0,42.49,BMA school registry (data.bangkok.go.th),bma_open_data
+253,Vadhana District,Bangkok Prep,school,low,none,0.0,0.8,7,27763.175054492203,MultiPolygon,1088.04800523294,On Nut,14.147439509302414,2.0,42.2,,osm_category_default
+275,Bang Rak District,โรงเรียนกรุงเทพคริสเตียนวิทยาลัย,school,low,none,0.0,1.0,9,27631.793803084063,MultiPolygon,1465.749741669044,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
+940,Phra Nakhon District,โรงเรียนวัดตรีทศเทพ,school,low,temple_land;oversized_parcel,69.0,,1,27628.22826218311,Point,1689.0559106793894,Sam Yot,10.073902842536365,2.3,43.21,BMA school registry (data.bangkok.go.th),bma_open_data
+758,Din Daeng District,สำนักการวางผังและพัฒนาเมือง,government_office,low,oversized_parcel,5.5,14.4,1,27464.830369105926,Polygon,1119.1789802000806,Sanam Pao,39.43490169368372,2.7,44.25,,osm_category_default
+755,Din Daeng District,,government_office,low,oversized_parcel,0.0,37.4,1,27461.871475782835,Polygon,1356.9356011551577,Sanam Pao,39.43490169368372,2.7,44.25,,osm_category_default
+905,Bang Phlat District,โรงเรียนวัดวิมุตยาราม,school,low,temple_land;oversized_parcel,54.6,,1,27309.66166920522,Point,839.6753222758081,Bang Pho,5.343934684605851,2.5,43.59,BMA school registry (data.bangkok.go.th),bma_open_data
+456,Din Daeng District,,park,low,oversized_parcel,0.0,111.3,1,27179.300222333077,Polygon,884.8027504242383,Sutthisan,39.43490169368372,2.7,44.25,,osm_category_default
+508,Chatuchak District,สำนักงานมาตรฐานสินค้าเกษตรและอาหารแห่งชาติ (มกอช.),government_office,low,none,0.0,1.6,1,27177.26232419004,Polygon,886.0853969697985,Royal Forest Department,7.512476021659428,3.1,44.35,,osm_category_default
+946,Pathum Wan District,โรงเรียนวัดบรมนิวาส,school,low,temple_land;oversized_parcel,90.1,,1,27156.547287705507,Point,1302.0872036693063,Ratchathewi,8.958127403648023,2.4,41.82,BMA school registry (data.bangkok.go.th),bma_open_data
+518,Ratchathewi District,วิทยาลัยเทคโนโลยีดอนบอสโก,school,low,none,8.9,1.0,4,27131.241340571254,Polygon,296.29697946377695,Makkasan,3.519620160749606,2.6,42.85,,osm_category_default
+258,Dusit District,โรงเรียนราชินีบน,school,low,none,0.0,1.0,15,27021.13525131632,MultiPolygon,956.5372052555074,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+345,Bang Phlat District,สวนหลวงพระราม 8,park,low,none,0.0,0.9,41,26859.28518855654,Polygon,1404.3063225048809,Bang Yi Khan,5.343934684605851,2.5,43.59,,osm_category_default
+703,Din Daeng District,สำนักงานเขตดินแดง,government_office,low,oversized_parcel,0.0,12.2,1,26858.118567867557,Polygon,1227.7495654121167,Sanam Pao,39.43490169368372,2.7,44.25,,osm_category_default
+715,Yan Nawa District,โรงเรียนสารสาสน์เอกตรา,school,low,none,0.0,1.0,22,26757.92900424215,Polygon,3660.135470267433,Lumphini,71.17195774707528,1.5,41.6,,osm_category_default
+427,Bang Rak District,โรงเรียนเซนต์โยเซฟคอนเวนต์,school,low,none,0.0,1.0,1,26746.432131303707,Polygon,412.2445919622151,Si Lom,95.26537274363294,2.3,41.81,,osm_category_default
+367,Ratchathewi District,โรงเรียนศรีอยุธยา,school,low,none,0.0,1.0,1,26680.700408154004,Polygon,512.4502496130843,Victory Monument,3.519620160749606,2.6,42.85,,osm_category_default
+250,Pom Prap Sattru Phai District,คลองถม เซ็นเตอร์,market,low,none,0.0,3.7,1,26594.84610719199,MultiPolygon,502.8471873850996,Sam Yot,2.5132994081199342,2.5,44.33,,osm_category_default
+212,Thon Buri District,ตลาดวัดกลาง,market,low,temple_land;oversized_parcel,38.1,,1,26518.495183772087,Point,633.6815199672326,Pho Nimit,0.4552733595031658,1.7,43.87,,osm_category_default
+666,Bang Kho Laem District,โรงเรียนวัดไผ่เงินโชตนาราม,school,low,temple_land,76.0,6.6,1,26439.104650266283,Polygon,3163.353329653118,Krung Thon Buri,43.05120204584554,1.6,42.48,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+311,Vadhana District,โรงเรียนวัดใต้,school,high,none,1.7,3.5,1,25892.530208100074,Polygon,931.7889900564079,On Nut,14.147439509302414,2.0,42.2,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+584,Bang Na District,,park,low,oversized_parcel,0.0,13.7,1,25869.27619868361,Polygon,379.4023682169852,Udom Suk,16.730954912626892,1.9,43.09,,osm_category_default
+444,Bang Na District,International Community School,school,low,none,0.0,0.9,2,25869.23220767842,Polygon,777.4834585143733,Si Iam,16.730954912626892,1.9,43.09,,osm_category_default
+849,Chatuchak District,อมรพันธ์,market,low,none,0.0,1.0,253,25832.74181816249,Polygon,344.1071796330537,Sena Nikhom,7.512476021659428,3.1,44.35,,osm_category_default
+375,Chatuchak District,สำนักงานปรมาณูเพื่อสันติ,government_office,low,none,0.0,1.3,1,25706.466602557106,Polygon,1657.0523272292412,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+614,Thon Buri District,โรงเรียนศึกษานารี,school,low,none,0.0,1.8,1,25662.55443850652,Polygon,1044.9026378352928,Sanam Chai,0.4552733595031658,1.7,43.87,,osm_category_default
+211,Thon Buri District,โรงเรียนซางตาครู้สศึกษา,school,low,oversized_parcel,2.8,,1,25520.839503837127,Point,593.7065893436783,Sanam Chai,0.4552733595031658,1.7,43.87,,osm_category_default
+439,Dusit District,กองอำนวยการรักษาความมั่นคงภายในราชอาณาจักร,government_office,low,none,0.0,2.3,1,25109.204693278538,Polygon,1635.736295836292,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+32,Chatuchak District,ตลาดประชานิเวศน์ 1,market,low,oversized_parcel,0.0,,1,24982.837945669697,Point,2384.802301266172,Wong Sawang,7.512476021659428,3.1,44.35,,osm_category_default
+455,Din Daeng District,ตลาดนัดรถไฟรัชดา,market,low,none,0.0,1.0,2,24807.70467377616,Polygon,185.63512415933036,Thailand Cultural Centre,39.43490169368372,2.7,44.25,,osm_category_default
+814,Dusit District,,school,low,none,0.0,4.3,1,24652.696819587585,Polygon,1770.246569356846,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+606,Bang Rak District,สวนสาธารณะคลองช่องนนทรี (เฟส 2),park,low,none,0.0,5.8,2,24464.346752182115,Polygon,582.1076499249518,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
+728,Bang Phlat District,โรงเรียนวัดคฤหบดี (จันทรสถิตย์),school,low,temple_land,54.8,7.0,1,24362.979843542562,Polygon,1299.1106973030376,Bang Yi Khan,5.343934684605851,2.5,43.59,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+577,Yan Nawa District,,health_centre,low,oversized_parcel,0.0,94.7,1,24277.243539992596,Polygon,2592.6996536405104,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+711,Din Daeng District,ตลาดขวัญพัฒนา,market,low,oversized_parcel,0.0,11.2,1,23951.08842281154,Polygon,710.407233000321,Phra Ram 9,39.43490169368372,2.7,44.25,,osm_category_default
+757,Samphanthawong District,โรงเรียนไตรมิตรวิทยาลัย,school,low,temple_land,53.9,6.6,2,23829.676754092547,Polygon,354.5578488858934,Hua Lamphong,1.3497852761115583,2.3,42.72,,osm_category_default
+152,Phra Nakhon District,,market,low,temple_land;oversized_parcel,98.2,,1,23805.739412402807,Point,890.5949864235992,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+529,Din Daeng District,สวนป่าวิภาวดีรังสิต,park,low,none,0.0,1.6,1,23736.701318949883,Polygon,1173.9978311176103,Sanam Pao,39.43490169368372,2.7,44.25,,osm_category_default
+9,Thon Buri District,สำนักงานเขตธนบุรี,district_office,low,temple_land;oversized_parcel,68.1,,1,23455.02327441814,Point,719.9187521643746,Pho Nimit,0.4552733595031658,1.7,43.87,,osm_category_default
+155,Dusit District,ตลาดวัดน้อยนพคุณ,market,low,temple_land;oversized_parcel,47.3,,1,23361.87565081755,Point,1967.1621118735538,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+761,Vadhana District,โรงเรียนนานาชาติแอ๊ดเวนตีสกรุงเทพ,school,low,none,1.0,6.1,1,23335.759731506176,Polygon,1362.2392177950856,Ramkhamhaeng,14.147439509302414,2.0,42.2,,osm_category_default
+316,Phra Nakhon District,หอสมุดเมืองกรุงเทพมหานคร,library,low,oversized_parcel,0.0,14.4,1,23153.64293508089,Polygon,1361.5717695972116,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+700,Din Daeng District,โรงเรียนฝึกอาชีพกรุงเทพมหานคร,school,low,none,0.0,1.6,1,23076.69475563039,Polygon,1457.2944557207568,Thailand Cultural Centre,39.43490169368372,2.7,44.25,,osm_category_default
+613,Khlong San District,โรงเรียนวัดสุวรรณ,school,low,temple_land,39.7,7.0,1,23071.46034262558,Polygon,268.2234661778675,Charoen Nakhon,3.432735525625637,1.9,42.91,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+559,Ratchathewi District,โรงเรียนสันติราษฎร์วิทยาลัย,school,low,none,0.0,1.0,1,23051.506279185982,Polygon,273.8281632851646,Phaya Thai,3.519620160749606,2.6,42.85,,osm_category_default
+880,Phra Nakhon District,โรงเรียนวัดมหรรณพาราม,school,low,temple_land;oversized_parcel,96.5,12.3,1,22956.974602035916,Polygon,913.0693299610058,Sam Yot,10.073902842536365,2.3,43.21,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+448,Dusit District,กรมป้องกันและบรรเทาสาธารณภัย,government_office,low,none,0.0,4.4,1,22932.236227374226,Polygon,2031.6783370128735,Sirindhorn,15.140222506111774,2.6,43.49,กระทรวงมหาดไทย,osm_category_default
+726,Bang Phlat District,โรงเรียนวัดบางพลัด (ป.สุวณโณ),school,low,temple_land,37.2,5.8,1,22785.374862841825,Polygon,636.3614748060663,Bang Phlat,5.343934684605851,2.5,43.59,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+265,Thon Buri District,โรงเรียนวัดราชคฤห์,school,low,temple_land;oversized_parcel,61.7,12.5,1,22418.16690965855,MultiPolygon,767.3298137438874,Pho Nimit,0.4552733595031658,1.7,43.87,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+556,Khlong Toei District,การไฟฟ้านครหลวงสำนักงานใหญ่คลองเตย,government_office,low,none,0.1,2.9,1,22405.107904319826,Polygon,152.77307299963428,Khlong Toei,32.04800465406342,1.5,42.1,,osm_category_default
+851,Chatuchak District,โคลัมเบีย,market,low,none,0.0,1.0,220,22260.39107352317,Polygon,407.37536759866447,Sena Nikhom,7.512476021659428,3.1,44.35,,osm_category_default
+751,Phaya Thai District,ส่วนก่อสร้างและบูรณะ 1,government_office,low,oversized_parcel,0.0,71.9,1,22113.400670246036,Polygon,1203.7105203807948,Sanam Pao,24.15944885836817,2.8,44.04,,osm_category_default
+163,Pathum Wan District,ออล ซีซั่น เพลส คอนราด บอลรูม,community_centre,low,oversized_parcel,0.0,,1,22069.761729770253,Point,459.9776706855221,Phloen Chit,8.958127403648023,2.4,41.82,,osm_category_default
+892,Chatuchak District,สำนักงานอัยการสูงสุด,government_office,low,none,0.0,6.0,1,22005.0123434853,Polygon,1007.8388717406281,Phahonyothin 24,7.512476021659428,3.1,44.35,,osm_category_default
+951,Bang Rak District,โรงเรียนวัดมหาพฤฒาราม,school,low,temple_land;oversized_parcel,79.3,,1,21894.394052239433,Point,522.1957423404959,Hua Lamphong,95.26537274363294,2.3,41.81,BMA school registry (data.bangkok.go.th),bma_open_data
+871,Sathon District,สวนใต้ด่วนซอยอยู่ดี,park,low,none,0.0,2.1,8,21490.36222591383,Polygon,2422.3146955207126,Krung Thon Buri,66.31155084548975,2.0,42.49,,osm_category_default
+330,Phaya Thai District,สวนพญาไทภิรมย์,park,low,none,0.0,1.0,82,21464.38937591488,Polygon,1069.8625726817686,Sanam Pao,24.15944885836817,2.8,44.04,,osm_category_default
+838,Chatuchak District,โรงเรียนธัชรินทร์วิทยา,school,low,none,0.0,1.0,37,21195.325234565138,Polygon,976.6509758153211,Ha Yaek Lat Phrao,7.512476021659428,3.1,44.35,,osm_category_default
+655,Sathon District,โรงเรียนสตรีศรีสุริโยทัย,school,low,none,0.0,2.9,1,21114.22088769927,Polygon,1377.3663627530682,Charoen Nakhon,66.31155084548975,2.0,42.49,,osm_category_default
+402,Sathon District,โรงเรียนวัดสุทธิวราราม,school,low,none,0.0,1.9,1,21078.988494795052,Polygon,1302.3170449848958,Krung Thon Buri,66.31155084548975,2.0,42.49,,osm_category_default
+904,Bang Phlat District,โรงเรียนวัดฉัตรแก้วจงกลณี,school,low,temple_land;oversized_parcel,45.7,,1,21075.07949314828,Point,538.8230328685911,Bang O,5.343934684605851,2.5,43.59,BMA school registry (data.bangkok.go.th),bma_open_data
+884,Bang Phlat District,,market,low,temple_land,44.6,8.4,1,21059.691528252595,Polygon,761.4956770203084,Bang Phlat,5.343934684605851,2.5,43.59,,osm_category_default
+815,Chatuchak District,โรงเรียนมัธยมประชานิเวศน์,school,low,none,0.0,1.3,2,20866.608288809563,Polygon,2630.467813486538,Wong Sawang,7.512476021659428,3.1,44.35,,osm_category_default
+555,Chatuchak District,ฝ่ายวิจัยและพัฒนาอุตสาหกรรมยาง การยางแห่งประเทศไทย บางเขน,government_office,low,none,0.0,2.9,1,20647.342498839807,Polygon,425.6894762649976,Royal Forest Department,7.512476021659428,3.1,44.35,,osm_category_default
+656,Sathon District,โรงเรียนนิพัทธ์วิทยา,school,low,none,0.0,1.6,1,20589.982699775497,Polygon,1684.7213059735714,Charoen Nakhon,66.31155084548975,2.0,42.49,,osm_category_default
+661,Bang Rak District,,community_centre,low,oversized_parcel,0.0,81.8,1,20229.561734370345,Polygon,618.1347916777718,Si Lom,95.26537274363294,2.3,41.81,,osm_category_default
+221,Khlong Toei District,,market,low,oversized_parcel,0.0,,1,20183.34851551728,Point,58.16095445653208,On Nut,32.04800465406342,1.5,42.1,,osm_category_default
+746,Yan Nawa District,สวนศิลาฤกษ์,park,low,none,0.0,1.1,7,20178.895846986874,Polygon,5837.583545980402,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+738,Yan Nawa District,โรงเรียนวัดคลองภูมิ,school,low,temple_land,64.7,5.2,1,19993.206134181237,Polygon,4600.967441927846,Khlong Toei,71.17195774707528,1.5,41.6,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+214,Yan Nawa District,,library,low,none,0.0,,1,19968.759249602746,Point,5824.6080161621185,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+362,Chatuchak District,โรงเรียนวัดเสมียนนารี,school,low,temple_land,79.9,4.1,2,19968.177028988823,Polygon,1882.4902366014455,Ratchayothin,7.512476021659428,3.1,44.35,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+598,Phaya Thai District,โรงเรียนรุจิเสรีวิทยา,school,low,none,0.0,1.0,23,19864.937875768977,Polygon,705.3683744357307,Sena Ruam,24.15944885836817,2.8,44.04,,osm_category_default
+621,Bang Rak District,โรงเรียนวัดหัวลำโพง,school,low,temple_land,87.1,9.2,1,19834.341042665095,Polygon,95.97973350922486,Sam Yan,95.26537274363294,2.3,41.81,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+520,Chatuchak District,โรงเรียนสตรีวรนารถ บางเขน,school,low,none,0.0,1.1,3,19810.951976131604,Polygon,215.1372696338074,Phahonyothin 24,7.512476021659428,3.1,44.35,,osm_category_default
+906,Bang Phlat District,โรงเรียนวัดรวก,school,high,none,10.9,,1,19798.085690309672,Point,463.06151002637625,Bang Yi Khan,5.343934684605851,2.5,43.59,BMA school registry (data.bangkok.go.th),bma_open_data
+744,Yan Nawa District,โรงเรียนวัดด่าน,school,low,temple_land,96.0,7.5,1,19727.888333722847,Polygon,5748.6325814763995,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+411,Vadhana District,โรงเรียนนานาชาติเซนต์แอนดรูวส์,school,low,none,0.0,1.0,25,19653.192888472804,Polygon,1192.2910888494646,Phra Khanong,14.147439509302414,2.0,42.2,,osm_category_default
+762,Din Daeng District,,park,low,oversized_parcel,0.0,15.9,1,19626.105018148774,Polygon,1320.2666731225754,Thailand Cultural Centre,39.43490169368372,2.7,44.25,,osm_category_default
+281,Phra Nakhon District,โรงเรียนราชินี,school,low,none,0.0,1.0,1,19569.614451851106,Polygon,212.7871980239929,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+461,Phaya Thai District,โรงเรียนวัดไผ่ตัน,school,low,temple_land,84.5,7.2,1,19303.43340371914,Polygon,249.34295641437708,Kamphaeng Phet,24.15944885836817,2.8,44.04,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+425,Phra Nakhon District,โรงเรียนวัดสังเวช,school,low,temple_land,45.6,2.6,1,19285.5932854167,Polygon,1950.119921161583,Bang Yi Khan,10.073902842536365,2.3,43.21,,osm_category_default
+11,Khlong San District,สำนักงานเขตคลองสาน,district_office,high,none,0.0,,1,19279.720549574045,Point,216.9496677347148,Khlong San,3.432735525625637,1.9,42.91,,osm_category_default
+58,Phra Nakhon District,็ต้นไม้รูปหัวใจ,park,low,none,0.0,,1,19215.137762292503,Point,1067.4008794107667,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+813,Bang Na District,สวนภูติอนันต์,park,low,none,0.0,0.6,2,19191.790334672725,Polygon,1431.2930618689127,Bearing,16.730954912626892,1.9,43.09,,osm_category_default
+916,Bang Kho Laem District,โรงเรียนวัดลาดบัวขาว,school,low,temple_land,38.6,,1,19184.17020619689,Point,2201.9972420348904,Wongwian Yai,43.05120204584554,1.6,42.48,BMA school registry (data.bangkok.go.th),bma_open_data
+292,Phra Nakhon District,พระปฐมบรมราชานุสรณ์เฉลิมพระเกียรติ,park,low,none,1.1,2.3,1,19136.682215237503,Polygon,512.2185631931707,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+390,Samphanthawong District,โรงเรียนวัดปทุมคงคา,school,low,temple_land,52.6,7.3,1,19133.436469450502,Polygon,575.8339591553881,Wat Mangkon,1.3497852761115583,2.3,42.72,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+915,Bang Kho Laem District,โรงเรียนวัดราชสิงขร,school,low,temple_land,67.3,,1,19059.961181854815,Point,1711.2514294843238,Krung Thon Buri,43.05120204584554,1.6,42.48,BMA school registry (data.bangkok.go.th),bma_open_data
+932,Thon Buri District,โรงเรียนวัดใหญ่ศรีสุพรรณ,school,high,none,0.0,,1,18966.94977349531,Point,1070.2445890156473,Wongwian Yai,0.4552733595031658,1.7,43.87,BMA school registry (data.bangkok.go.th),bma_open_data
+759,Din Daeng District,,government_office,low,oversized_parcel,0.0,12.4,1,18891.35328247798,Polygon,1116.335809139632,Sanam Pao,39.43490169368372,2.7,44.25,,osm_category_default
+707,Din Daeng District,โรงเรียนสามัคคีบํารุงวิทยา,school,low,none,0.0,5.4,1,18877.233959503486,Polygon,1392.6687791376512,Thailand Cultural Centre,39.43490169368372,2.7,44.25,,osm_category_default
+774,Yan Nawa District,โรงเรียนวัดปริวาส,school,low,temple_land,99.9,4.1,1,18735.86478737607,Polygon,5839.533541427808,Khlong Toei,71.17195774707528,1.5,41.6,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+458,Bangkok Yai District,,school,low,temple_land,61.4,5.9,1,18659.79232038188,Polygon,503.8206256568355,Bang Phai,17.88295316842188,1.9,44.11,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+532,Pathum Wan District,โรงเรียนวัดดวงแข,school,low,temple_land,47.3,8.5,1,18564.541128067413,Polygon,518.324581885875,Hua Lamphong,8.958127403648023,2.4,41.82,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+352,Vadhana District,สวนสมเด็จสราญราษฎร์มณีรมย์,park,low,none,2.8,1.2,1,18400.625804303803,Polygon,1160.680815361655,Ramkhamhaeng,14.147439509302414,2.0,42.2,,osm_category_default
+262,Din Daeng District,โรงเรียนแม่พระฟาติมา,school,low,none,3.5,1.0,2,18304.584692757115,MultiPolygon,1032.9282675058246,Phra Ram 9,39.43490169368372,2.7,44.25,,osm_category_default
+393,Bang Na District,โรงเรียนสิริรัตนาธร,school,low,none,0.0,1.0,1,18231.94214698022,Polygon,1656.8556898420613,Udom Suk,16.730954912626892,1.9,43.09,,osm_category_default
+447,Dusit District,โรงเรียนเซนต์คาเบรียล,school,low,none,0.0,0.9,4,18131.49223468702,Polygon,1673.14098361773,Sirindhorn,15.140222506111774,2.6,43.49,,osm_category_default
+117,Khlong Toei District,Rockademy,school,low,none,0.0,,1,18021.573800571303,Point,809.401033139523,Queen Sirikit National Convention Centre,32.04800465406342,1.5,42.1,,osm_category_default
+824,Dusit District,โรงเรียนวัดสวัสดิ์วารีสีมาราม,school,low,temple_land;oversized_parcel,45.5,15.8,1,18001.154728651112,Polygon,1716.299508658101,Bang Phlat,15.140222506111774,2.6,43.49,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+452,Din Daeng District,โรงเรียนกุนนทีรุทธารามวิทยาคม,school,low,none,0.0,1.4,1,17933.737327174214,Polygon,399.763886987183,Huai Khwang,39.43490169368372,2.7,44.25,,osm_category_default
+219,Phra Nakhon District,ห้องสมุดพระองค์เจ้าวิวัฒนไชย,library,low,none,0.0,,1,17845.71244514507,Point,1824.716593256998,Bang Yi Khan,10.073902842536365,2.3,43.21,,osm_category_default
+271,Dusit District,โรงเรียนราชวินิต,school,low,none,0.0,1.1,1,17805.305557200856,Polygon,2095.157345652977,Sirindhorn,15.140222506111774,2.6,43.49,,osm_category_default
+331,Chatuchak District,สวนสมเด็จย่า ๘๔,park,low,none,0.0,1.9,1,17743.6322221088,Polygon,244.13709834939422,Phahon Yothin,7.512476021659428,3.1,44.35,,osm_category_default
+878,Chatuchak District,สวนบ่อฝรั่ง,park,low,none,0.0,2.1,1,17610.056695654686,Polygon,1014.683575009948,Bang Son,7.512476021659428,3.1,44.35,,osm_category_default
+516,Chatuchak District,,community_centre,low,oversized_parcel,0.0,44.6,1,17547.387099508804,Polygon,125.2067073993504,Kamphaeng Phet,7.512476021659428,3.1,44.35,,osm_category_default
+497,Vadhana District,,park,low,oversized_parcel,0.0,12.4,1,17330.80386556493,Polygon,405.19722151270133,On Nut,14.147439509302414,2.0,42.2,,osm_category_default
+501,Khlong Toei District,โรงเรียนนานาชาติเซนต์แอนดรูว์ส,school,low,none,0.0,1.0,2,16999.485261238468,Polygon,338.240246712102,Ekkamai BTS Station,32.04800465406342,1.5,42.1,Nord Anglia Education,osm_category_default
+877,Khlong Toei District,Department of industrial promotion,government_office,low,none,0.0,2.5,2,16848.796700071653,Polygon,895.50917321841,Phra Khanong,32.04800465406342,1.5,42.1,,osm_category_default
+704,Din Daeng District,โรงเรียนวิชูทิศ,school,high,none,0.0,1.1,1,16814.860908286235,Polygon,1420.3000753732315,Phra Ram 9,39.43490169368372,2.7,44.25,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+29,Chatuchak District,ห้องสมุดและศูนย์สื่อการเรียนรู้,library,low,none,0.0,,1,16778.574663627605,Point,1315.1514009318587,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+44,Phra Nakhon District,Makalin Clinic,health_centre,medium,none,0.0,,1,16677.62760335616,Point,1905.3690839143458,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+81,Ratchathewi District,ศูนย์เทคโนโลยีทางการศึกษา,government_office,low,none,0.0,,1,16650.125881420587,Point,268.0071259195893,Phaya Thai,3.519620160749606,2.6,42.85,,osm_category_default
+547,Khlong Toei District,ตลาดสุนทรโกษา,market,low,oversized_parcel,0.0,13.4,1,16611.25555977984,Polygon,380.65662257953534,Queen Sirikit National Convention Centre,32.04800465406342,1.5,42.1,,osm_category_default
+912,Bang Sue District,โรงเรียนวัดบางโพโอมาวาส,school,low,temple_land,63.1,,1,16600.805525100677,Point,324.2003605030941,Bang Pho,16.59413937857211,3.2,44.7,BMA school registry (data.bangkok.go.th),bma_open_data
+160,Bang Na District,Supakunn Clinic,health_centre,medium,none,0.0,,1,16585.599532599233,Point,2000.4059174941574,Si La Salle,16.730954912626892,1.9,43.09,,osm_category_default
+719,Chatuchak District,,park,low,none,0.0,0.7,23,16440.36665722432,Polygon,1051.9462704307825,Royal Forest Department,7.512476021659428,3.1,44.35,,osm_category_default
+494,Chatuchak District,สวนสาธารณะหมู่บ้านซิเมนต์ไทย,park,low,none,0.0,1.1,1,16234.619687243461,Polygon,1818.219140293874,Bang Son,7.512476021659428,3.1,44.35,,osm_category_default
+635,Sathon District,โรงเรียนโสตศึกษาทุ่งมหาเมฆ,school,low,none,0.0,1.0,1,16200.134517200613,Polygon,1469.7978094511548,Si Lom,66.31155084548975,2.0,42.49,,osm_category_default
+800,Bang Na District,หน่วยบริการข้อมูลทางหลวง,government_office,low,oversized_parcel,0.0,17.1,1,16165.248928393885,Polygon,141.46716044226014,Si Iam,16.730954912626892,1.9,43.09,,osm_category_default
+737,Yan Nawa District,ศูนย์บริการสาธารณสุข 55,health_centre,low,temple_land;oversized_parcel,99.6,76.4,1,16075.00276284279,Polygon,4379.147929231576,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+793,Bang Na District,โรงเรียนเพี้ยนพินอนุสรณ์,school,high,none,0.0,1.0,1,15929.989242521315,Polygon,567.039589999535,Bearing,16.730954912626892,1.9,43.09,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+806,Dusit District,กรมส่งเสริมการปกครองท้องถิ่น,government_office,low,none,0.0,7.7,1,15872.426825952272,Polygon,2087.66567019591,Sirindhorn,15.140222506111774,2.6,43.49,,osm_category_default
+742,Thon Buri District,โรงเรียนวัดขุนจันทร์,school,low,temple_land;oversized_parcel,65.2,18.3,1,15858.461918024805,Polygon,819.9694225534198,Wutthakat,0.4552733595031658,1.7,43.87,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+527,Ratchathewi District,สวนรมย์ราชเทวี,park,low,none,0.0,0.9,42,15806.188381640506,Polygon,444.18819022899993,Ratchaprarop,3.519620160749606,2.6,42.85,,osm_category_default
+442,Phra Nakhon District,โรงเรียนวัดราชบพิธ,school,low,none,0.0,0.9,2,15729.886063651313,Polygon,43.598182411276156,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+97,Vadhana District,,market,low,none,0.0,,1,15665.335702417395,Point,1662.3499339173786,Ramkhamhaeng,14.147439509302414,2.0,42.2,,osm_category_default
+807,Dusit District,,park,low,oversized_parcel,0.0,14.8,1,15649.932611716296,Polygon,1773.4162474211203,Sirindhorn,15.140222506111774,2.6,43.49,,osm_category_default
+302,Yan Nawa District,โรงเรียนประถมนนทรี,school,low,none,0.0,1.0,8,15351.658353406343,Polygon,1044.7930023389774,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+499,Ratchathewi District,โรงเรียนเซนต์ดอมินิก,school,low,none,0.0,1.0,4,15257.96664920687,Polygon,360.64329864061244,Makkasan,3.519620160749606,2.6,42.85,,osm_category_default
+525,Pom Prap Sattru Phai District,โรงเรียนวัดพลับพลาชัย,school,low,temple_land,60.8,4.8,1,15220.37967107396,Polygon,485.6133064739724,Wat Mangkon,2.5132994081199342,2.5,44.33,,osm_category_default
+377,Phra Nakhon District,,park,low,oversized_parcel,0.0,302.6,1,15189.318565399992,Polygon,978.9538782390815,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+523,Phra Nakhon District,โรงเรียนสตรีวิทยา,school,low,none,0.0,1.1,1,15134.043482576319,Polygon,1214.1713723777932,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+713,Din Daeng District,จ๊อดแฟร์ รัชดา,market,low,none,0.0,1.7,9,15124.508960346178,Polygon,249.8640906428023,Thailand Cultural Centre,39.43490169368372,2.7,44.25,,osm_category_default
+143,Bang Kho Laem District,สำนักวัณโรค,government_office,low,none,0.0,,1,15123.870644783796,Point,2397.7277717868074,Krung Thon Buri,43.05120204584554,1.6,42.48,,osm_category_default
+790,Chatuchak District,,library,low,oversized_parcel,0.0,96.8,1,15120.282668618709,Polygon,439.5415109137556,Ratchadaphisek,7.512476021659428,3.1,44.35,,osm_category_default
+624,Bang Kho Laem District,โรงเรียนเปรมฤดีศึกษา,school,low,none,4.3,1.0,10,15075.669242597658,Polygon,3490.710402106854,Krung Thon Buri,43.05120204584554,1.6,42.48,,osm_category_default
+687,Bang Rak District,โรงเรียนสตรีวัดมหาพฤฒาราม,school,low,none,0.3,1.5,1,15034.745734509368,Polygon,630.9646659426068,Hua Lamphong,95.26537274363294,2.3,41.81,,osm_category_default
+685,Phra Nakhon District,,park,low,none,2.1,6.7,1,15000.977902648134,Polygon,514.315985265666,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+471,Bang Phlat District,โรงเรียนวิมุตยารามพิทยากร,school,low,none,4.8,0.8,2,14969.490837202102,Polygon,958.5823055926489,Bang Pho,5.343934684605851,2.5,43.59,,osm_category_default
+803,Bang Sue District,โรงเรียนวัดประชาศรัทธาธรรม,school,low,temple_land,80.4,6.3,1,14968.7307942084,Polygon,1360.0326671483217,Bang Pho,16.59413937857211,3.2,44.7,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+226,Khlong Toei District,BeautUp Clinic Thonglo,health_centre,medium,none,0.0,,1,14901.819428402478,Point,303.7339198950808,Thong Lo,32.04800465406342,1.5,42.1,BeautUp Clinic,osm_category_default
+837,Bang Sue District,โรงเรียนโยธินบูรณะ 2 (สุวรรณสุทธาราม),school,low,none,0.0,1.6,1,14692.243504719858,Polygon,484.73757737548306,Wong Sawang,16.59413937857211,3.2,44.7,,osm_category_default
+587,Bangkok Yai District,,park,low,temple_land,53.3,4.9,1,14626.065410157036,Polygon,349.904609212967,Itsaraphap,17.88295316842188,1.9,44.11,,osm_category_default
+242,Phra Nakhon District,สำนักงานอัยการสูงสุด,government_office,low,none,1.5,5.6,1,14493.452535401999,Polygon,934.8608548212893,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+769,Dusit District,โรงเรียนวัดประชาระบือธรรม,school,low,temple_land,33.7,3.2,1,14351.309194510357,Polygon,1897.5514351548122,Bang Pho,15.140222506111774,2.6,43.49,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+924,Chatuchak District,โรงเรียนรัตนโกสินทร์สมโภช (ราชทัณฑ์อุปถัมภ์),school,high,none,0.0,,1,14252.718560521374,Point,2922.616143317606,Sena Nikhom,7.512476021659428,3.1,44.35,BMA school registry (data.bangkok.go.th),bma_open_data
+123,Pathum Wan District,,library,low,none,0.0,,1,14000.241666091808,Point,273.1984839403284,Phloen Chit,8.958127403648023,2.4,41.82,,osm_category_default
+101,Din Daeng District,Laser Center,health_centre,medium,none,0.0,,1,13993.681221638684,Point,164.89128207697485,Huai Khwang,39.43490169368372,2.7,44.25,,osm_category_default
+554,Vadhana District,โรงเรียนนานาชาตินิสท์,school,low,none,0.0,0.4,5,13874.09565698926,Polygon,440.5083059355419,Makkasan,14.147439509302414,2.0,42.2,,osm_category_default
+798,Dusit District,สภาสตรีแห่งชาติ,government_office,low,oversized_parcel,0.0,23.0,1,13857.038461254277,Polygon,2057.439773690562,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+802,Dusit District,ศาลาอุดม,community_centre,low,oversized_parcel,0.0,152.8,1,13662.95939785265,Polygon,1958.6018249834,Ari,15.140222506111774,2.6,43.49,,osm_category_default
+875,Bangkok Yai District,ตลาดชาติชาย,market,low,none,0.0,1.0,139,13654.375815368629,Polygon,100.38464471053506,จรัญฯ 13,17.88295316842188,1.9,44.11,,osm_category_default
+510,Chatuchak District,,park,low,oversized_parcel,0.0,20.8,1,13651.211192238481,Polygon,189.1090568663197,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+955,Dusit District,โรงเรียนวัดสัมณานัมบริหาร,school,low,temple_land,43.4,,1,13597.104296615453,Point,1883.5434253543658,Ratchathewi,15.140222506111774,2.6,43.49,BMA school registry (data.bangkok.go.th),bma_open_data
+466,Ratchathewi District,สำนักงานนโยบายและแผนการขนส่งและจราจร,government_office,low,none,0.0,7.4,1,13538.018314830708,Polygon,1201.7801276542793,Ratchathewi,3.519620160749606,2.6,42.85,,osm_category_default
+260,Din Daeng District,สำนักการโยธา,government_office,low,none,0.0,4.1,1,13500.140780692587,Polygon,1524.2064384876915,Ari,39.43490169368372,2.7,44.25,,osm_category_default
+92,Vadhana District,,health_centre,medium,none,0.0,,1,13240.126631198933,Point,802.7159433327188,On Nut,14.147439509302414,2.0,42.2,,osm_category_default
+908,Bangkok Yai District,โรงเรียนวัดใหม่พิเรนทร์,school,low,temple_land,70.6,,1,13184.775688629263,Point,478.0867442020203,Itsaraphap,17.88295316842188,1.9,44.11,BMA school registry (data.bangkok.go.th),bma_open_data
+668,Sathon District,โรงเรียนเตรียมอุดมศึกษาพัฒนาการ ยานนาเวศ,school,low,none,0.0,1.0,1,13152.064691939988,Polygon,3055.754038366964,Si Lom,66.31155084548975,2.0,42.49,,osm_category_default
+928,Thon Buri District,โรงเรียนวัดดาวคนอง,school,low,temple_land,39.1,,1,13126.522187745099,Point,2381.8070994939467,Talat Phlu,0.4552733595031658,1.7,43.87,BMA school registry (data.bangkok.go.th),bma_open_data
+489,Dusit District,สำนักงานคณะกรรมการกฤษฎีกา,government_office,low,oversized_parcel,0.0,11.1,1,12915.465540571236,Polygon,1921.322126380353,Sirindhorn,15.140222506111774,2.6,43.49,,osm_category_default
+438,Dusit District,โรงเรียนทีปังกรวิทยาพัฒน์,school,low,temple_land,58.3,7.1,1,12913.783727649297,Polygon,1300.233032159635,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+706,Din Daeng District,ตลาดดินแดง,market,low,none,0.0,2.0,1,12895.099499751404,Polygon,1267.3495971994357,Phra Ram 9,39.43490169368372,2.7,44.25,,osm_category_default
+673,Khlong Toei District,สามสิบหก คลินิกเวชกรรม,health_centre,low,oversized_parcel,2.0,34.6,1,12859.732692255375,Polygon,210.1033960245712,Thong Lo,32.04800465406342,1.5,42.1,,osm_category_default
+568,Phra Nakhon District,,park,low,none,0.0,4.2,1,12755.967961932514,Polygon,85.98433266634513,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+918,Bang Kho Laem District,โรงเรียนวัดจันทร์นอก,school,low,temple_land,55.6,,1,12711.249394124825,Point,3492.717693509957,Krung Thon Buri,43.05120204584554,1.6,42.48,BMA school registry (data.bangkok.go.th),bma_open_data
+18,Samphanthawong District,โรงเรียนวัดสัมพันธวงศ์,school,low,temple_land,91.9,,1,12607.043149213987,Point,420.44391515735686,Wat Mangkon,1.3497852761115583,2.3,42.72,,osm_category_default
+232,Phra Nakhon District,ศูนย์ดำรงธรรมกระทรวงมหาดไทย,government_office,low,none,0.0,,1,12579.642717721297,Point,691.6688169506646,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+811,Khlong Toei District,ลานเสาธง,park,low,none,0.0,4.6,1,12560.916812750482,Polygon,1073.3440697608635,Queen Sirikit National Convention Centre,32.04800465406342,1.5,42.1,,osm_category_default
+274,Phaya Thai District,กรมโยธาธิการและผังเมือง,government_office,low,none,0.0,2.1,2,12526.07697542428,Polygon,1390.6148409102461,Sanam Pao,24.15944885836817,2.8,44.04,,osm_category_default
+570,Phra Nakhon District,ถนนคนเดินคลองโอ่งอ่าง,market,low,none,0.0,1.0,18,12469.563441829421,Polygon,268.96252328374214,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+714,Yan Nawa District,โรงเรียนสารสาสน์พิทยา,school,low,none,0.0,1.1,55,12467.720869290548,Polygon,3539.343173092632,Lumphini,71.17195774707528,1.5,41.6,,osm_category_default
+919,Bang Kho Laem District,โรงเรียนวัดบางโคล่นอก,school,low,temple_land,60.4,,1,12447.202116559467,Point,3830.9292284780354,Krung Thon Buri,43.05120204584554,1.6,42.48,BMA school registry (data.bangkok.go.th),bma_open_data
+600,Samphanthawong District,โรงเรียนกุหลาบวิทยา,school,low,none,6.5,1.0,1,12374.153582313626,Polygon,605.2199604709074,Khlong San,1.3497852761115583,2.3,42.72,,osm_category_default
+379,Sathon District,โรงเรียนเซนต์หลุยส์ศึกษา,school,low,none,9.1,2.6,1,12367.583282523345,Polygon,1597.2995508740387,Sam Yan,66.31155084548975,2.0,42.49,,osm_category_default
+618,Khlong San District,สำเพ็ง ท่าดินแดง,market,low,none,0.0,0.9,3,12292.298959181695,Polygon,748.0448804929463,Khlong San,3.432735525625637,1.9,42.91,,osm_category_default
+766,Dusit District,โรงเรียนช่างอากาศอำรุง,school,low,none,22.9,0.5,1,12251.137316559736,Polygon,970.2953421580972,Bang Sue,15.140222506111774,2.6,43.49,,osm_category_default
+137,Phra Nakhon District,โรงเรียนวัดใหม่อมตรส,school,low,temple_land,68.5,,1,12225.92938087099,Point,1937.4728443552294,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+920,Bang Kho Laem District,โรงเรียนวัดจันทร์ใน,school,low,temple_land,66.1,,1,12216.271567681288,Point,2806.27900075085,Krung Thon Buri,43.05120204584554,1.6,42.48,BMA school registry (data.bangkok.go.th),bma_open_data
+541,Khlong Toei District,สำนักงานเขตคลองเตย,district_office,high,none,0.0,9.7,1,12198.74605607202,Polygon,1181.5657012814372,Phra Khanong,32.04800465406342,1.5,42.1,,osm_category_default
+550,Bang Rak District,โรงเรียนพุทธจักรวิทยา,school,low,none,20.6,2.0,1,12160.548731645797,Polygon,165.04838052995092,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
+927,Thon Buri District,โรงเรียนวัดบุคคโล,school,low,temple_land,82.9,,1,12139.633393509866,Point,2059.6942764922924,Talat Phlu,0.4552733595031658,1.7,43.87,BMA school registry (data.bangkok.go.th),bma_open_data
+505,Pathum Wan District,กรมพัฒนาพลังงานทดแทนและอนุรักษ์พลังงาน กระทรวงพลังงาน,government_office,low,none,0.0,1.0,1,12127.65768656644,Polygon,1160.6952801332857,Wat Mangkon,8.958127403648023,2.4,41.82,,osm_category_default
+917,Bang Kho Laem District,โรงเรียนวัดไทร,school,high,none,12.6,,1,12071.959099370955,Point,3757.127346321672,Krung Thon Buri,43.05120204584554,1.6,42.48,BMA school registry (data.bangkok.go.th),bma_open_data
+28,Ratchathewi District,โรงเรียนสอนคนตาบอด,school,low,none,0.0,,1,12026.097915816163,Point,1046.9024935599966,Victory Monument,3.519620160749606,2.6,42.85,Foundation for The Blind in Thailand,osm_category_default
+782,Samphanthawong District,โรงเรียนวัดชัยชนะสงคราม,school,low,temple_land;oversized_parcel,72.5,12.0,1,11976.784203500698,Polygon,463.58724102378403,Sam Yot,1.3497852761115583,2.3,42.72,,osm_category_default
+381,Phra Nakhon District,กรมส่งเสริมสหกรณ์,government_office,low,none,0.0,1.1,2,11968.237103517771,Polygon,1756.7105710933813,Sirindhorn,10.073902842536365,2.3,43.21,,osm_category_default
+198,Khlong Toei District,KTC Clinic,health_centre,medium,none,0.0,,1,11939.17627791614,Point,359.4009651885989,Phrom Phong,32.04800465406342,1.5,42.1,KTC Clinic,osm_category_default
+491,Chatuchak District,SCB park west,park,low,none,0.0,4.7,1,11613.212219137136,Polygon,589.5608646257224,Phahonyothin 24,7.512476021659428,3.1,44.35,,osm_category_default
+607,Phra Nakhon District,สำนักงานการปฏิรูปที่ดินเพื่อเกษตรกรรม,government_office,low,none,0.0,1.5,1,11541.95016394787,Polygon,1298.9827435006837,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+404,Khlong Toei District,การท่าเรือแห่งประเทศไทย,government_office,low,none,0.0,3.2,1,11445.769050209266,Polygon,1128.9178751491968,Queen Sirikit National Convention Centre,32.04800465406342,1.5,42.1,,osm_category_default
+899,Vadhana District,โรงเรียนวัดภาษี,school,low,temple_land,66.1,,1,11436.784348481237,Point,1322.5973558932594,Ramkhamhaeng,14.147439509302414,2.0,42.2,BMA school registry (data.bangkok.go.th),bma_open_data
+165,Bang Na District,Skinity Clinic,health_centre,medium,none,0.0,,1,11400.81438945186,Point,728.816486103305,Udom Suk,16.730954912626892,1.9,43.09,,osm_category_default
+792,Pom Prap Sattru Phai District,โรงเรียนวัดพระพิเรนทร์,school,low,temple_land;oversized_parcel,76.7,10.7,1,11356.227132126838,Polygon,402.9353909067423,Sam Yot,2.5132994081199342,2.5,44.33,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+610,Bang Rak District,ชุมชนตลาดสดเพชรพลอย,market,low,none,0.0,1.0,1,11166.774825731332,Polygon,933.5832345426218,Hua Lamphong,95.26537274363294,2.3,41.81,,osm_category_default
+4,Bang Sue District,สำนักงานเขตบางซื่อ,district_office,high,none,0.0,,1,11129.614999367288,Point,780.2835324453058,Tao Poon,16.59413937857211,3.2,44.7,,osm_category_default
+511,Chatuchak District,,park,low,oversized_parcel,0.0,16.2,1,11063.98511525266,Polygon,61.139813841864324,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+862,Pom Prap Sattru Phai District,โรงเรียนวัดดิสานุการาม,school,low,temple_land,90.3,6.8,1,10990.612534737262,Polygon,700.395768054693,Sam Yot,2.5132994081199342,2.5,44.33,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+207,Bang Phlat District,ตลาดบางพัฒนา,market,low,none,0.0,,1,10940.57874193912,Point,372.1332637546537,Sirindhorn,5.343934684605851,2.5,43.59,,osm_category_default
+329,Ratchathewi District,สวนสาธารณะสวนเงิน,park,low,none,0.0,2.0,1,10845.105642843184,Polygon,1131.9125902750236,Victory Monument,3.519620160749606,2.6,42.85,,osm_category_default
+911,Bang Sue District,โรงเรียนวัดประดู่ธรรมาธิปัตย์,school,low,temple_land,77.4,,1,10836.036302542032,Point,629.2089044700263,Bang Pho,16.59413937857211,3.2,44.7,BMA school registry (data.bangkok.go.th),bma_open_data
+563,Phaya Thai District,โรงเรียนสวนบัว,school,low,none,0.0,1.1,5,10742.28231069654,Polygon,457.6200377522245,Ari,24.15944885836817,2.8,44.04,,osm_category_default
+440,Dusit District,โรงเรียนราชวินิต มัธยม,school,low,none,0.0,1.1,1,10729.835972177014,Polygon,2198.5349179113114,Ratchathewi,15.140222506111774,2.6,43.49,,osm_category_default
+632,Bang Rak District,โรงเรียนกว่างเจ้า,school,low,none,0.0,1.0,1,10711.814342555674,Polygon,929.5669107434346,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
+945,Pom Prap Sattru Phai District,โรงเรียนวัดสิตาราม,school,low,temple_land,96.6,,1,10670.576478251607,Point,1283.3681777101965,Sam Yot,2.5132994081199342,2.5,44.33,BMA school registry (data.bangkok.go.th),bma_open_data
+368,Chatuchak District,,park,low,none,0.0,9.4,1,10652.710176719376,Polygon,320.3754057862721,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+341,Phra Nakhon District,สวนสันติชัยปราการ,park,low,none,0.0,0.8,12,10451.510041255628,Polygon,1847.4755706965825,Bang Yi Khan,10.073902842536365,2.3,43.21,,osm_category_default
+353,Dusit District,ตลาดเทวราช,market,low,none,0.0,4.7,1,10429.913175329524,Polygon,1787.8697331860376,Sirindhorn,15.140222506111774,2.6,43.49,,osm_category_default
+893,Bang Phlat District,โรงเรียนวัดใหม่อมตรส,school,high,none,0.0,,1,10321.72965500771,Point,676.8971968084772,Bang Yi Khan,5.343934684605851,2.5,43.59,BMA school registry (data.bangkok.go.th),bma_open_data
+200,Dusit District,การไฟฟ้านครหลวง เขตสามเสน,government_office,low,none,0.0,,1,10253.386308480232,Point,1901.5514817954488,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+450,Sathon District,สวนสาธารณะสะพานตากสิน,park,low,none,0.0,1.2,2,10209.564011752853,Polygon,1029.2229997899938,Charoen Nakhon,66.31155084548975,2.0,42.49,,osm_category_default
+736,Thon Buri District,โรงเรียนวัดประดิษฐาราม,school,low,temple_land,70.9,9.8,1,10195.64853848477,Polygon,527.1469797763662,Itsaraphap,0.4552733595031658,1.7,43.87,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+259,Din Daeng District,สำนักการระบายน้ำ,government_office,low,none,0.0,3.1,1,10143.13002987512,Polygon,1445.4936795823185,Sanam Pao,39.43490169368372,2.7,44.25,,osm_category_default
+601,Samphanthawong District,,government_office,low,none,0.0,1.9,4,10118.739352523815,Polygon,712.2768753909136,Khlong San,1.3497852761115583,2.3,42.72,,osm_category_default
+469,Bang Phlat District,Pimonwit School,school,low,none,0.0,1.2,7,10086.74146807044,Polygon,229.52314210264842,Sirindhorn,5.343934684605851,2.5,43.59,,osm_category_default
+176,Bang Kho Laem District,ห้องสมุดในสวน,library,low,none,16.6,,1,10054.093394155621,Point,3414.2807144765866,Krung Thon Buri,43.05120204584554,1.6,42.48,,osm_category_default
+267,Thon Buri District,วงเวียนใหญ่,park,low,none,0.0,0.7,5,10010.34614461761,Polygon,618.8480134743471,Wongwian Yai,0.4552733595031658,1.7,43.87,,osm_category_default
+349,Phra Nakhon District,สำนักงานเขตพระนคร,district_office,high,none,0.0,1.0,16,9919.999809233526,Polygon,1977.388647688272,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+276,Samphanthawong District,ตลาดสำเพ็ง,market,low,none,0.0,0.5,83,9898.559319688806,MultiPolygon,411.8200741026216,Wat Mangkon,1.3497852761115583,2.3,42.72,,osm_category_default
+735,Thon Buri District,โรงเรียนซางตาครู้สคอนแวนท์,school,low,none,0.0,1.0,1,9788.860309553109,Polygon,755.0301586478682,Sanam Chai,0.4552733595031658,1.7,43.87,,osm_category_default
+699,Din Daeng District,สวนดินแดง 3,park,low,none,0.0,1.4,1,9769.63327122151,Polygon,1221.62164470473,Ratchaprarop,39.43490169368372,2.7,44.25,,osm_category_default
+441,Phra Nakhon District,สนามพระท่าพระจันทร์,market,low,none,0.0,0.8,5,9746.362098111838,Polygon,1398.1417822549734,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+282,Phra Nakhon District,,market,low,none,0.0,1.6,29,9694.801200078002,Polygon,289.4080940062919,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+947,Pathum Wan District,โรงเรียนวัดชัยมงคล,school,low,temple_land,35.9,,1,9626.978974173579,Point,1039.7076021018656,Ratchathewi,8.958127403648023,2.4,41.82,BMA school registry (data.bangkok.go.th),bma_open_data
+335,Vadhana District,สำนักงานเขตวัฒนา,district_office,high,none,0.0,1.0,6,9404.97253844539,Polygon,1582.7544378515536,Ramkhamhaeng,14.147439509302414,2.0,42.2,,osm_category_default
+575,Yan Nawa District,,park,low,none,0.0,1.8,1,9396.141232712185,Polygon,2739.0102362093594,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+503,Phra Nakhon District,สวนสาธารณะป้อมมหากาฬ,park,low,none,0.0,0.9,25,9392.062554102555,Polygon,939.7686020318968,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+21,Chatuchak District,Veterinary Technology,school,low,none,0.0,,1,9365.296234008263,Point,384.6617698863742,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+804,Chatuchak District,โรงเรียนบางบัว (เพ่งตั้งตรงจิตรวิทยาคาร),school,low,none,0.0,1.0,4,9365.102064709978,Polygon,91.369409434215,Bang Bua,7.512476021659428,3.1,44.35,,osm_category_default
+731,Bang Phlat District,โรงเรียนวัดเปาโรหิตย์,school,low,temple_land,64.6,2.9,1,9344.507449647084,Polygon,419.5695699046304,Sirindhorn,5.343934684605851,2.5,43.59,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+257,Samphanthawong District,ตลาดน้อย,market,low,none,0.0,0.9,165,9293.552901336036,Polygon,530.9052370481127,Hua Lamphong,1.3497852761115583,2.3,42.72,,osm_category_default
+873,Bangkok Yai District,ตลาดรวยรุ่งเรือง,market,low,none,0.0,1.0,11,9291.994342315915,Polygon,220.00965051997912,Tha Phra,17.88295316842188,1.9,44.11,,osm_category_default
+522,Khlong Toei District,,park,low,none,0.0,0.9,3,9263.556412613645,Polygon,879.0156475924638,Queen Sirikit National Convention Centre,32.04800465406342,1.5,42.1,,osm_category_default
+96,Vadhana District,,government_office,low,none,0.0,,1,9196.292767188608,Point,231.25327419433162,Phra Khanong,14.147439509302414,2.0,42.2,,osm_category_default
+637,Sathon District,โรงเรียนคริสต์ศาสนศาสตร์แบ๊บติสต์,school,low,temple_land,38.7,9.5,1,9182.069689319684,Polygon,779.1283609730541,Lumphini,66.31155084548975,2.0,42.49,,osm_category_default
+730,Bang Phlat District,โรงเรียนวัดพระยาศิริไอยสวรรค์,school,low,temple_land,60.7,3.7,1,9161.315192502869,Polygon,1264.8172931441072,Bang Yi Khan,5.343934684605851,2.5,43.59,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+380,Sathon District,โรงเรียนทุ่งมหาเมฆ,school,low,none,0.0,0.9,1,9122.838979580625,Polygon,1831.582887316578,Si Lom,66.31155084548975,2.0,42.49,,osm_category_default
+868,Phra Nakhon District,ตลาดพาหุรัด,market,low,none,5.8,0.4,108,9051.164467130771,Polygon,316.10449914846293,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+953,Bang Rak District,โรงเรียนวัดแก้วแจ่มฟ้า,school,low,temple_land,69.8,,1,9018.164704136036,Point,721.6181105677166,Hua Lamphong,95.26537274363294,2.3,41.81,BMA school registry (data.bangkok.go.th),bma_open_data
+300,Sathon District,วิทยาลัยเซนต์หลุยส์,school,low,none,0.0,1.0,1,9015.076140287103,Polygon,1767.968210228751,Charoen Nakhon,66.31155084548975,2.0,42.49,,osm_category_default
+206,Bangkok Yai District,โรงเรียนวัดดีดวด,school,low,temple_land,71.2,,1,8909.804207807043,Point,420.42144469850456,จรัญฯ 13,17.88295316842188,1.9,44.11,,osm_category_default
+243,Phra Nakhon District,ศาลาว่าการกรุงเทพมหานคร,district_office,high,none,0.0,1.1,20,8897.380547166817,MultiPolygon,767.2557951318406,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+797,Dusit District,โรงเรียนอักษรเจริญ,school,low,none,0.0,2.0,1,8838.707968263112,Polygon,2212.1212089942824,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+106,Chatuchak District,,health_centre,medium,none,0.0,,1,8825.266941342892,Point,290.88780807024534,Ratchayothin,7.512476021659428,3.1,44.35,,osm_category_default
+397,Vadhana District,Wells International School,school,low,none,0.0,1.3,2,8753.681581454566,Polygon,361.6158731293811,Thong Lo,14.147439509302414,2.0,42.2,,osm_category_default
+437,Dusit District,โรงเรียนวัดราขผาติการาม,school,low,temple_land,50.3,3.1,1,8726.542799356033,Polygon,1319.1438332561202,Sirindhorn,15.140222506111774,2.6,43.49,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+674,Phra Nakhon District,กรมที่ดิน,government_office,low,none,0.0,3.9,1,8711.197989472481,Polygon,124.72581714591618,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+739,Yan Nawa District,ตลาดครูหวี,market,low,none,0.0,0.7,4,8658.297447492121,Polygon,5164.030426067937,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+498,Dusit District,,park,low,oversized_parcel,0.0,20.4,1,8625.39632179702,Polygon,1454.2349396221591,Bang Pho,15.140222506111774,2.6,43.49,,osm_category_default
+778,Dusit District,ตลาดศรีย่าน,market,low,none,0.0,0.8,83,8576.087052642699,Polygon,1156.7250272275692,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+164,Bang Na District,Phuti Anun Park,park,low,none,0.0,,1,8535.40406530258,Point,747.3184277030433,Bang Na,16.730954912626892,1.9,43.09,,osm_category_default
+931,Thon Buri District,โรงเรียนวัดราชวรินทร์,school,low,temple_land,78.9,,1,8506.263737505122,Point,1293.967375430498,Pho Nimit,0.4552733595031658,1.7,43.87,BMA school registry (data.bangkok.go.th),bma_open_data
+680,Thon Buri District,โรงเรียนวัดบางน้ำชน,school,low,temple_land,72.2,3.6,1,8425.85630376992,Polygon,1730.2316647055295,Pho Nimit,0.4552733595031658,1.7,43.87,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+228,Chatuchak District,ห้องสมุดโรงเรียนประชานิเวศน์,library,low,none,0.0,,1,8384.433180824977,Point,2669.571362618448,Wong Sawang,7.512476021659428,3.1,44.35,,osm_category_default
+743,Thon Buri District,โรงเรียนธนบุรีวรเทพีพลารักษ์,school,low,none,0.0,1.0,3,8303.80432746497,Polygon,798.9513049175056,Talat Phlu,0.4552733595031658,1.7,43.87,,osm_category_default
+416,Khlong San District,สมาคมตระกูลลิ้ม,community_centre,low,none,0.0,1.1,4,8264.27581228851,Polygon,1160.7375544221509,Wongwian Yai,3.432735525625637,1.9,42.91,,osm_category_default
+952,Bang Rak District,โรงเรียนวัดสวนพลู,school,low,temple_land,53.9,,1,8253.285973582126,Point,866.9354736567517,Charoen Nakhon,95.26537274363294,2.3,41.81,BMA school registry (data.bangkok.go.th),bma_open_data
+832,Phaya Thai District,ตลาดมิ่งขวัญบ้านนา,market,low,none,0.0,0.9,14,8105.422841236778,Polygon,1114.6472948775656,Saphan Khwai,24.15944885836817,2.8,44.04,,osm_category_default
+104,Vadhana District,,school,low,none,0.0,,1,8086.714940702011,Point,1161.671050721096,Ramkhamhaeng,14.147439509302414,2.0,42.2,,osm_category_default
+233,Phra Nakhon District,ศูนย์ปฏิบัติการต่อต้านการทุจริต,government_office,low,none,0.0,,1,8040.638501450493,Point,642.6054032041308,Sam Yot,10.073902842536365,2.3,43.21,กระทรวงมหาดไทย,osm_category_default
+864,Bang Phlat District,โรงเรียนสตรีบูรณวิทย์,school,low,none,0.0,1.0,2,8009.297309590136,Polygon,666.9636035225813,Bang Phlat,5.343934684605851,2.5,43.59,,osm_category_default
+315,Phra Nakhon District,ทำเนียบองคมนตรี,government_office,low,none,1.8,5.2,1,7871.449309952926,Polygon,567.4131434714614,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+799,Dusit District,โรงเรียนอัมพวันศิกษา,school,low,temple_land,63.2,2.9,1,7762.047612145141,Polygon,2143.299517592139,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+254,Bang Rak District,โรงเรียนนานาชาติเซนต์แอนดรูส์ สาทร,school,low,none,0.8,1.0,5,7690.3062993321155,Polygon,468.18707584425,Si Lom,95.26537274363294,2.3,41.81,,osm_category_default
+822,Dusit District,โรงเรียนเศรษฐเสถียร,school,low,none,0.0,1.0,3,7637.136315864285,Polygon,2266.0373528906634,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+801,Bang Na District,โรงเรียนศรีเอี่ยมอนุสรณ์,school,high,none,16.8,1.2,2,7624.605499589804,Polygon,173.70656124720603,Si Iam,16.730954912626892,1.9,43.09,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+156,Vadhana District,Emma Clinic,health_centre,medium,none,0.0,,1,7624.313933645765,Point,430.05426617594344,Makkasan,14.147439509302414,2.0,42.2,,osm_category_default
+484,Pathum Wan District,,park,low,none,0.0,0.8,1,7602.226421422595,Polygon,161.0554669739818,Phloen Chit,8.958127403648023,2.4,41.82,,osm_category_default
+451,Dusit District,Thewet market,market,low,none,0.2,2.5,1,7489.027269144379,Polygon,1695.2445321304026,Sirindhorn,15.140222506111774,2.6,43.49,,osm_category_default
+605,Phaya Thai District,สำนักงานการปฏิรูปที่ดินเพื่อเกษตรกรรม,government_office,low,none,0.0,1.0,3,7486.706776485083,Polygon,804.7946638613256,Sena Ruam,24.15944885836817,2.8,44.04,,osm_category_default
+333,Chatuchak District,สวนป่าประชานิเวศน์,park,low,none,0.0,0.9,1,7466.536701747127,Polygon,2201.4836108575987,Phahonyothin 24,7.512476021659428,3.1,44.35,,osm_category_default
+543,Samphanthawong District,กรมเจ้าท่า,government_office,low,none,0.1,1.0,2,7462.964688647132,Polygon,595.7163784933365,Khlong San,1.3497852761115583,2.3,42.72,,osm_category_default
+930,Thon Buri District,โรงเรียนวัดกระจับพินิจ,school,low,temple_land,49.1,,1,7448.004286664164,Point,453.063405138305,Pho Nimit,0.4552733595031658,1.7,43.87,BMA school registry (data.bangkok.go.th),bma_open_data
+213,Thon Buri District,โรงเรียนวัดบางสะแกใน,school,low,none,0.0,,1,7428.712923852592,Point,325.1227628335188,Talat Phlu,0.4552733595031658,1.7,43.87,,osm_category_default
+867,Bang Kho Laem District,โรงเรียนมูลนิธิสตรีไทยมุสลิม,school,low,none,0.0,1.2,2,7412.806095642483,Polygon,1514.0031944285583,Krung Thon Buri,43.05120204584554,1.6,42.48,,osm_category_default
+478,Vadhana District,Bangkok Prep Campus,school,low,none,0.0,0.2,4,7364.905605784117,Polygon,1045.7648582363922,On Nut,14.147439509302414,2.0,42.2,,osm_category_default
+55,Vadhana District,Dentalista Dental Clinic,health_centre,medium,none,0.0,,1,7327.449823402248,Point,268.85692038368313,Phra Khanong,14.147439509302414,2.0,42.2,,osm_category_default
+611,Bang Rak District,โรงเรียนยุหมินพัฒนา,school,low,none,0.2,1.1,8,7318.287115108101,Polygon,1160.205492737058,Charoen Nakhon,95.26537274363294,2.3,41.81,,osm_category_default
+514,Chatuchak District,กองบังคับการปราบปรามการกระทำความผิด เกี่ยวกับทรัพยากรธรรมชาติและสิ่งแวดล้อม (บก.ปทส.),government_office,low,none,0.0,0.8,1,7273.603440467574,Polygon,344.95037149976326,Royal Forest Department,7.512476021659428,3.1,44.35,,osm_category_default
+252,Khlong San District,อุทยานเฉลิมพระเกียรติสมเด็จพระศรีนครินทราบรมราชชนนี,park,low,none,0.0,0.8,6,7266.828485951866,MultiPolygon,1003.773543732837,Sanam Chai,3.432735525625637,1.9,42.91,,osm_category_default
+100,Din Daeng District,Idolme,health_centre,medium,none,0.0,,1,7225.105222231042,Point,34.322943885220454,Huai Khwang,39.43490169368372,2.7,44.25,,osm_category_default
+907,Bang Phlat District,โรงเรียนวัดสามัคคีสุทธาวาส,school,high,none,1.0,,1,7213.600101425072,Point,626.189005329828,Bang Phlat,5.343934684605851,2.5,43.59,BMA school registry (data.bangkok.go.th),bma_open_data
+465,Chatuchak District,อาคารสารนิเทศ 50 ปี,government_office,low,none,0.0,1.5,1,7174.8703179979475,Polygon,1312.5186617515144,Royal Forest Department,7.512476021659428,3.1,44.35,,osm_category_default
+779,Ratchathewi District,โรงเรียนวัดพระยายัง,school,high,none,10.0,4.9,1,7139.0828805417,Polygon,1057.2899021708624,Ratchathewi,3.519620160749606,2.6,42.85,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+712,Din Daeng District,ตลาดขวัญพัฒนา 2,market,low,none,0.0,1.1,1,7123.511495070485,Polygon,795.5848464520808,Phra Ram 9,39.43490169368372,2.7,44.25,,osm_category_default
+293,Phra Nakhon District,United Nations Building,government_office,low,none,0.0,0.7,9,7080.382256282017,Polygon,1966.584595612298,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+486,Din Daeng District,,market,low,none,0.0,1.6,7,7063.482227455068,Polygon,393.4583158999574,Ratchadaphisek,39.43490169368372,2.7,44.25,,osm_category_default
+544,Sathon District,โรงเรียนวัดยานนาวา,school,low,temple_land,75.3,4.1,1,7046.3934587049935,Polygon,1170.6843332816172,Charoen Nakhon,66.31155084548975,2.0,42.49,,osm_category_default
+549,Pom Prap Sattru Phai District,โรงเรียนสายปัญญา ในพระบรมราชินูปถัมภ์,school,low,none,0.0,1.0,10,6961.1541699337995,Polygon,568.5333711901715,Wat Mangkon,2.5132994081199342,2.5,44.33,,osm_category_default
+434,Pom Prap Sattru Phai District,กระทรวงคมนาคม,government_office,low,none,0.0,2.4,1,6886.439556824524,Polygon,1446.5339740506652,Sam Yot,2.5132994081199342,2.5,44.33,,osm_category_default
+534,Pathum Wan District,โรงเรียนสีตบุตรบำรุง,school,low,none,0.0,1.5,4,6842.770011079642,Polygon,755.314185374774,Hua Lamphong,8.958127403648023,2.4,41.82,,osm_category_default
+153,Khlong Toei District,ศูนย์บริการทีโอที คลองเตย,government_office,low,none,0.0,,1,6822.022671691105,Point,1072.0445832264102,Thong Lo,32.04800465406342,1.5,42.1,,osm_category_default
+261,Din Daeng District,โรงเรียนจำนงค์พิทยา,school,low,none,0.0,1.1,10,6812.707671685721,MultiPolygon,997.8473133832998,Phra Ram 9,39.43490169368372,2.7,44.25,,osm_category_default
+722,Din Daeng District,,school,low,none,0.0,1.0,2,6801.8377664736,Polygon,221.72238125184867,Ratchadaphisek,39.43490169368372,2.7,44.25,,osm_category_default
+208,Bang Phlat District,โรงเรียนบูรณวิทย์,school,low,none,0.0,,1,6765.471796776471,Point,671.707659687854,Bang Phlat,5.343934684605851,2.5,43.59,,osm_category_default
+835,Bang Sue District,โรงเรียนวัดมัชฌันติการาม,school,high,none,0.0,1.0,2,6752.869820182177,Polygon,1298.3636758846028,Wong Sawang,16.59413937857211,3.2,44.7,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+634,Yan Nawa District,โรงเรียนวัดช่องลม,school,low,none,0.0,1.0,3,6741.121095802084,Polygon,2146.0234592371366,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+651,Sathon District,โรงเรียนนานาชาติการ์เด้น,school,low,none,0.0,1.0,7,6729.888996210115,Polygon,1169.4227585937933,Lumphini,66.31155084548975,2.0,42.49,,osm_category_default
+309,Sathon District,,market,low,none,0.0,3.0,1,6673.39664660059,Polygon,1174.4928937056973,Krung Thon Buri,66.31155084548975,2.0,42.49,,osm_category_default
+765,Dusit District,โรงเรียนกันตะบุตร,school,low,none,0.0,1.6,2,6618.208055593598,Polygon,1332.6476820870284,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+850,Chatuchak District,โรงเรียนอรรถมิตร,school,low,none,0.0,1.0,4,6600.374004019603,Polygon,486.3859567089787,Ratchayothin,7.512476021659428,3.1,44.35,,osm_category_default
+324,Chatuchak District,ตลาด อ.ต.ก.,market,low,none,0.0,1.2,3,6575.021839787579,Polygon,83.19152313801906,Kamphaeng Phet,7.512476021659428,3.1,44.35,,osm_category_default
+672,Chatuchak District,,park,low,oversized_parcel,0.0,148.3,1,6544.439240705735,Polygon,396.6090887509092,Saphan Khwai,7.512476021659428,3.1,44.35,,osm_category_default
+858,Thon Buri District,สำนักเทศกิจ,government_office,low,none,0.0,3.0,1,6543.879117830419,Polygon,628.8238008978931,Sanam Chai,0.4552733595031658,1.7,43.87,,osm_category_default
+1,Ratchathewi District,สำนักงานเขตราชเทวี,district_office,high,none,0.0,,1,6494.294882484212,Point,243.9274920663831,Phaya Thai,3.519620160749606,2.6,42.85,,osm_category_default
+659,Bang Rak District,ศูนย์สุขภาพชุมชนซอยวัดม่วงแคและมัสยิดฮารูณ,health_centre,low,oversized_parcel,2.8,23.6,1,6490.187174417171,Polygon,618.5945270065497,Charoen Nakhon,95.26537274363294,2.3,41.81,,osm_category_default
+521,Vadhana District,,school,low,none,0.0,1.1,2,6459.330685951627,Polygon,636.4992118873374,Phra Khanong,14.147439509302414,2.0,42.2,,osm_category_default
+10,Bang Kho Laem District,สำนักงานเขตบางคอแหลม,district_office,high,none,0.0,,1,6338.409187623055,Point,3065.4037211758027,Krung Thon Buri,43.05120204584554,1.6,42.48,,osm_category_default
+763,Din Daeng District,โรงเรียนนิธิปริญญา,school,low,none,0.0,1.1,6,6321.381660281193,Polygon,987.2324048607805,Ratchaprarop,39.43490169368372,2.7,44.25,,osm_category_default
+548,Ratchathewi District,,park,low,oversized_parcel,0.0,14.7,1,6284.286080600186,Polygon,212.26438527703084,Victory Monument,3.519620160749606,2.6,42.85,,osm_category_default
+741,Thon Buri District,โรงเรียนวัดใหม่ยายนุ้ย,school,low,temple_land;oversized_parcel,96.8,11.1,1,6276.705093955973,Polygon,127.2715321947875,Wutthakat,0.4552733595031658,1.7,43.87,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+816,Chatuchak District,วิทยาลัยเทคโนโลยีวราธิปบริหารธุรกิจ,school,low,none,0.0,1.2,1,6266.249954013035,Polygon,2514.0764655230123,Wong Sawang,7.512476021659428,3.1,44.35,,osm_category_default
+653,Yan Nawa District,โรงเรียนทวีวัฒนา,school,low,none,0.0,1.0,2,6227.988196629816,Polygon,2673.413560113053,Lumphini,71.17195774707528,1.5,41.6,,osm_category_default
+628,Bang Rak District,โรงเรียนมัธยมปัญญารัตน์,school,low,none,0.0,1.0,1,6221.490596534266,Polygon,994.4771008995277,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
+882,Pom Prap Sattru Phai District,Talat Kao,market,low,none,0.4,2.9,1,6164.042118471256,Polygon,41.26442942287707,Wat Mangkon,2.5132994081199342,2.5,44.33,,osm_category_default
+526,Ratchathewi District,ตลาดสดกิ่งเพชร,market,low,none,0.0,6.4,1,6152.814452710002,Polygon,315.97906115155996,Ratchathewi,3.519620160749606,2.6,42.85,,osm_category_default
+654,Yan Nawa District,โรงเรียนเซนต์ยอเซฟยานนาวา,school,low,none,0.0,1.0,8,6069.410152243492,Polygon,2636.5697204475196,Lumphini,71.17195774707528,1.5,41.6,,osm_category_default
+122,Bang Sue District,สำนักงานสนับสนุน สำนักงานปลัดกระทรวงกลาโหม,government_office,low,none,0.0,,1,6036.0892269889555,Point,1328.1894611753928,Wong Sawang,16.59413937857211,3.2,44.7,,osm_category_default
+314,Sathon District,สถาบันเกอเธ่,school,low,none,0.0,1.0,1,6012.723565519932,Polygon,156.88799619792235,Lumphini,66.31155084548975,2.0,42.49,,osm_category_default
+403,Sathon District,สำนักงานอัยการสูงสุด อาคารกรุงเทพใต้,government_office,low,none,0.0,4.4,1,5963.82936800506,Polygon,1265.458839302706,Charoen Nakhon,66.31155084548975,2.0,42.49,,osm_category_default
+360,Bang Rak District,โรงเรียนวัดม่วงแค,school,low,temple_land,93.2,7.3,1,5949.088088805048,Polygon,608.9030250975983,Charoen Nakhon,95.26537274363294,2.3,41.81,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+558,Khlong Toei District,สวนหย่อม โนเบิล รีมิกซ์,park,low,oversized_parcel,0.0,11.5,1,5948.093773174419,Polygon,151.11354720096998,Thong Lo,32.04800465406342,1.5,42.1,,osm_category_default
+175,Bang Rak District,คลินิกแพทย์พนัส-เพ็ญศรี,health_centre,medium,none,0.0,,1,5928.4237849731635,Point,359.7309388227907,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
+569,Phra Nakhon District,สวนสันติพร,park,low,none,0.0,1.5,2,5914.718419158901,Polygon,1471.0591088563242,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+46,Ratchathewi District,Siam Singapore International School,school,low,none,0.0,,1,5848.3076463726675,Point,527.758277921024,Ratchathewi,3.519620160749606,2.6,42.85,Siam Singapore International School,osm_category_default
+385,Pom Prap Sattru Phai District,โรงเรียนวัดคณิกาผล,school,low,temple_land,92.4,6.9,1,5753.594512507071,Polygon,237.0964442216914,Wat Mangkon,2.5132994081199342,2.5,44.33,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+820,Dusit District,ตลาดราชวัตร,market,low,none,0.0,1.1,65,5669.5676793635685,Polygon,2046.431847140046,Sanam Pao,15.140222506111774,2.6,43.49,,osm_category_default
+161,Bang Sue District,สำนักหอสมุดกลาง,library,low,none,0.0,,1,5660.285549576691,Point,1620.2007559422877,Bang Pho,16.59413937857211,3.2,44.7,,osm_category_default
+15,Chatuchak District,กรมทรัพยากรน้ำบาดาล,government_office,low,none,0.0,,1,5655.216076805641,Point,517.4547972373845,Sena Nikhom,7.512476021659428,3.1,44.35,,osm_category_default
+788,Yan Nawa District,โรงเรียนวัดคลองใหม่,school,high,none,0.0,2.4,1,5640.1871812723975,Polygon,5019.088982929048,Khlong Toei,71.17195774707528,1.5,41.6,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+158,Bangkok Yai District,ศูนย์ภาษากรมยุทธศึกษาทหารเรือ,government_office,low,none,0.0,,1,5613.460530625257,Point,481.9203780529414,Itsaraphap,17.88295316842188,1.9,44.11,,osm_category_default
+828,Yan Nawa District,สวนฤทัยสมาน,park,low,none,0.0,2.3,7,5596.35011523442,Polygon,2840.855336902825,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+861,Thon Buri District,,school,low,none,0.0,1.0,16,5569.26377822664,Polygon,709.355036066881,Itsaraphap,0.4552733595031658,1.7,43.87,,osm_category_default
+125,Ratchathewi District,Entrance Visa Services,government_office,low,none,0.0,,1,5568.401879062909,Point,517.5379285546511,Ratchathewi,3.519620160749606,2.6,42.85,,osm_category_default
+717,Pathum Wan District,โรงเรียนพระมหาไถ่ศึกษา,school,low,none,16.9,1.0,8,5475.71756497336,Polygon,848.0718877501995,Phloen Chit,8.958127403648023,2.4,41.82,,osm_category_default
+842,Bang Na District,ตลาดสดลาซาล 2000,market,low,none,0.0,1.0,2,5420.233421952404,Polygon,1365.5057726501773,Bang Na,16.730954912626892,1.9,43.09,,osm_category_default
+227,Bang Phlat District,Indy Market Pinklao,market,low,none,0.0,,1,5404.333582345067,Point,78.96714315656158,Bang Yi Khan,5.343934684605851,2.5,43.59,,osm_category_default
+168,Pathum Wan District,Royal Symphony Music,school,low,none,0.0,,1,5336.373864246082,Point,957.6400638887131,Lumphini,8.958127403648023,2.4,41.82,,osm_category_default
+487,Vadhana District,Sisb Nursery Center,school,low,none,0.0,1.3,3,5325.391589335353,Polygon,1410.8525803459088,Ekkamai BTS Station,14.147439509302414,2.0,42.2,,osm_category_default
+413,Khlong San District,โรงเรียนวัดสุทธาราม,school,low,temple_land,54.6,2.3,1,5308.210407917207,Polygon,900.5816223539213,Wongwian Yai,3.432735525625637,1.9,42.91,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+843,Bang Na District,ตลาดดวงพลอย,market,low,none,0.0,1.2,1,5270.1775595128565,Polygon,1615.1176573432922,Bang Na,16.730954912626892,1.9,43.09,,osm_category_default
+780,Dusit District,โรงเรียนพณิชยการสามเสน,school,low,none,0.0,1.8,2,5270.115304000317,Polygon,1228.7887125774848,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+334,Phra Nakhon District,สำนักงานคณะกรรมการกฤษฎีกา อาคาร 2,government_office,low,none,0.0,9.6,1,5260.947748381293,Polygon,1914.8068772377248,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+676,Vadhana District,39 Vadhana Pocket Park,park,low,oversized_parcel,0.0,26.7,1,5233.524137634795,Polygon,1219.020554151775,Makkasan,14.147439509302414,2.0,42.2,,osm_category_default
+844,Khlong San District,โรงเรียนวัดทองเพลง,school,high,none,0.0,1.4,2,5205.999100752448,Polygon,483.34099845498537,Krung Thon Buri,3.432735525625637,1.9,42.91,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+149,Pathum Wan District,Ibaby Fertility & Genetic Center,health_centre,medium,none,0.0,,1,5205.770417389917,Point,214.67951169229465,Phloen Chit,8.958127403648023,2.4,41.82,Ibaby Fertility & Genetic Center,osm_category_default
+684,Chatuchak District,เดอะแคมป์ แฟร์,market,low,none,0.0,3.9,1,5174.893763460925,Polygon,19.665883965028314,Kamphaeng Phet,7.512476021659428,3.1,44.35,,osm_category_default
+900,Bang Na District,โรงเรียนวัดบางนาใน,school,high,none,0.0,,1,5169.818578372709,Point,344.0394870644063,Bang Na,16.730954912626892,1.9,43.09,BMA school registry (data.bangkok.go.th),bma_open_data
+474,Phra Nakhon District,ตลาดนัดชุมชนหลังวัดราชนัดดา,market,low,none,4.2,2.8,22,5136.952337148258,Polygon,832.6478068306318,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+723,Khlong Toei District,สวนป๋าเปรม,park,low,none,0.0,6.3,1,5136.763328221026,Polygon,470.63641251615394,Queen Sirikit National Convention Centre,32.04800465406342,1.5,42.1,,osm_category_default
+833,Chatuchak District,โรงเรียนวัดเทวสุนทร,school,high,none,2.6,0.9,4,5130.570427670786,Polygon,2075.663036701146,Kasetsart University,7.512476021659428,3.1,44.35,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+571,Bang Sue District,ลานเฉลิมพระเกียรติ,park,low,none,0.0,2.4,1,5081.250922880098,Polygon,1616.4617054012463,Bang Pho,16.59413937857211,3.2,44.7,,osm_category_default
+509,Chatuchak District,กรมส่งเสริมการเกษตร,government_office,low,none,0.0,0.5,2,5063.17183126972,Polygon,92.87553784774435,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+891,Chatuchak District,สำนักงานศาลยุติธรรม,government_office,low,none,0.0,1.9,1,5059.334502507971,Polygon,582.1769871775547,Lat Phrao,7.512476021659428,3.1,44.35,,osm_category_default
+641,Yan Nawa District,ตลาดนางลิ้นจี่,market,low,none,0.0,0.8,61,5045.298627087676,Polygon,1946.3849226584211,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+698,Sathon District,โรงเรียนอนุบาลเธียรประสิทธิ์ศาสตร์,school,low,none,0.0,1.1,3,4997.15511593551,Polygon,294.3492123267324,Lumphini,66.31155084548975,2.0,42.49,,osm_category_default
+399,Vadhana District,Chamchan School,school,high,none,0.0,1.4,1,4985.281265664873,Polygon,1453.370641299211,Ramkhamhaeng,14.147439509302414,2.0,42.2,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+418,Khlong San District,รร.อนุบาลสุวาวรรณ,school,low,none,0.0,1.1,1,4947.005947002402,Polygon,1214.6169285921112,Wongwian Yai,3.432735525625637,1.9,42.91,,osm_category_default
+876,Bangkok Yai District,โรงเรียนวัดราชสิทธาราม,school,high,none,0.0,1.0,1,4927.839630601551,Polygon,301.19759531259444,Itsaraphap,17.88295316842188,1.9,44.11,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+502,Phra Nakhon District,ลานพลับพลามหาเจษฎาบดินทร์,park,low,none,0.0,1.2,4,4890.7098651765,Polygon,988.1414903869523,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+626,Yan Nawa District,โรงเรียนวรมงคล,school,low,none,0.0,1.1,21,4886.521655145989,Polygon,3130.868469883033,Lumphini,71.17195774707528,1.5,41.6,,osm_category_default
+956,Dusit District,โรงเรียนวัดธรรมาภิรตาราม,school,high,none,19.8,,1,4873.513775061252,Point,874.561498235401,Tao Poon,15.140222506111774,2.6,43.49,BMA school registry (data.bangkok.go.th),bma_open_data
+205,Bangkok Yai District,โรงเรียนวัดเจ้ามูล,school,low,temple_land,45.3,,1,4872.910671848648,Point,413.9481694020964,จรัญฯ 13,17.88295316842188,1.9,44.11,,osm_category_default
+346,Ratchathewi District,โรงเรียนดุสิตพาณิชยการ,school,low,none,0.0,1.0,2,4865.9557886717475,Polygon,342.7613161597247,Victory Monument,3.519620160749606,2.6,42.85,,osm_category_default
+564,Phaya Thai District,โรงเรียนอนุบาลสามเสน,school,low,none,0.0,1.0,3,4822.610543840458,Polygon,1045.4200177880646,Sena Ruam,24.15944885836817,2.8,44.04,,osm_category_default
+415,Khlong San District,ตลาด,market,low,none,0.0,1.6,1,4818.8088483187275,Polygon,640.3307394244375,Krung Thon Buri,3.432735525625637,1.9,42.91,,osm_category_default
+167,Vadhana District,,health_centre,medium,none,0.0,,1,4793.37398338709,Point,185.81711949293333,Nana,14.147439509302414,2.0,42.2,,osm_category_default
+313,Bang Na District,,park,low,none,0.0,3.4,1,4781.085931235776,Polygon,653.8253114462107,Bang Na,16.730954912626892,1.9,43.09,,osm_category_default
+409,Pom Prap Sattru Phai District,กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์,government_office,low,none,0.0,1.7,1,4777.489120914317,Polygon,1601.0505397809407,Wat Mangkon,2.5132994081199342,2.5,44.33,,osm_category_default
+323,Vadhana District,,school,low,none,0.0,1.5,4,4674.350880154438,Polygon,1534.4332490020197,Ramkhamhaeng,14.147439509302414,2.0,42.2,,osm_category_default
+874,Bangkok Yai District,โรงเรียนวัดท่าพระ,school,high,none,0.0,1.4,1,4618.213558251644,Polygon,433.35911799838107,Tha Phra,17.88295316842188,1.9,44.11,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+817,Bang Na District,โรงเรียนวัดบางนานอก,school,low,temple_land,66.1,1.3,1,4607.304720075342,Polygon,2002.721935693159,Bang Na,16.730954912626892,1.9,43.09,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+870,Khlong Toei District,,library,low,oversized_parcel,0.0,21.2,1,4553.577125037386,Polygon,1429.5579408285498,Ekkamai BTS Station,32.04800465406342,1.5,42.1,,osm_category_default
+625,Bang Kho Laem District,โรงเรียนวาสุเทวี,school,low,none,0.0,0.4,1,4544.990464935351,Polygon,3392.749040067072,Krung Thon Buri,43.05120204584554,1.6,42.48,Ursulines of the Roman Union (Thailand),osm_category_default
+734,Khlong San District,โรงเรียนมัธยมวัดสุทธาราม,school,low,none,0.0,1.0,1,4492.23066443367,Polygon,914.3005392414915,Wongwian Yai,3.432735525625637,1.9,42.91,,osm_category_default
+783,Ratchathewi District,Kovit Thamrong School,school,low,none,0.0,1.0,3,4484.100277579843,Polygon,304.9868548043655,Ratchaprarop,3.519620160749606,2.6,42.85,,osm_category_default
+901,Bang Na District,โรงเรียนผ่องพลอยอนุสรณ์,school,high,none,0.0,,1,4478.562203278285,Point,1497.4988411133575,Si La Salle,16.730954912626892,1.9,43.09,BMA school registry (data.bangkok.go.th),bma_open_data
+669,Yan Nawa District,ตลาดนัดสาธุ,market,low,none,0.0,1.0,1,4458.65375053737,Polygon,2876.1851787553524,Si Lom,71.17195774707528,1.5,41.6,,osm_category_default
+435,Pom Prap Sattru Phai District,กระทรวงการท่องเที่ยวและกีฬา,government_office,low,none,0.0,2.4,1,4447.790876267028,Polygon,1596.9132614305317,Sam Yot,2.5132994081199342,2.5,44.33,,osm_category_default
+280,Phra Nakhon District,ตลาดสดสำราญราษฎร์,market,low,none,0.0,1.0,9,4430.552220407888,Polygon,643.2961963296686,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+192,Phra Nakhon District,,market,low,none,0.0,,1,4413.019923100661,Point,2007.5408401165014,Sirindhorn,10.073902842536365,2.3,43.21,,osm_category_default
+6,Bang Phlat District,สำนักงานเขตบางพลัด,district_office,high,none,0.0,,1,4371.907088618198,Point,168.55513596949595,Bang Phlat,5.343934684605851,2.5,43.59,,osm_category_default
+836,Bang Sue District,โรงเรียนวัดเลียบราษฏร์บำรุง,school,high,none,0.0,1.1,1,4358.112548133584,Polygon,597.4388053160477,Wong Sawang,16.59413937857211,3.2,44.7,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+542,Dusit District,สำนักงานเลขาธิการสภาการศึกษา,government_office,low,none,0.0,2.0,1,4342.912536522577,Polygon,1551.1888406832925,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+733,Khlong San District,โรงเรียนนานาชาติอินเตอร์เนชั่นแนลไพโอเนียร์ส,school,low,none,0.0,1.0,6,4322.131254788867,Polygon,317.3638401622046,Krung Thon Buri,3.432735525625637,1.9,42.91,,osm_category_default
+831,Phaya Thai District,สวนอินทมระ,park,low,oversized_parcel,0.0,10.4,2,4321.262319783247,Polygon,1076.4623040641331,Saphan Khwai,24.15944885836817,2.8,44.04,,osm_category_default
+662,Samphanthawong District,,market,low,none,0.0,5.3,1,4317.433148579817,Polygon,640.1925890266139,Khlong San,1.3497852761115583,2.3,42.72,,osm_category_default
+794,Phaya Thai District,ตลาดหลังกระทรวงการคลัง,market,low,none,0.0,0.6,8,4314.984970318594,Polygon,895.9574630935853,Ari,24.15944885836817,2.8,44.04,,osm_category_default
+477,Sathon District,โรงเรียนนานาชาติเครซเซนต์,school,low,none,0.0,1.0,1,4257.876112472447,Polygon,812.4452154269521,Lumphini,66.31155084548975,2.0,42.49,,osm_category_default
+579,Ratchathewi District,Pratunal Clinic,health_centre,low,oversized_parcel,0.0,15.5,5,4254.3458359320475,Polygon,86.46583924536777,Ratchaprarop,3.519620160749606,2.6,42.85,,osm_category_default
+423,Khlong Toei District,โรงเรียนนานาชาติบีเอสบีบริติชไพรแมรี่,school,low,none,0.0,1.0,3,4232.330909810082,Polygon,539.5476520777457,Nana,32.04800465406342,1.5,42.1,บริษัท เดอะ บริติช สคูล ออฟ แบงคอก จำกัด,osm_category_default
+8,Bangkok Yai District,สำนักงานเขตบางกอกใหญ่,district_office,high,none,0.0,,1,4223.780393584184,Point,746.9721759239002,Tha Phra,17.88295316842188,1.9,44.11,,osm_category_default
+470,Vadhana District,,park,low,none,0.0,1.8,1,4200.8227092153875,Polygon,903.1196708422682,Phra Khanong,14.147439509302414,2.0,42.2,,osm_category_default
+629,Vadhana District,,park,low,none,0.0,1.8,1,4185.75567522595,Polygon,543.2650296461219,Phrom Phong,14.147439509302414,2.0,42.2,,osm_category_default
+839,Chatuchak District,,park,low,none,0.0,1.1,14,4184.806378122148,Polygon,1360.8827036602495,Bang Son,7.512476021659428,3.1,44.35,,osm_category_default
+957,Yan Nawa District,โรงเรียนวัดดอกไม้,school,high,none,0.0,,1,4163.541053222601,Point,4866.227657097625,Krung Thon Buri,71.17195774707528,1.5,41.6,BMA school registry (data.bangkok.go.th),bma_open_data
+623,Bangkok Yai District,สวนบางกอกใหญ่,park,low,none,0.0,1.3,1,4110.2857121032575,Polygon,520.2808725051043,Tha Phra,17.88295316842188,1.9,44.11,,osm_category_default
+818,Chatuchak District,โรงเรียนบีคอนเฮาส์ แย้มสอาดลาดพร้าว,school,low,none,0.0,1.0,7,4098.985218903128,Polygon,856.9425839770141,Lat Phrao,7.512476021659428,3.1,44.35,,osm_category_default
+464,Chatuchak District,Gistda บางเขน,government_office,low,none,0.0,6.9,1,4045.3640472555785,Polygon,312.9979402726139,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+105,Chatuchak District,,health_centre,medium,none,0.0,,1,4032.9382629090464,Point,196.63565144902827,Ratchayothin,7.512476021659428,3.1,44.35,,osm_category_default
+98,Chatuchak District,,government_office,low,none,0.0,,1,4030.8556035815914,Point,154.3174726375931,Phahonyothin 24,7.512476021659428,3.1,44.35,,osm_category_default
+355,Phaya Thai District,ศูนย์เซเวียร์,community_centre,low,none,0.0,3.5,1,4007.145477843419,Polygon,524.8015757840243,Victory Monument,24.15944885836817,2.8,44.04,,osm_category_default
+150,Vadhana District,,health_centre,medium,none,0.0,,1,3975.9681654111755,Point,1543.4848513274621,Ramkhamhaeng,14.147439509302414,2.0,42.2,,osm_category_default
+414,Thon Buri District,รร.เกื้อวิทยา,school,low,none,0.0,1.0,2,3959.254360089556,Polygon,1246.6184190417594,Wongwian Yai,0.4552733595031658,1.7,43.87,,osm_category_default
+151,Ratchathewi District,กรมปศุสัตว์,government_office,low,none,0.0,,1,3958.4796675850057,Point,149.34797448448518,Phaya Thai,3.519620160749606,2.6,42.85,,osm_category_default
+507,Chatuchak District,,government_office,low,none,0.0,1.1,1,3899.095237281918,Polygon,111.79568987539787,Royal Forest Department,7.512476021659428,3.1,44.35,,osm_category_default
+394,Bang Na District,ตลาดคุณยิ้ม,market,low,none,0.0,1.0,4,3892.3579774802397,Polygon,84.71143493540686,Udom Suk,16.730954912626892,1.9,43.09,,osm_category_default
+482,Phra Nakhon District,โรงเรียนสตรีวรนาถ,school,low,none,0.0,5.0,1,3872.829109667174,Polygon,2194.467015620139,Sirindhorn,10.073902842536365,2.3,43.21,,osm_category_default
+357,Phra Nakhon District,สำนักงานสรรพากรภาค ๓,government_office,low,none,0.0,1.4,3,3863.7936857341415,Polygon,1711.239859221319,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+241,Chatuchak District,Shine Clinic,health_centre,medium,none,0.0,,1,3849.2609345020714,Point,170.87837038468595,Lat Phrao,7.512476021659428,3.1,44.35,,osm_category_default
+747,Yan Nawa District,โรงเรียนเจ้าพระยาวิทยาคม,school,low,none,0.0,0.2,2,3834.700202658733,Polygon,5954.877897714425,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+124,Pathum Wan District,ห้องสมุดศิลปะ,library,low,none,0.0,,1,3824.387167006078,Point,424.1527507601472,Siam,8.958127403648023,2.4,41.82,,osm_category_default
+773,Phaya Thai District,,park,low,none,0.0,1.0,3,3819.8595005219477,Polygon,1251.7445069466387,Ari,24.15944885836817,2.8,44.04,,osm_category_default
+582,Chatuchak District,สวนวิภาภิรมณ์,park,high,none,0.0,1.0,1,3815.6016688450827,Polygon,934.7064528069025,Chatuchak Park,7.512476021659428,3.1,44.35,Bangkok Metropolitan,osm_operator_tag
+841,Phra Nakhon District,,park,low,none,0.0,3.6,2,3813.138872385418,Polygon,1123.2414162241796,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+237,Khlong Toei District,Bangkok Community Help Foundation,government_office,low,none,0.0,,1,3789.5933313248975,Point,1378.7052216711181,Ekkamai BTS Station,32.04800465406342,1.5,42.1,,osm_category_default
+617,Khlong San District,สวนสานสาธารณะ,park,low,none,1.5,1.0,2,3778.9295493703758,Polygon,961.6174567294808,Khlong San,3.432735525625637,1.9,42.91,สำนักงานคณะกรรมการสุขภาพแห่งชาติ (สช.),osm_category_default
+830,Din Daeng District,โรงเรียนอำนวยพิทยา,school,low,none,0.0,1.0,1,3772.4438670823397,Polygon,927.4945554034467,Thailand Cultural Centre,39.43490169368372,2.7,44.25,,osm_category_default
+49,Yan Nawa District,Homegate Real Estate Co. Ltd.,market,low,none,0.0,,1,3757.384229798655,Point,2871.9092583235597,Lumphini,71.17195774707528,1.5,41.6,,osm_category_default
+162,Ratchathewi District,สถาบันทดสอบทางการศึกษาแห่งชาติ,government_office,low,none,0.0,,1,3730.172610459205,Point,252.8905565296864,Phaya Thai,3.519620160749606,2.6,42.85,,osm_category_default
+5,Bang Na District,สำนักงานเขตบางนา,district_office,high,none,0.0,,1,3712.363960346559,Point,363.40073939130235,Si Iam,16.730954912626892,1.9,43.09,,osm_category_default
+695,Dusit District,โรงเรียนวัดจันทรสโมสร,school,high,none,0.0,1.0,1,3710.177148933092,Polygon,1069.288765013884,Bang O,15.140222506111774,2.6,43.49,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+567,Phra Nakhon District,,park,low,none,0.0,1.0,2,3661.720111664241,Polygon,216.26465027361178,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+263,Bang Phlat District,ตลาดกรุงธน,market,low,none,0.0,3.2,1,3656.731214941714,MultiPolygon,243.5825519417118,Sirindhorn,5.343934684605851,2.5,43.59,,osm_category_default
+650,Bangkok Yai District,ศูนย์นันทนาการบางกอกใหญ่,community_centre,low,none,0.0,1.6,1,3642.481478104234,Polygon,718.0471515620217,Tha Phra,17.88295316842188,1.9,44.11,,osm_category_default
+718,Ratchathewi District,โรงเรียนกิ่งเพชร,school,high,none,0.0,1.0,1,3591.901939044271,Polygon,563.7719449440891,Ratchathewi,3.519620160749606,2.6,42.85,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+777,Dusit District,ตลาดนครชัยศรี,market,low,none,0.0,0.9,27,3588.3193586181806,Polygon,1112.7556741543006,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+406,Ratchathewi District,Defence Energy Department,government_office,low,none,0.0,7.9,1,3585.31931514991,Polygon,244.3881321238605,Ratchathewi,3.519620160749606,2.6,42.85,,osm_category_default
+301,Ratchathewi District,Victory Point,market,low,none,0.0,1.4,3,3570.3824137485726,Polygon,182.42280478349292,Victory Monument,3.519620160749606,2.6,42.85,,osm_category_default
+923,Chatuchak District,โรงเรียนบ้านลาดพร้าว,school,high,none,0.0,,1,3565.689506413124,Point,642.032453712868,Phawana,7.512476021659428,3.1,44.35,BMA school registry (data.bangkok.go.th),bma_open_data
+405,Pathum Wan District,สำนักงานป้องกันและปราบปรามการฟอกเงิน,government_office,low,none,0.0,1.7,2,3564.9822266998804,Polygon,415.9424400793831,Ratchathewi,8.958127403648023,2.4,41.82,,osm_category_default
+750,Khlong Toei District,ตลาด SW1,market,low,none,0.0,1.0,6,3562.822696165871,Polygon,296.3725865115005,Asok,32.04800465406342,1.5,42.1,,osm_category_default
+565,Phaya Thai District,Rasami British International School Bangkok,school,low,none,0.0,1.0,5,3558.3435330094953,Polygon,794.8025935031866,Sanam Pao,24.15944885836817,2.8,44.04,,osm_category_default
+327,Sathon District,ตลาดสวนพลู,market,low,none,0.0,6.0,1,3551.230527718468,Polygon,1077.8314232224889,Lumphini,66.31155084548975,2.0,42.49,,osm_category_default
+852,Phaya Thai District,โรงเรียนธำรงวิทย์,school,low,none,0.0,1.0,3,3543.8849661060262,Polygon,338.7641735365762,Ari,24.15944885836817,2.8,44.04,,osm_category_default
+480,Thon Buri District,,park,low,none,0.0,3.7,3,3521.4964950964672,Polygon,505.5068112722654,Wongwian Yai,0.4552733595031658,1.7,43.87,,osm_category_default
+84,Vadhana District,รร. สาธิต มศว ประสานมิตร (ฝ่ายมัธยม),school,low,none,0.0,,1,3518.6600568671547,Point,794.8953785533479,Asok,14.147439509302414,2.0,42.2,,osm_category_default
+170,Din Daeng District,The Street Ratchada Night Market,market,low,none,0.0,,1,3503.2098723499753,Point,462.9986395288253,Thailand Cultural Centre,39.43490169368372,2.7,44.25,,osm_category_default
+179,Bang Rak District,Nevella,health_centre,medium,none,0.0,,1,3499.175112107806,Point,146.44621632743855,Si Lom,95.26537274363294,2.3,41.81,,osm_category_default
+467,Vadhana District,สถานีดับเพลิงพระโขนง,fire_station,medium,none,0.0,5.0,1,3491.7262843481053,Polygon,312.2665583281505,On Nut,14.147439509302414,2.0,42.2,,osm_category_default
+827,Yan Nawa District,สวนร่มแมกไม้,park,low,none,0.0,1.9,2,3486.5621723851946,Polygon,2616.718448467397,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+13,Sathon District,โรงเรียนจิ้นเตอะ,school,low,none,0.0,,1,3477.6959299935816,Point,2501.4044581548806,Si Lom,66.31155084548975,2.0,42.49,,osm_category_default
+303,Vadhana District,โรงเรียนพระแม่มารีพระโขนง,school,low,none,0.0,1.0,1,3454.744012655766,Polygon,360.9863010256331,Phra Khanong,14.147439509302414,2.0,42.2,,osm_category_default
+829,Yan Nawa District,สวนเขตขวัญ,park,low,none,0.0,1.8,1,3448.6450317947547,Polygon,2937.82409760164,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+412,Thon Buri District,ตลาดวัดสุทธาราม,market,low,none,0.0,1.7,1,3422.873360515301,Polygon,920.9967761763901,Wongwian Yai,0.4552733595031658,1.7,43.87,,osm_category_default
+366,Vadhana District,สมาคมส่งเสริมเทคโนโลยี (ไทย-ญี่ปุ่น),school,low,none,0.0,1.2,1,3393.9631843333545,Polygon,493.75343565835317,Asok,14.147439509302414,2.0,42.2,,osm_category_default
+492,Chatuchak District,สวนวงเวียนซ.24,park,low,none,0.0,0.8,4,3370.0770310961966,Polygon,302.4600372860584,Phahonyothin 24,7.512476021659428,3.1,44.35,,osm_category_default
+60,Pom Prap Sattru Phai District,,fire_station,medium,none,0.0,,1,3340.226449475156,Point,670.2390403693266,Wat Mangkon,2.5132994081199342,2.5,44.33,,osm_category_default
+622,Vadhana District,Bangkok Prep Tennis Academy,school,low,none,0.0,1.6,1,3330.446785404356,Polygon,1152.6698778565246,On Nut,14.147439509302414,2.0,42.2,,osm_category_default
+37,Phaya Thai District,เบญจบริรักษ์เวช คลินิก,health_centre,medium,none,0.0,,1,3327.0850340991365,Point,57.75745702783657,Ari,24.15944885836817,2.8,44.04,,osm_category_default
+879,Bang Phlat District,,park,low,none,1.8,1.1,3,3325.46429050881,Polygon,768.1200622824449,Bang Yi Khan,5.343934684605851,2.5,43.59,,osm_category_default
+419,Vadhana District,Bangkok Area Revenue Office,government_office,low,none,0.0,6.1,1,3310.1727467497126,Polygon,231.63326860599966,Nana,14.147439509302414,2.0,42.2,,osm_category_default
+660,Samphanthawong District,สวนชุมชนโชฎึก,park,low,none,0.0,3.7,3,3304.906752097853,Polygon,390.11266220475756,Hua Lamphong,1.3497852761115583,2.3,42.72,,osm_category_default
+33,Phra Nakhon District,United Nations Economic and Social Commission for Asia and the Pacific (ESCAP),government_office,low,none,0.0,,1,3275.6320580130637,Point,1944.583105700538,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+479,Khlong San District,ตลาดท่าดินแดง,market,low,none,0.0,2.9,1,3264.633305160362,Polygon,687.1020185831899,Khlong San,3.432735525625637,1.9,42.91,,osm_category_default
+59,Chatuchak District,สำนักงานการวิจัยแห่งชาติ (วช.),government_office,low,none,0.0,,1,3263.8016893876534,Point,359.25809065339723,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+16,Chatuchak District,อนุบาลสุดารักษ์,school,low,none,0.0,,1,3210.329052933983,Point,550.0668940794114,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+50,Samphanthawong District,โรงเรียนเผยอิง,school,low,none,12.6,,1,3199.0959575979327,Point,469.54714784427546,Wat Mangkon,1.3497852761115583,2.3,42.72,,osm_category_default
+94,Khlong Toei District,,health_centre,medium,none,0.0,,1,3192.2854352780214,Point,14.767622896581528,Phra Khanong,32.04800465406342,1.5,42.1,,osm_category_default
+675,Sathon District,โรงเรียนเบญจวรรณศึกษา,school,low,none,0.0,1.0,9,3166.9314911241254,Polygon,2797.5251294062487,Krung Thon Buri,66.31155084548975,2.0,42.49,,osm_category_default
+697,Dusit District,สวนหย่อมคลองบางซื่อ,park,low,none,0.0,0.8,1,3134.4712727237834,Polygon,870.6915277896479,Bang Pho,15.140222506111774,2.6,43.49,,osm_category_default
+866,Bangkok Yai District,ตลาดโพธิ์สามต้น,market,low,oversized_parcel,0.0,12.8,1,3126.6129548969716,Polygon,365.85386554410326,Itsaraphap,17.88295316842188,1.9,44.11,,osm_category_default
+66,Phra Nakhon District,Baanchao Yoga,school,low,none,0.0,,1,3108.1822432416157,Point,1846.7590191252693,Bang Yi Khan,10.073902842536365,2.3,43.21,,osm_category_default
+35,Thon Buri District,โรงเรียนกันตทาราราม (สืบ-ลูกจันทร์ จึงประไพ),school,low,none,0.0,,1,3079.791545978915,Point,440.5634578900273,Talat Phlu,0.4552733595031658,1.7,43.87,,osm_category_default
+445,Khlong San District,ตลาดสดวงเวียนใหญ่,market,low,none,0.0,1.0,1,3073.5235038509036,Polygon,436.29059571063243,Wongwian Yai,3.432735525625637,1.9,42.91,,osm_category_default
+72,Pom Prap Sattru Phai District,,market,low,none,1.4,,1,3041.094032625495,Point,77.7009451005891,Wat Mangkon,2.5132994081199342,2.5,44.33,,osm_category_default
+663,Bangkok Yai District,โรงเรียนชาตศึกษา,school,low,none,0.0,1.0,1,3035.591688405317,Polygon,636.559610813104,Itsaraphap,17.88295316842188,1.9,44.11,,osm_category_default
+283,Samphanthawong District,ตลาดเก่า,market,low,none,0.0,0.9,24,3025.5551990775502,Polygon,273.1478394882009,Wat Mangkon,1.3497852761115583,2.3,42.72,,osm_category_default
+361,Bang Rak District,ตลาดบางรัก,market,low,none,0.0,2.0,1,3013.5572366257284,Polygon,944.2187098751004,Charoen Nakhon,95.26537274363294,2.3,41.81,,osm_category_default
+664,Bang Rak District,ตลาดละลายทรัพย์,market,low,none,0.0,1.1,11,3010.9598918802694,Polygon,676.1500372386755,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
+898,Vadhana District,โรงเรียนสุเหร่าสามอิน,school,high,none,22.0,,1,2991.941418840722,Point,1495.9588303268017,Phra Khanong,14.147439509302414,2.0,42.2,BMA school registry (data.bangkok.go.th),bma_open_data
+854,Phaya Thai District,สำนักป้องกันและบรรเทาสาธารณภัย,government_office,low,none,0.0,5.6,1,2988.406563224458,Polygon,147.04889585979427,Ari,24.15944885836817,2.8,44.04,,osm_category_default
+781,Dusit District,แฟลตสถานีดับเพลิงดุสิต,fire_station,medium,none,0.0,2.9,1,2988.0717869570503,Polygon,1554.6792051029001,Ari,15.140222506111774,2.6,43.49,,osm_category_default
+496,Sathon District,,park,low,none,0.0,5.2,4,2985.9340210750634,Polygon,2545.4168494152873,Si Lom,66.31155084548975,2.0,42.49,,osm_category_default
+725,Yan Nawa District,บ้านหนังสือ,library,low,oversized_parcel,0.0,35.6,1,2981.763861889382,Polygon,2979.8230789543786,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+432,Dusit District,สำนักงานคณะกรรมการข้าราชการพลเรือน,government_office,low,none,0.0,2.6,1,2979.9573263222887,Polygon,2244.1351983301925,Sam Yot,15.140222506111774,2.6,43.49,,osm_category_default
+38,Phaya Thai District,La Cherie Clinic,health_centre,medium,none,0.0,,1,2959.4904212260235,Point,87.84887868411485,Ari,24.15944885836817,2.8,44.04,,osm_category_default
+422,Vadhana District,,school,low,none,0.0,1.3,2,2946.9566250768794,Polygon,685.7222856447601,Asok,14.147439509302414,2.0,42.2,,osm_category_default
+90,Vadhana District,โรงเรียนนานาชาติไอวี่บาวนด์,school,low,none,0.0,,1,2939.4692343514334,Point,658.5217401660566,Phrom Phong,14.147439509302414,2.0,42.2,,osm_category_default
+14,Sathon District,สำนักงานเขตสาทร,district_office,high,none,0.0,,1,2938.1185109401954,Point,2610.373347193241,Si Lom,66.31155084548975,2.0,42.49,,osm_category_default
+71,Phra Nakhon District,,market,low,none,0.0,,1,2934.3419862706637,Point,1415.6528334040265,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+356,Phaya Thai District,,park,low,none,0.0,3.5,1,2929.9756163901607,Polygon,480.0087114248616,Ari,24.15944885836817,2.8,44.04,,osm_category_default
+454,Din Daeng District,Samsen Nok School,school,low,none,0.0,1.0,5,2910.4540280559063,Polygon,488.48726529468775,Huai Khwang,39.43490169368372,2.7,44.25,,osm_category_default
+91,Khlong Toei District,Vanessa Sukhumvit School,school,low,none,0.0,,1,2860.413034378871,Point,733.2071012570606,Phrom Phong,32.04800465406342,1.5,42.1,,osm_category_default
+146,Bang Sue District,สถานีดับเพลิงและกู้ภัยบางซ่อน,fire_station,medium,none,0.0,,1,2852.0058728787135,Point,256.31312992470873,Wong Sawang,16.59413937857211,3.2,44.7,,osm_category_default
+40,Bang Rak District,ตลาดกลางคืนพัฒน์พงษ์,market,low,none,0.0,,1,2840.880472475666,Point,384.3428975968937,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
+328,Thon Buri District,ตลาดพลู,market,low,none,0.0,0.9,1,2826.7993737710467,Polygon,813.5217069461775,Talat Phlu,0.4552733595031658,1.7,43.87,,osm_category_default
+89,Vadhana District,,health_centre,medium,none,0.0,,1,2768.099019233226,Point,191.44096028011543,Phrom Phong,14.147439509302414,2.0,42.2,,osm_category_default
+12,Sathon District,,school,low,none,0.0,,1,2749.9570974130156,Point,1637.892305935294,Si Lom,66.31155084548975,2.0,42.49,,osm_category_default
+942,Phra Nakhon District,โรงเรียนราชบพิธ,school,high,none,0.0,,1,2740.23514574124,Point,429.8923976283971,Sam Yot,10.073902842536365,2.3,43.21,BMA school registry (data.bangkok.go.th),bma_open_data
+449,Pathum Wan District,โรงเรียนประเสริฐธรรมวิทยา,school,low,none,0.0,6.9,1,2735.8857253461583,Polygon,534.0577063955309,Hua Lamphong,8.958127403648023,2.4,41.82,,osm_category_default
+417,Khlong San District,สํานักงานที่ดินกรุงเทพมหานคร สาขาธนบุรี,government_office,low,none,0.0,1.8,3,2733.5602253200614,Polygon,691.3931256118419,Krung Thon Buri,3.432735525625637,1.9,42.91,,osm_category_default
+812,Phaya Thai District,สำนักงานเขตพญาไท,district_office,high,none,0.0,0.9,2,2713.2043453515557,Polygon,228.61534530023553,Ari,24.15944885836817,2.8,44.04,,osm_category_default
+39,Vadhana District,west one,market,low,none,0.0,,1,2676.7274650640575,Point,547.0120119726511,Phrom Phong,14.147439509302414,2.0,42.2,,osm_category_default
+190,Phra Nakhon District,,market,low,none,0.0,,1,2667.841721381018,Point,1956.8553263750166,Sirindhorn,10.073902842536365,2.3,43.21,,osm_category_default
+332,Chatuchak District,สวนป่าประชาชื่น,park,low,none,0.0,0.8,1,2609.8930183951466,Polygon,2018.805460070052,Wong Sawang,7.512476021659428,3.1,44.35,,osm_category_default
+938,Bang Phlat District,โรงเรียนบางยี่ขันวิทยาคม,school,high,none,0.0,,1,2592.604863071035,Point,616.2152450581533,Bang Yi Khan,5.343934684605851,2.5,43.59,BMA school registry (data.bangkok.go.th),bma_open_data
+597,Bang Rak District,ตลาดนัดซอย 10,market,low,none,0.0,1.2,1,2590.2204070839907,Polygon,531.0192548084838,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
+921,Khlong Toei District,โรงเรียนวัดสะพาน,school,low,temple_land,100.0,,1,2571.359784439236,Point,1251.9989578171148,Phra Khanong,32.04800465406342,1.5,42.1,BMA school registry (data.bangkok.go.th),bma_open_data
+392,Vadhana District,The Early Learning Centre,school,low,none,0.0,0.9,4,2566.7418282490003,Polygon,1029.7498628901449,Phrom Phong,14.147439509302414,2.0,42.2,,osm_category_default
+359,Bang Rak District,สีลม สแควร์,market,low,none,0.0,1.1,1,2560.412831315011,Polygon,512.6934107445686,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
+310,Vadhana District,ตลาดอ่อนนุช,market,low,none,0.0,1.0,3,2537.719492362411,Polygon,509.244216343641,On Nut,14.147439509302414,2.0,42.2,,osm_category_default
+633,Bang Rak District,โรงเรียนอัสสัมชัญคอนแวนต์ สีลม,school,low,none,0.0,1.0,1,2508.83664070637,Polygon,1437.2483108611666,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
+199,Sathon District,Aestima,health_centre,medium,none,0.0,,1,2495.0151798840193,Point,348.4171163879146,Lumphini,66.31155084548975,2.0,42.49,,osm_category_default
+537,Phaya Thai District,Metropolitan Electricity Authority Wiphawadi District,government_office,low,none,0.0,1.1,5,2494.7573454672324,Polygon,961.2280118245857,Sanam Pao,24.15944885836817,2.8,44.04,,osm_category_default
+512,Chatuchak District,,park,low,none,0.0,2.4,1,2490.919623057268,Polygon,399.6399046951952,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+374,Bang Rak District,โรงเรียนคริสต์ธรรมวิทยา,school,low,none,0.0,1.0,2,2474.9405419307177,Polygon,765.3992740686219,Hua Lamphong,95.26537274363294,2.3,41.81,,osm_category_default
+22,Chatuchak District,คณะสัตวแพทย์ศาสตร์,school,low,none,0.0,,1,2459.8708149709423,Point,301.87914650058195,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+65,Khlong Toei District,W Ploenchit Wellness Center,health_centre,medium,none,0.0,,1,2445.385800029152,Point,308.2613646689127,Phloen Chit,32.04800465406342,1.5,42.1,W Ploenchit Wellness Center,osm_category_default
+210,Bang Phlat District,Canadian International School of Thailand,school,low,none,0.0,,1,2443.4047715896268,Point,889.8251240783188,Sirindhorn,5.343934684605851,2.5,43.59,,osm_category_default
+141,Khlong Toei District,,government_office,low,none,0.0,,1,2439.173487555263,Point,241.9387664501376,Asok,32.04800465406342,1.5,42.1,,osm_category_default
+572,Sathon District,สวนสาธารณะคลองช่องนนทรี,park,low,none,0.0,0.7,1,2435.0022028904123,Polygon,1136.6927970617576,Si Lom,66.31155084548975,2.0,42.49,,osm_category_default
+619,Khlong San District,,park,low,none,0.0,5.1,1,2413.1611806598935,Polygon,638.7829787200732,Khlong San,3.432735525625637,1.9,42.91,,osm_category_default
+77,Vadhana District,Chutaporn Kindergarten,school,low,none,0.0,,1,2412.879215666728,Point,869.3719013933547,Makkasan,14.147439509302414,2.0,42.2,,osm_category_default
+184,Vadhana District,,health_centre,medium,none,0.0,,1,2410.698737633703,Point,592.2757688411695,Makkasan,14.147439509302414,2.0,42.2,,osm_category_default
+386,Din Daeng District,ตลาดศรีดินแดง,market,low,none,0.0,1.6,1,2371.31760191995,Polygon,989.780480735246,Ratchaprarop,39.43490169368372,2.7,44.25,,osm_category_default
+602,Phra Nakhon District,อุทกทาน,park,low,none,0.0,0.8,1,2370.282563513715,Polygon,1309.8644920036952,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+387,Bang Phlat District,ปิ่นเงิน พลาซ่า,market,low,none,0.0,1.1,1,2361.4437686688875,Polygon,874.350141726342,Bang Yi Khan,5.343934684605851,2.5,43.59,,osm_category_default
+689,Yan Nawa District,La Petite École Bangkok,school,low,none,0.0,1.0,5,2350.4169677240707,Polygon,1102.2695564710457,Khlong Toei,71.17195774707528,1.5,41.6,บริษัท ลา เปติท อีโคล แบงค็อก จำกัด,osm_category_default
+796,Bang Na District,ตลาดนัดลาซาล 48,market,low,none,0.0,0.8,2,2343.329593747328,Polygon,1045.904748548814,Si La Salle,16.730954912626892,1.9,43.09,,osm_category_default
+459,Yan Nawa District,สำนักงานเขตยานนาวา,district_office,high,none,0.0,2.2,1,2321.996553421138,Polygon,3141.787756957746,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+43,Sathon District,ไชยแพทย์ 25 คลินิก,health_centre,medium,none,0.0,,1,2317.2535981273404,Point,450.6997736114516,Lumphini,66.31155084548975,2.0,42.49,,osm_category_default
+383,Bang Phlat District,สถานีดับเพลิงบางอ้อ,fire_station,medium,none,0.0,1.1,1,2290.9666646007136,Polygon,501.5427887684395,Bang O,5.343934684605851,2.5,43.59,,osm_category_default
+692,Chatuchak District,,park,low,none,0.0,0.8,2,2283.250062019784,Polygon,1730.121517975847,Bang Son,7.512476021659428,3.1,44.35,,osm_category_default
+107,Chatuchak District,,health_centre,medium,none,0.0,,1,2282.0479319294313,Point,264.17199116076165,Ratchayothin,7.512476021659428,3.1,44.35,,osm_category_default
+364,Phra Nakhon District,สำนักงานคณะกรรมการกฤษฎีกา,government_office,low,none,0.0,1.7,1,2270.327339449652,Polygon,1767.0444791686423,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+421,Vadhana District,โรงเรียนสวัสดีวิทยา,school,high,none,0.0,1.9,1,2245.6518688801925,Polygon,658.20638264634,Asok,14.147439509302414,2.0,42.2,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+686,Thon Buri District,ตลาด BTS ตลาดพลู,market,low,none,0.0,1.0,14,2233.015326876705,Polygon,46.26621517065608,Talat Phlu,0.4552733595031658,1.7,43.87,,osm_category_default
+103,Vadhana District,,health_centre,medium,none,0.0,,1,2232.5020167275275,Point,102.7965362821864,Asok,14.147439509302414,2.0,42.2,,osm_category_default
+433,Dusit District,สำนักงานคณะกรรมการพัฒนาระบบราชการ,government_office,low,none,0.0,2.3,1,2224.5699582254574,Polygon,2246.871564690486,Sam Yot,15.140222506111774,2.6,43.49,,osm_category_default
+74,Ratchathewi District,Tourism Authority of Thailand,government_office,low,none,0.0,,1,2216.636475454953,Point,540.059574807232,Makkasan,3.519620160749606,2.6,42.85,,osm_category_default
+348,Phra Nakhon District,องค์การพัฒนาอุตสาหกรรมแห่งสหประชาชาติ,government_office,low,none,0.0,1.4,5,2207.153492088882,Polygon,1863.580870525651,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+463,Ratchathewi District,One food market,market,low,none,0.0,4.9,1,2155.786055760629,Polygon,410.9088529032851,Ratchaprarop,3.519620160749606,2.6,42.85,,osm_category_default
+897,Vadhana District,โรงเรียนสุเหร่าบางมะเขือ (ปรีดี พนมยงค์ อนุสรณ์),school,high,none,22.3,,1,2134.2352846498125,Point,613.5945202233173,Phra Khanong,14.147439509302414,2.0,42.2,BMA school registry (data.bangkok.go.th),bma_open_data
+574,Bang Rak District,สำนักงานเขตบางรัก,district_office,high,none,0.0,2.0,1,2133.9624033752084,Polygon,712.8988801742678,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
+720,Yan Nawa District,สวนเปรมพัฒน์,park,low,none,0.0,2.0,1,2098.6326890434766,Polygon,2566.3986879684758,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+896,Vadhana District,โรงเรียนวิจิตรวิทยา,school,high,none,0.0,,1,2066.880415139536,Point,814.1505962643596,Ramkhamhaeng,14.147439509302414,2.0,42.2,BMA school registry (data.bangkok.go.th),bma_open_data
+231,Phaya Thai District,สำนักงานสรรพากรพื้นที่พญาไท,government_office,low,none,0.0,,1,2061.3435170783127,Point,54.52929574644112,Ari,24.15944885836817,2.8,44.04,,osm_category_default
+949,Pathum Wan District,โรงเรียนวัดสระบัว,school,high,none,1.0,,1,2052.065520452099,Point,1113.992952041283,Wat Mangkon,8.958127403648023,2.4,41.82,BMA school registry (data.bangkok.go.th),bma_open_data
+615,Bang Rak District,พี.เอส.อี. คลินิก,health_centre,low,oversized_parcel,0.0,16.6,1,2048.163623936863,Polygon,721.0671392042918,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
+909,Ratchathewi District,โรงเรียนวัดดิสหงสาราม,school,high,none,0.0,,1,2033.9314749668229,Point,677.7508621920728,Phloen Chit,3.519620160749606,2.6,42.85,BMA school registry (data.bangkok.go.th),bma_open_data
+2,Pom Prap Sattru Phai District,สำนักงานเขตป้อมปราบศัตรูพ่าย,district_office,high,none,0.0,,1,2029.566921873248,Point,1713.2479108673992,Sam Yot,2.5132994081199342,2.5,44.33,,osm_category_default
+658,Bang Rak District,เต้นท์ชมพู,market,low,none,0.0,1.1,3,2019.54280240592,Polygon,519.0120829303519,Si Lom,95.26537274363294,2.3,41.81,,osm_category_default
+578,Yan Nawa District,,health_centre,medium,none,0.0,3.9,1,1995.620221297071,Polygon,2512.26936098837,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+472,Bang Sue District,,park,low,oversized_parcel,0.0,31.3,1,1984.7816758193308,Polygon,256.71361491302474,Bang Pho,16.59413937857211,3.2,44.7,,osm_category_default
+709,Din Daeng District,สุทธิพรการแพทย์,health_centre,low,oversized_parcel,0.0,36.3,1,1976.10975073346,Polygon,1052.3472503550176,Phra Ram 9,39.43490169368372,2.7,44.25,,osm_category_default
+791,Pom Prap Sattru Phai District,หอสมุดดำรงราชานุภาพ,library,low,none,0.0,5.2,1,1975.4117990864056,Polygon,1475.3517123880451,Sam Yot,2.5132994081199342,2.5,44.33,,osm_category_default
+643,Vadhana District,สวน Park Thonglor Tower,park,low,none,0.0,2.2,1,1967.4507250131833,Polygon,1420.3415094717277,Thong Lo,14.147439509302414,2.0,42.2,Park Thonglor Tower,osm_category_default
+194,Phra Nakhon District,ห้องสมุดชุมชนบางลำพู,library,low,none,0.0,,1,1952.16023876318,Point,1934.6539551169687,Bang Yi Khan,10.073902842536365,2.3,43.21,,osm_category_default
+517,Chatuchak District,ตลาดบางเขน,market,low,none,0.0,1.0,1,1937.0359177353541,Polygon,231.0283844933963,Sena Nikhom,7.512476021659428,3.1,44.35,,osm_category_default
+344,Vadhana District,Dental Hospital Bangkok,health_centre,medium,none,0.0,3.0,1,1902.9906567039893,Polygon,803.6794453287529,Phrom Phong,14.147439509302414,2.0,42.2,,osm_category_default
+70,Pom Prap Sattru Phai District,,market,low,none,0.0,,1,1882.5416699199545,Point,422.7571249032552,Wat Mangkon,2.5132994081199342,2.5,44.33,,osm_category_default
+826,Samphanthawong District,ศูนย์ปฎิบัติการย่อยอาสาสมัครป้องกันภัยฝ่ายพลเรือนเขตสัมพันธวงศ์,fire_station,low,oversized_parcel,0.0,59.2,1,1881.3711381621672,Polygon,269.1749970677172,Hua Lamphong,1.3497852761115583,2.3,42.72,,osm_category_default
+823,Dusit District,โรงเรียนราชวัตรวิทยา,school,low,none,0.0,0.7,1,1880.6066076676866,Polygon,2032.5408831642972,Bang Phlat,15.140222506111774,2.6,43.49,,osm_category_default
+264,Yan Nawa District,สวน 15 นาที ยานนาวา,park,low,none,0.0,1.8,6,1878.5419776948308,MultiPolygon,4808.809485128386,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+573,Phra Nakhon District,ตลาดล็อตเตอรี่ศาลเจ้าพ่อเสือ,market,low,none,1.7,0.9,4,1877.087773806781,Polygon,899.9019523206974,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+902,Bang Na District,โรงเรียนรุ่งเรืองอุปถัมภ์,school,high,none,0.0,,1,1864.475915614393,Point,389.71724403885406,Udom Suk,16.730954912626892,1.9,43.09,BMA school registry (data.bangkok.go.th),bma_open_data
+825,Phra Nakhon District,ปากคลองตลาด,market,low,none,0.0,0.8,1,1851.4428235150212,Polygon,348.76417892645077,Sanam Chai,10.073902842536365,2.3,43.21,,osm_category_default
+922,Khlong Toei District,โรงเรียนวัดคลองเตย,school,high,none,0.0,,1,1825.4790762668188,Point,1395.933521667191,Queen Sirikit National Convention Centre,32.04800465406342,1.5,42.1,BMA school registry (data.bangkok.go.th),bma_open_data
+863,Samphanthawong District,สวนสมเด็จพระธีรญาณมุนี,park,low,none,0.0,1.8,3,1806.120679650914,Polygon,749.4609426368893,Sam Yot,1.3497852761115583,2.3,42.72,,osm_category_default
+48,Phaya Thai District,Office of the narcotics control board,government_office,low,none,0.0,,1,1765.4954147478998,Point,780.2917116336926,Victory Monument,24.15944885836817,2.8,44.04,,osm_category_default
+599,Bang Na District,,market,low,none,0.0,0.8,1,1754.3632499933647,Polygon,510.94536457559116,Bang Na,16.730954912626892,1.9,43.09,,osm_category_default
+890,Khlong Toei District,,market,low,none,0.0,1.1,2,1742.6339126103894,Polygon,573.4559297725888,Ekkamai BTS Station,32.04800465406342,1.5,42.1,,osm_category_default
+118,Vadhana District,TOEIC testing centre,school,low,none,0.0,,1,1732.4296437319213,Point,616.1267382626453,Makkasan,14.147439509302414,2.0,42.2,,osm_category_default
+382,Thon Buri District,โรงเรียนวัดโพธินิมิตร,school,high,none,0.0,1.0,1,1728.4838531237642,Polygon,219.48733763773208,Pho Nimit,0.4552733595031658,1.7,43.87,BMA school registry (data.bangkok.go.th),bma_open_data+osm_footprint
+193,Pom Prap Sattru Phai District,Street food and fruits,market,low,none,0.0,,1,1719.956808322851,Point,367.72972035055807,Wat Mangkon,2.5132994081199342,2.5,44.33,,osm_category_default
+238,Phra Nakhon District,ชนะการแพทย์,health_centre,medium,none,0.0,,1,1700.7571367130467,Point,1781.1504377751198,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+910,Ratchathewi District,โรงเรียนวัดทัศนารุณสุนทริการาม,school,high,none,0.0,,1,1695.8820886634953,Point,661.1159654992309,Ratchaprarop,3.519620160749606,2.6,42.85,BMA school registry (data.bangkok.go.th),bma_open_data
+79,Chatuchak District,I-tower,community_centre,low,none,0.0,,1,1647.3485745564544,Point,677.4968052700822,Ha Yaek Lat Phrao,7.512476021659428,3.1,44.35,,osm_category_default
+223,Phra Nakhon District,ตลาดตรอกหม้อ,market,low,none,0.0,,1,1638.3013099245322,Point,404.91699774475967,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+134,Pathum Wan District,สำนักงานเขตปทุมวัน,district_office,high,none,0.0,,1,1626.7176906959767,Point,995.7253314522809,Hua Lamphong,8.958127403648023,2.4,41.82,,osm_category_default
+764,Phaya Thai District,Maple Bear International School,school,low,none,0.0,1.0,1,1608.2807953166255,Polygon,489.2617273801515,Ari,24.15944885836817,2.8,44.04,,osm_category_default
+594,Phra Nakhon District,sam phraya park,park,low,none,0.0,2.4,1,1599.850793384991,Polygon,1770.0666946616514,Bang Yi Khan,10.073902842536365,2.3,43.21,,osm_category_default
+677,Bangkok Yai District,,market,low,none,0.0,2.0,1,1588.8574487117035,Polygon,368.29268696607534,จรัญฯ 13,17.88295316842188,1.9,44.11,,osm_category_default
+581,Samphanthawong District,,park,low,oversized_parcel,17.1,14.3,1,1583.6887544515844,Polygon,338.66159519782383,Wat Mangkon,1.3497852761115583,2.3,42.72,,osm_category_default
+307,Sathon District,ตลาดสดแสงจันทร์,market,low,none,0.0,3.8,1,1552.347247881259,Polygon,1912.2699791327823,Krung Thon Buri,66.31155084548975,2.0,42.49,,osm_category_default
+19,Ratchathewi District,Tantimedh Kindergarten,school,low,none,0.0,,1,1540.337354221819,Point,187.45709502033574,Phaya Thai,3.519620160749606,2.6,42.85,,osm_category_default
+126,Khlong Toei District,,market,low,none,0.0,,1,1536.682680633991,Point,571.9824399388305,Asok,32.04800465406342,1.5,42.1,,osm_category_default
+592,Bang Rak District,สวนพบรัก,park,low,none,0.0,5.2,1,1535.3450533425691,Polygon,156.24278274418523,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
+903,Bang Na District,โรงเรียนอำนวยกนกศิริอนุสรณ์,school,high,none,0.0,,1,1531.7478874854578,Point,1166.7778562684234,Udom Suk,16.730954912626892,1.9,43.09,BMA school registry (data.bangkok.go.th),bma_open_data
+110,Vadhana District,,community_centre,low,none,0.0,,1,1520.7596875111335,Point,304.5914115769854,Asok,14.147439509302414,2.0,42.2,,osm_category_default
+247,Ratchathewi District,สวนเฉลิมหล้า,park,high,none,0.0,0.8,1,1509.8885793457296,Polygon,203.55659890445685,Ratchathewi,3.519620160749606,2.6,42.85,กรุงเทพมหานคร,osm_operator_tag
+553,Samphanthawong District,พิพิธภัณฑ์ป๋วย อึ๊งภากรณ์,community_centre,low,none,0.0,3.2,1,1491.509774033563,Polygon,644.1796787808651,Khlong San,1.3497852761115583,2.3,42.72,,osm_category_default
+20,Sathon District,สถานีดับเพลิง ยานนาวา,fire_station,medium,none,0.0,,1,1471.1544040624663,Point,1337.9652851358885,Krung Thon Buri,66.31155084548975,2.0,42.49,,osm_category_default
+236,Bang Rak District,WellMed Bangkok Clinic,health_centre,medium,none,0.0,,1,1466.0820082491973,Point,404.86451866610685,Si Lom,95.26537274363294,2.3,41.81,,osm_category_default
+585,Bangkok Yai District,,park,low,none,0.0,1.3,2,1432.8483886652903,Polygon,37.65495644067232,Itsaraphap,17.88295316842188,1.9,44.11,,osm_category_default
+239,Chatuchak District,NP Prime Clinic - สาขาลาดพร้าว,health_centre,medium,none,0.0,,1,1409.2881053088029,Point,362.9059506530527,Lat Phrao,7.512476021659428,3.1,44.35,NP Prime Clinic,osm_category_default
+535,Dusit District,สัปปายะสภาสถาน,government_office,low,none,0.0,0.0,1,1406.308814247626,Polygon,827.7339895415238,Bang O,15.140222506111774,2.6,43.49,,osm_category_default
+620,Khlong San District,,park,low,none,0.0,5.7,1,1380.4254075126619,Polygon,580.9935265383677,Khlong San,3.432735525625637,1.9,42.91,,osm_category_default
+88,Vadhana District,,health_centre,medium,none,0.0,,1,1350.3147187776542,Point,272.3638017278277,Phrom Phong,14.147439509302414,2.0,42.2,,osm_category_default
+340,Chatuchak District,Bonmarche Market,market,low,none,0.0,0.0,3,1340.5213868448634,Polygon,2362.1590851134442,Ratchayothin,7.512476021659428,3.1,44.35,,osm_category_default
+645,Bang Rak District,ตลาดร่มเขียว,market,low,none,0.0,0.9,4,1313.5715096534273,Polygon,290.9714276373283,Si Lom,95.26537274363294,2.3,41.81,,osm_category_default
+68,Khlong Toei District,Romrawin,health_centre,medium,none,0.0,,1,1312.7488613687512,Point,70.92148078893294,Phrom Phong,32.04800465406342,1.5,42.1,,osm_category_default
+93,Vadhana District,,health_centre,medium,none,0.0,,1,1297.4242437561609,Point,465.9964895480017,Nana,14.147439509302414,2.0,42.2,,osm_category_default
+786,Khlong Toei District,สถานีดับเพลิงและกู้ภัยคลองเตย,fire_station,medium,none,0.0,1.3,1,1289.6265741956254,Polygon,520.4308747013293,Queen Sirikit National Convention Centre,32.04800465406342,1.5,42.1,,osm_category_default
+586,Bangkok Yai District,,park,low,none,0.0,1.1,2,1288.6493638105617,Polygon,55.838959594996915,Itsaraphap,17.88295316842188,1.9,44.11,,osm_category_default
+388,Bang Phlat District,ปิ่นทองพลาซ่า,market,low,none,0.0,0.7,1,1280.3676154353407,Polygon,857.7998078324264,Bang Yi Khan,5.343934684605851,2.5,43.59,,osm_category_default
+885,Samphanthawong District,ตลาดอาหารจีน,market,low,none,0.0,0.7,8,1271.771519295759,Polygon,106.68708493076237,Wat Mangkon,1.3497852761115583,2.3,42.72,,osm_category_default
+889,Ratchathewi District,,market,low,none,0.0,0.7,5,1271.3672898294158,Polygon,404.73718064290944,Ratchaprarop,3.519620160749606,2.6,42.85,,osm_category_default
+321,Vadhana District,,market,low,none,0.0,2.3,1,1242.8206594127782,Polygon,879.7610443426145,Ramkhamhaeng,14.147439509302414,2.0,42.2,,osm_category_default
+647,Yan Nawa District,สวนตระการเกษม,park,low,none,0.0,0.8,2,1242.7704072316897,Polygon,2593.6646875241718,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+234,Vadhana District,Edition Clinic Thonglor,health_centre,medium,none,0.0,,1,1200.4707875481895,Point,595.3225747782456,Thong Lo,14.147439509302414,2.0,42.2,Edition Clinic Thonglor,osm_category_default
+859,Pom Prap Sattru Phai District,,park,low,none,0.0,1.3,2,1183.258894643827,Polygon,1015.1513968088889,Wat Mangkon,2.5132994081199342,2.5,44.33,,osm_category_default
+131,Vadhana District,Ambassade de Mongolie,government_office,low,none,0.0,,1,1149.302628117887,Point,1292.800027424696,Ramkhamhaeng,14.147439509302414,2.0,42.2,,osm_category_default
+78,Vadhana District,Kom-boo-cha,community_centre,low,none,0.0,,1,1147.134643783522,Point,1363.4125013167104,On Nut,14.147439509302414,2.0,42.2,,osm_category_default
+109,Chatuchak District,,community_centre,low,none,0.0,,1,1105.875418172351,Point,170.87399025478524,Ratchayothin,7.512476021659428,3.1,44.35,,osm_category_default
+834,Bang Sue District,,park,low,none,0.0,1.2,1,1095.2211488746498,Polygon,1788.2960578268103,Yaek Tiwanon,16.59413937857211,3.2,44.7,,osm_category_default
+925,Chatuchak District,โรงเรียนเสนานิคม,school,high,none,0.0,,1,1095.1024415149468,Point,1682.7330746204511,Sena Nikhom,7.512476021659428,3.1,44.35,BMA school registry (data.bangkok.go.th),bma_open_data
+7,Vadhana District,สำนักงานเขตวัฒนา,district_office,high,none,0.0,,1,1074.4714093846703,Point,1600.2681842104853,Ramkhamhaeng,14.147439509302414,2.0,42.2,,osm_category_default
+95,Phra Nakhon District,Na Krung Thewes,market,low,none,0.0,,1,1066.866130290861,Point,2198.003958968733,Sirindhorn,10.073902842536365,2.3,43.21,,osm_category_default
+41,Khlong Toei District,Soi 38 Nightmarket,market,low,none,0.0,,1,1062.5938504238036,Point,57.86814733335118,Thong Lo,32.04800465406342,1.5,42.1,,osm_category_default
+475,Bang Rak District,,market,low,none,0.0,1.7,1,1061.46184117879,Polygon,931.8907523399236,Si Lom,95.26537274363294,2.3,41.81,,osm_category_default
+460,Khlong Toei District,,market,low,none,0.0,4.0,1,1058.088575016736,Polygon,543.3681369825838,On Nut,32.04800465406342,1.5,42.1,,osm_category_default
+603,Pathum Wan District,บ้านหนังสือ,library,low,oversized_parcel,0.0,25.2,1,1053.0975743818724,Polygon,1210.2306245641064,Hua Lamphong,8.958127403648023,2.4,41.82,,osm_category_default
+485,Bang Rak District,สวนวัดหัวลำโพงรุกขนิเวศน์,park,low,none,0.0,0.9,1,1042.2335983490127,Polygon,133.90007131230965,Sam Yan,95.26537274363294,2.3,41.81,wecreatepark,osm_category_default
+144,Phra Nakhon District,,health_centre,medium,none,0.0,,1,1038.800986847729,Point,804.8768715169385,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+473,Bang Sue District,,park,low,none,0.0,6.6,1,1036.698726255827,Polygon,229.7985613168718,Bang Pho,16.59413937857211,3.2,44.7,,osm_category_default
+857,Phra Nakhon District,ศาลาชุมชนวัดเทพธิดาราม,community_centre,low,oversized_parcel,0.0,12.7,1,1029.9980521308369,Polygon,824.1997113441138,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+420,Sathon District,,market,low,none,0.0,1.3,2,1008.1179177325103,Polygon,2785.137729886022,Si Lom,66.31155084548975,2.0,42.49,,osm_category_default
+113,Vadhana District,,health_centre,medium,none,0.0,,1,995.9937739134356,Point,521.4529749612997,Phrom Phong,14.147439509302414,2.0,42.2,,osm_category_default
+627,Yan Nawa District,โรงเรียนนานาชาติดับเบิลทรีส์ เขตพระราม 3,school,low,none,0.0,0.7,2,974.9314933185258,Polygon,3061.957057076256,Lumphini,71.17195774707528,1.5,41.6,,osm_category_default
+138,Sathon District,,health_centre,medium,none,0.0,,1,973.0283042751466,Point,475.14382822926626,Lumphini,66.31155084548975,2.0,42.49,,osm_category_default
+396,Vadhana District,,school,low,none,0.0,3.0,1,970.9017624999934,Polygon,1232.9620581889521,Phra Khanong,14.147439509302414,2.0,42.2,,osm_category_default
+363,Phra Nakhon District,Kumon,school,low,none,0.0,5.7,1,966.1765109219116,Polygon,1836.8114243608154,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+130,Vadhana District,Angoon's Garden,park,low,none,0.0,,1,944.2446187626276,Point,396.53643106259983,Thong Lo,14.147439509302414,2.0,42.2,,osm_category_default
+636,Sathon District,ตลาดคุณมาย,market,low,none,0.0,1.0,1,919.5741585090045,Polygon,1099.806004463013,Lumphini,66.31155084548975,2.0,42.49,,osm_category_default
+446,Thon Buri District,ตลาดสดสำเหร่,market,low,none,0.0,1.0,7,919.5016169762929,Polygon,760.584355651405,Pho Nimit,0.4552733595031658,1.7,43.87,,osm_category_default
+745,Yan Nawa District,Genesis Fertility Center,health_centre,medium,none,0.0,1.4,1,918.4640987591044,Polygon,5463.783079965897,Khlong Toei,71.17195774707528,1.5,41.6,,osm_category_default
+552,Pom Prap Sattru Phai District,,park,low,none,0.0,1.2,1,903.7027578740092,Polygon,295.3200922853739,Wat Mangkon,2.5132994081199342,2.5,44.33,,osm_category_default
+630,Bang Rak District,ตลาดซอยประชุม,market,low,none,0.0,0.6,1,892.0324080637773,Polygon,1105.6528928073337,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
+51,Vadhana District,Preecha Aesthetic Institute,health_centre,medium,none,0.0,,1,891.4430437406654,Point,1571.5931496231522,Thong Lo,14.147439509302414,2.0,42.2,,osm_category_default
+235,Khlong Toei District,,market,low,none,0.0,,1,889.4485023073482,Point,584.8709987092158,Phra Khanong,32.04800465406342,1.5,42.1,,osm_category_default
+108,Chatuchak District,,health_centre,medium,none,0.0,,1,877.0245205378204,Point,878.118090473507,Ratchayothin,7.512476021659428,3.1,44.35,,osm_category_default
+716,Pathum Wan District,โรงเรียนนานาชาติ อาร์ซี,school,low,none,0.0,1.0,1,876.7231406351176,Polygon,456.34066279542736,Phloen Chit,8.958127403648023,2.4,41.82,,osm_category_default
+468,Yan Nawa District,The Complete Naratiwas Green Area,park,low,none,0.0,1.3,1,866.6908141907472,Polygon,2508.455363049593,Lumphini,71.17195774707528,1.5,41.6,,osm_category_default
+320,Vadhana District,,market,low,none,0.0,1.1,2,853.0187187525631,Polygon,876.0339780873206,Ramkhamhaeng,14.147439509302414,2.0,42.2,,osm_category_default
+284,Pom Prap Sattru Phai District,,market,low,none,0.0,0.7,8,835.0627143769972,Polygon,1131.627639518993,Sam Yot,2.5132994081199342,2.5,44.33,,osm_category_default
+34,Chatuchak District,,fire_station,medium,none,0.0,,1,816.2315352286898,Point,622.2312088903245,Phawana,7.512476021659428,3.1,44.35,,osm_category_default
+395,Vadhana District,,school,low,none,0.0,1.5,1,809.3671406028789,Polygon,582.3230259893553,Phra Khanong,14.147439509302414,2.0,42.2,,osm_category_default
+539,Ratchathewi District,The Brain,school,low,none,0.0,1.2,3,802.0163099581695,Polygon,415.5301291856583,Victory Monument,3.519620160749606,2.6,42.85,,osm_category_default
+895,Vadhana District,โรงเรียนสุเหร่าบ้านดอน,school,high,none,0.0,,1,796.417137554915,Point,1777.0577010616637,Phrom Phong,14.147439509302414,2.0,42.2,BMA school registry (data.bangkok.go.th),bma_open_data
+304,Bang Rak District,ห้องสมุดแสงอรุณ,library,low,none,0.0,3.8,1,793.4428349926825,Polygon,1142.537718626816,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
+317,Phra Nakhon District,กองบังคับการตำรวจนครบาล 6,government_office,low,none,0.0,1.0,2,792.6922331080663,Polygon,336.490134876882,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+646,Bang Rak District,ตลาดกลางซอย,market,low,none,0.0,1.5,1,786.0019311967897,Polygon,265.47489935676634,Si Lom,95.26537274363294,2.3,41.81,,osm_category_default
+358,Bang Rak District,ห้องสมุด เนียลสัน เฮย์ส,library,low,none,0.0,1.5,1,773.8418814275346,Polygon,947.8237063737403,Sam Yan,95.26537274363294,2.3,41.81,,osm_category_default
+398,Din Daeng District,Bangkok Plastic Surgery Clinic,health_centre,medium,none,0.0,2.4,6,769.3457346978854,Polygon,1223.2841061538147,Sutthisan,39.43490169368372,2.7,44.25,,osm_category_default
+229,Vadhana District,BOB Space,community_centre,low,none,0.0,,1,762.6438375084964,Point,642.8244675732229,Ekkamai BTS Station,14.147439509302414,2.0,42.2,,osm_category_default
+178,Ratchathewi District,Victory Hub,market,low,none,0.0,,1,751.4741863325048,Point,337.20839929379997,Victory Monument,3.519620160749606,2.6,42.85,,osm_category_default
+169,Khlong Toei District,POWWOWWOW BKK,community_centre,low,none,0.0,,1,750.0121251410407,Point,452.9927251222089,Ekkamai BTS Station,32.04800465406342,1.5,42.1,,osm_category_default
+538,Phaya Thai District,,health_centre,medium,none,0.0,1.0,1,746.6761146517464,Polygon,1035.8178881636068,Victory Monument,24.15944885836817,2.8,44.04,,osm_category_default
+937,Thon Buri District,โรงเรียนวัดบางสะแกนอก,school,low,temple_land,40.9,,1,729.4993808093107,Point,209.61973118258385,Talat Phlu,0.4552733595031658,1.7,43.87,BMA school registry (data.bangkok.go.th),bma_open_data
+191,Dusit District,,market,low,none,0.0,,1,714.6289605836341,Point,1924.2992985482842,Sirindhorn,15.140222506111774,2.6,43.49,,osm_category_default
+177,Ratchathewi District,Fashion walk,market,low,none,0.0,,1,705.3329564053391,Point,183.69461921616198,Victory Monument,3.519620160749606,2.6,42.85,,osm_category_default
+652,Bang Rak District,,park,low,none,0.0,2.1,1,699.3459810904193,Polygon,1347.00575748211,Charoen Nakhon,95.26537274363294,2.3,41.81,,osm_category_default
+127,Bang Sue District,Prachanukun Health Garden สวนสุขภาพ ประชานุกูล,park,low,none,0.0,,1,694.9307879329562,Point,1284.27427509436,Bang Son,16.59413937857211,3.2,44.7,,osm_category_default
+756,Din Daeng District,,market,low,none,0.0,1.1,5,689.9773276277824,Polygon,1314.8101560520674,Huai Khwang,39.43490169368372,2.7,44.25,,osm_category_default
+75,Bang Sue District,,school,low,none,0.0,,1,685.5613343390488,Point,1079.1551022246488,Bang Son,16.59413937857211,3.2,44.7,,osm_category_default
+63,Vadhana District,Anglo Singapore International School,school,low,none,0.0,,1,683.667743759512,Point,1035.0719197336061,Makkasan,14.147439509302414,2.0,42.2,,osm_category_default
+557,Bang Na District,,park,low,none,0.0,1.0,1,679.6803364723231,Polygon,1274.5392617880245,Bang Na,16.730954912626892,1.9,43.09,,osm_category_default
+608,Bang Rak District,สถานีดับเพลิงและกู้ภัยบางรัก (ชั่วคราว),fire_station,medium,none,0.0,1.3,2,677.0377148187848,Polygon,814.5479402822175,Hua Lamphong,95.26537274363294,2.3,41.81,,osm_category_default
+457,Din Daeng District,,park,low,none,0.0,3.0,1,667.767051426379,Polygon,875.2721580021743,Sutthisan,39.43490169368372,2.7,44.25,,osm_category_default
+389,Samphanthawong District,,market,low,none,0.0,0.7,1,661.7654749648773,Polygon,659.411048797619,Khlong San,1.3497852761115583,2.3,42.72,,osm_category_default
+657,Phra Nakhon District,ตลาดนัดหลังศาลากลางฯ,market,low,none,0.0,0.7,5,633.9862737487018,Polygon,853.6221658861665,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+481,Phra Nakhon District,ศูนย์เยาวชนเทเวศร์,community_centre,low,none,0.0,2.0,1,622.3949649260348,Polygon,2193.4553023113667,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default
+201,Vadhana District,Soho House,community_centre,low,none,0.0,,1,618.677947011724,Point,746.3612507158617,Asok,14.147439509302414,2.0,42.2,,osm_category_default
+682,Bang Rak District,,market,low,none,0.0,1.5,1,616.2269071153419,Polygon,183.32117810941335,Si Lom,95.26537274363294,2.3,41.81,,osm_category_default
+116,Vadhana District,Acorns to Oaks Children's Centre,school,low,none,0.0,,1,610.8568187532829,Point,1492.892176789521,Phra Khanong,14.147439509302414,2.0,42.2,,osm_category_default
+504,Bang Phlat District,สวนพระปิ่นเกล้า,park,low,none,0.0,0.1,5,606.6430086895525,Polygon,1658.3794632251904,Bang Yi Khan,5.343934684605851,2.5,43.59,,osm_category_default
+30,Bang Rak District,The Reading Room,library,low,none,0.0,,1,595.7820266929109,Point,1290.7441292161864,Charoen Nakhon,95.26537274363294,2.3,41.81,,osm_category_default
+808,Din Daeng District,,park,low,none,0.0,1.6,7,591.4930341802826,Polygon,843.4531346332484,Ratchaprarop,39.43490169368372,2.7,44.25,,osm_category_default
+840,Dusit District,สำนักงานสรรพากรพื้นที่สาขาดุสิต,government_office,low,none,0.0,0.7,1,589.4717229801722,Polygon,2050.280216688709,Tao Poon,15.140222506111774,2.6,43.49,,osm_category_default
+671,Vadhana District,เดอะ สแตรนด์ ปาร์ค,park,low,none,0.0,1.3,10,585.704928922946,Polygon,131.2403048790312,Thong Lo,14.147439509302414,2.0,42.2,,osm_category_default
+771,Phaya Thai District,คลาดแม่ฟุ้ง,market,low,none,0.0,1.0,2,582.5640436471077,Polygon,803.5502105125171,Ari,24.15944885836817,2.8,44.04,,osm_category_default
+325,Bang Rak District,โรงเรียนอัสสัมชัญ,school,low,none,0.0,0.0,1,576.5216594853257,Polygon,801.4402008142006,Charoen Nakhon,95.26537274363294,2.3,41.81,,osm_category_default
+64,Vadhana District,"Modern International School, Bangkok",school,low,none,0.0,,1,567.4423718858044,Point,1134.8339226058176,Makkasan,14.147439509302414,2.0,42.2,,osm_category_default
+350,Phaya Thai District,,park,low,none,0.0,2.3,1,565.7411391311468,Polygon,683.2668912461061,Sanam Pao,24.15944885836817,2.8,44.04,,osm_category_default
+294,Chatuchak District,โรงเรียนสาธิตแห่งมหาวิทยาลัยเกษตรศาสตร์,school,low,none,0.0,0.0,1,565.2718453834302,Polygon,1335.589387186312,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+47,Din Daeng District,,market,low,none,0.0,,1,541.1249897955867,Point,219.14577151510082,Phra Ram 9,39.43490169368372,2.7,44.25,,osm_category_default
+688,Chatuchak District,,park,low,none,0.0,2.2,1,520.0517349334823,Polygon,500.1871687157843,Kasetsart University,7.512476021659428,3.1,44.35,,osm_category_default
+121,Vadhana District,,health_centre,medium,none,0.0,,1,518.7233000714655,Point,456.89440599726606,Ekkamai BTS Station,14.147439509302414,2.0,42.2,,osm_category_default
+888,Phra Nakhon District,อาศรมวัฒนธรรมไทย-ภารต,community_centre,low,none,0.0,1.7,2,512.3221936477051,Polygon,966.0075346135527,Sam Yot,10.073902842536365,2.3,43.21,,osm_category_default

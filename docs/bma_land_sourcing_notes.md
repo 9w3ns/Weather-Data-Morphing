@@ -179,6 +179,7 @@ Two findings worth arguing in the thesis:
 
 ```
 data/fetch_bma_parcels.py       -> data/gis/bangkok_parcels_<district>.geojson
+  (--around-facilities mode)       data/gis/bangkok_parcels_seeded_manifest.csv
 data/fetch_bma_facilities.py    -> data/gis/bangkok_bma_facilities.geojson
                                    data/gis/bangkok_temple_land.geojson
 data/build_bma_land_layer.py    -> data/gis/bangkok_bma_land.geojson
@@ -190,3 +191,44 @@ data/gis/gh_bma_land.py         -> Grasshopper curves (shared local XY frame)
 Run from the repo root. Kept as a **parallel layer** to the vacant-plots Tier 2
 work, not folded into its `rank_score` (those five weights sum to 1.0 by design,
 and "looks empty" is a different question from "the city owns it").
+
+## 7. Widening beyond Tier 1: the priority subset (seed-driven fetch)
+
+The first pass fetched parcels for only three districts (Bang Rak, Sathon, Khlong
+Toei), because the district-scoped fetch is heavy — Bang Rak alone is ~13,700
+parcels. But **the facility seeds were never district-limited**:
+`fetch_bma_facilities.py` runs city-wide (`ox.features_from_place("Bangkok,
+Thailand")` plus the full 437-school registry), so `bangkok_bma_facilities.geojson`
+already holds **2,537 seeds across all 50 districts** (502 high / 190 medium /
+1,845 low). The only thing missing elsewhere was parcel *geometry*.
+
+`fetch_bma_parcels.py --around-facilities` fills exactly that gap. It does **not**
+re-crawl whole districts — parcels carry no owner attribute, so extra parcels are
+only grey context, never a new ownership answer. Instead it buffers each seed
+(footprint +50 m, point +150 m), dissolves the buffers into a handful of disjoint
+envelopes (so clustered inner-city facilities cost one fetch each), and pulls only
+the parcels underneath, across a **UHI/transit priority subset** of districts:
+
+```
+priority = { UHI_Tier == "Severe" }  ∪  { Intercept_Score_Pct >= 30 }  ∪  { Bang Na }
+         = 21 districts   (see data/gis/bangkok_parcels_seeded_manifest.csv)
+```
+
+The rule is a CLI knob (`--min-tier`, `--intercept-min`, `--extra-districts`), not
+folklore; `bangkok_parcels_seeded_manifest.csv` records which districts were fetched
+`full` vs `seeded`, why each qualified, and the parcel count. The three Tier 1
+districts keep their **full** cadastral files (not re-seeded unless `--force`); the
+other 18 are **seeded**. `build_bma_land_layer.py` globs all parcel files unchanged.
+
+**Two caveats this introduces:**
+
+1. **Mixed parcel density.** The three Tier 1 districts have the full cadastral
+   fabric; the 18 new ones have parcels only around BMA facilities. This is
+   sufficient for the ownership question (a facility can only claim parcels it sits
+   on), but the context basemap in `build`'s render is sparser outside Tier 1.
+2. **Verification burden scales with the net.** Including low-confidence seeds
+   across 21 districts surfaces many more `low` candidates. `high` still means "no
+   disqualifier found", not "title confirmed" (see §3) — every surviving site is
+   audited individually. Run `build_bma_land_layer.py --min-confidence low
+   --min-area 500` to see the wider set; sort on `ownership_confidence` and
+   `land_owner_risk`.
